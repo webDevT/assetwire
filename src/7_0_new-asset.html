@@ -1,0 +1,867 @@
+@@include("partials/main.html")
+
+    <head>
+        
+        @@include("partials/title-meta.html", {"title": "Dashboard"})
+
+        @@include("partials/head-css.html")
+
+    </head>
+
+    @@include("partials/body.html")
+
+<!-- Select2 CSS -->
+<link href="/dashboard/shared/assets/libs/select2/css/select2.min.css" rel="stylesheet" type="text/css" />
+
+<style>
+  .unirope-nav-link {
+    color: #BDBDBD !important;
+    text-decoration-color: #BDBDBD !important;
+  }
+
+  .main-content-custom {
+    margin-left: 250px;
+  }
+
+  @media screen and (max-width: 992px) {
+    .main-content-custom {
+      margin-left: 0;
+    }
+  }
+
+  .page-content-sidebar {
+    padding: 65px calc(24px * 0.75) 60px calc(24px * 0.75);
+  }
+
+  .container-sidebar {
+    max-width: 100% !important;
+  }
+
+  .card-title {
+    color: #212121;
+    font-family: Poppins;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+
+  .input-title {
+    color: #212121;
+    font-family: Poppins;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+
+  .mt-20 {
+    margin-top: 20px;
+  }
+
+  p {
+    margin: 0;
+    padding: 0;
+  }
+
+  /* Remove text placeholder for date inputs */
+  input[type="date"]:in-range::-webkit-datetime-edit-year-field,
+  input[type="date"]:in-range::-webkit-datetime-edit-month-field,
+  input[type="date"]:in-range::-webkit-datetime-edit-day-field,
+  input[type="date"]:in-range::-webkit-datetime-edit-text {
+    color: transparent;
+  }
+
+  /* The Modal (background) */
+  .modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1002;
+    /* Sit on top */
+    padding-top: 100px;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+  }
+
+  /* Modal Content */
+  .modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 790px;
+    height: 448.393px;
+  }
+
+  /* The Close Button */
+  .close:hover,
+  .close:focus {
+    cursor: pointer;
+  }
+
+  /* SELECT2 CUSTOM CSS */
+
+  .select2-container--default .select2-results__option--highlighted.select2-results__option--selectable,
+  .select2-container--default .select2-results__option[aria-selected=true]:hover {
+    background-color: #EC1C24;
+    color: white;
+  }
+
+  .select2-dropdown {
+    border: 1px solid #212121;
+  }
+
+  .regular-dropdown .select2-results__option {
+    border-top: 1px solid #212121;
+  }
+
+  .select2-results__group {
+    border-top: 1px solid #000 !important;
+  }
+
+  .select2-container--default .select2-selection--single {
+    height: 36px;
+    width: 100%;
+    display: grid;
+    align-items: center;
+    border-color: #ced4da;
+    -webkit-transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+    transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  }
+
+  .select2-container--default .select2-selection--single:hover,
+  .select2-container--default .select2-selection--single:active,
+  .select2-container--default .select2-selection--single:focus {
+    border: 1px solid black;
+    box-shadow: none;
+  }
+
+  .select2-container--default .select2-selection--single .select2-selection__arrow {
+    height: 34px;
+  }
+</style>
+
+<!-- Begin page -->
+<div id="layout-wrapper" style="font-family: Poppins; margin-top: -79px;">
+  @@include("partials/menu.html")
+  <!-- ========== Left Sidebar Start ========== -->
+  <div class="vertical-menu" style="">
+
+    <div data-simplebar class="h-100">
+
+      <!--- Sidemenu -->
+      <div id="sidebar-menu">
+        <!-- Left Menu Start -->
+        <ul class="metismenu list-unstyled" id="side-menu" style="padding-top: 50px;">
+          <li>
+            <a href="" class="waves-effect">
+              <i class="bx bx-plus-circle active"></i>
+              <span key="t-chat active">Add</span>
+            </a>
+          </li>
+          <li>
+            <a href="" class="waves-effect">
+              <i class="bx bxs-file-plus"></i>
+              <span key="t-chat">Add with Order</span>
+            </a>
+          </li>
+          <li>
+            <a href="" class="waves-effect">
+              <i class="bx bx-upload"></i>
+              <span key="t-chat">Import/Export</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <!-- Sidebar -->
+    </div>
+  </div>
+  <!-- Left Sidebar End -->
+
+  <!-- ============================================================== -->
+  <!-- Start right Content here -->
+  <!-- ============================================================== -->
+  <div class="main-content-custom">
+
+    <div class="page-content-sidebar">
+      <div class="container-fluid container-sidebar mb-5">
+
+        <!-- start page title -->
+        <div class="row">
+          <div class="col-12">
+            <div class="page-title-box d-sm-flex align-items-center justify-content-between">
+              <h1 class="title">NEW ASSET</h1>
+            </div>
+            <div class="page-title-box d-sm-flex align-items-center justify-content-between">
+              <h1 class="title">ADD</h1>
+              <button type="button" class="btn btn-dark btn-group-b" style="width: 60px; height: 28px; padding: 0; font-size: 11px; font-family: Century Gothic Paneuropean;">
+                Import
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- end page title -->
+
+        <!-- start page content -->
+        <div class="row gx-5">
+
+          <!-- start column left -->
+          <div class="col-6">
+
+            <!-- start asset type card -->
+            <div class="card">
+              <div class="card-body">
+                <label for="asset-type" class="form-label">Asset Type</label>
+                <div class="d-flex align-items-center asset-type-select">
+                  <select id="asset-type" class="form-control select2">
+                    <option></option>
+                    <optgroup label="Rigging Hardware">
+                      <option>Hook Block / Overhaul Ball</option>
+                    </optgroup>
+                    <optgroup label="Non ASME Compliant Lifting Products" style="border-top: 1rem solid #000">
+                      <option>Chain Lifting Assembly</option>
+                      <option>Custom Lifting Device</option>
+                    </optgroup>
+                    <optgroup label="Fall Protection Equipment">
+                      <option>Fall Protection Equipment</option>
+                    </optgroup>
+                  </select>
+
+                  <div class="form-check form-check-inline ms-3">
+                    <input id="tag-radio" class="form-check-input" type="radio" name="asset" id="newAsset" value="newAsset" checked>
+                    <label class="form-check-label unirope-radio-label" for="inlineRadio1">New</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input id="tag-and-test-radio" class="form-check-input" type="radio" name="asset" id="usedAsset" value="usedAsset">
+                    <label class="form-check-label unirope-radio-label" for="inlineRadio2">Used</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- start identifiers card -->
+            <div class="card">
+              <div class="card-body">
+                <h2 class="card-title">Identifiers</h2>
+
+                <div class="row">
+                  <div class="col-6">
+                    <label for="identified" class="form-label input-title mt-20">*Identified</label>
+                    <div class="input-group" id="identified-date">
+                      <input type="text" class="form-control" placeholder="" data-date-format="dd M, yyyy" data-date-container='#identified-date' data-provide="datepicker">
+                      <span class="input-group-text"><i class="mdi mdi-calendar"></i></span>
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <h3 class="input-title mt-20">Order Number</h3>
+                    <input class="form-control" type="text" placeholder="" id="feet-length-input">
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-12">
+                    <label for="serial-number" class="form-label input-title mt-20">*Serial Number</label>
+                    <div class="d-flex align-items-center">
+                      <select id="serial-number" class="form-control select2 regular-select" style="width: 48.5%;">
+                        <option></option>
+                        <option>Hook Block / Overhaul Ball</option>
+                        <option>Chain Lifting Assembly</option>
+                        <option>Custom Lifting Device</option>
+                        <option>Fall Protection Equipment</option>
+                      </select>
+                      <p class="ms-3">OR <a class="ms-2" href=""><u>Identify Multiple Assets</u></a></p>
+                    </div>
+                    <div class="mt-1">
+                      <a href=""><u>Generate</u></a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-6">
+                    <h3 class="input-title mt-20">RFID Number</h3>
+                    <input class="form-control" type="text" placeholder="" id="RFID-num-input">
+                    <h3 class="input-title mt-20">Packing Slips</h3>
+                    <input class="form-control" type="text" placeholder="" id="packing-slips-input">
+                  </div>
+                  <div class="col-6">
+                    <h3 class="input-title mt-20">Reference Number</h3>
+                    <input class="form-control" type="text" placeholder="" id="reference-num-input">
+                    <h3 class="input-title mt-20">5 million number</h3>
+                    <input class="form-control" type="text" placeholder="" id="5-million-input">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- start order details card -->
+            <div class="card">
+              <div class="card-body">
+                <h2 class="card-title">Order Details</h2>
+                <div class="row">
+                  <div class="col-12">
+                    <h3 class="input-title mt-20 mb-2">Purchase Order</h3>
+                    <input class="form-control" type="text" placeholder="" id="purchase-order-input">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- start owner card -->
+            <div class="card">
+              <div class="card-body">
+                <h2 class="card-title">Owner</h2>
+                <div class="row">
+                  <div class="col-6">
+                    <h3 class="input-title mt-20">Assigned To</h3>
+                    <input class="form-control" type="text" placeholder="" id="assigned-to-input">
+                    <h3 class="input-title mt-20">Freeform Location</h3>
+                    <input class="form-control" type="text" placeholder="" id="freeform-location-input">
+                  </div>
+                  <div class="col-6">
+                    <h3 class="input-title mt-20">*Owner</h3>
+                    <div class="d-flex align-items-center">
+                      <input class="form-control" type="text" placeholder="" id="owner-input">
+                      <i style="font-size: 30px; color: #EC1C24;" class="bx bx-x"></i>
+                      <i style="font-size: 22px; color: #212121;" class="bx bx-search"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- start uploads card -->
+            <div class="card">
+              <div class="card-body">
+                <h2 class="card-title">Uploads</h2>
+                <div class="row">
+                  <div class="col-6">
+                    <h3 class="input-title mt-20">Asset Image</h3>
+                    <p style="font-weight: 300;">Upload an image of the asset to be displayed on the profile page. The image should be 300x wide.</p>
+                  </div>
+
+                  <div class="col-6">
+                    <h3 class="input-title mt-20 mb-2">Attachments</h3>
+                    <p style="font-weight: 300;">Upload images or documents you would like all users to have access to.</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-6">
+                    <div class="dropzone">
+                      <div class="fallback">
+                        <input name="file" type="file" hidden multiple="multiple">
+                      </div>
+                      <div class="dz-message needsclick text-center">
+                        <div class="">
+                          <i class="mt-3 display-4 text-muted bx bxs-cloud-upload"></i>
+                        </div>
+
+                        <p class="file-upload-txt">Drop files here or click to upload.</p>
+                      </div>
+                    </div>
+
+                    <ul class="list-unstyled mb-0" id="dropzone-preview">
+                      <li class="mt-2" id="dropzone-preview-list">
+                        <!-- This is used as the file preview template -->
+                        <div class="border rounded">
+                          <div class="d-flex p-2">
+                            <div class="flex-shrink-0 me-3">
+                              <div class="avatar-sm bg-light rounded">
+                                <img data-dz-thumbnail class="img-fluid rounded d-block" src="https://img.themesbrand.com/judia/new-document.png" alt="Dropzone-Image">
+                              </div>
+                            </div>
+                            <div class="flex-grow-1">
+                              <div class="pt-1">
+                                <h5 class="fs-md mb-1" data-dz-name>&nbsp;</h5>
+                                <p class="fs-sm text-muted mb-0" data-dz-size></p>
+                                <strong class="error text-danger" data-dz-errormessage></strong>
+                              </div>
+                            </div>
+                            <div class="flex-shrink-0 ms-3">
+                              <button data-dz-remove class="btn btn-sm btn-danger">Delete</button>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col-6">
+                    <div class="dropzone">
+                      <div class="fallback">
+                        <input name="file" type="file" hidden multiple="multiple">
+                      </div>
+                      <div class="dz-message needsclick text-center">
+                        <div class="">
+                          <i class="mt-3 display-4 text-muted bx bxs-cloud-upload"></i>
+                        </div>
+
+                        <p class="file-upload-txt">Drop files here or click to upload.</p>
+                      </div>
+                    </div>
+
+                    <ul class="list-unstyled mb-0" id="dropzone-preview">
+                      <li class="mt-2" id="dropzone-preview-list">
+                        <!-- This is used as the file preview template -->
+                        <div class="border rounded">
+                          <div class="d-flex p-2">
+                            <div class="flex-shrink-0 me-3">
+                              <div class="avatar-sm bg-light rounded">
+                                <img data-dz-thumbnail class="img-fluid rounded d-block" src="https://img.themesbrand.com/judia/new-document.png" alt="Dropzone-Image">
+                              </div>
+                            </div>
+                            <div class="flex-grow-1">
+                              <div class="pt-1">
+                                <h5 class="fs-md mb-1" data-dz-name>&nbsp;</h5>
+                                <p class="fs-sm text-muted mb-0" data-dz-size></p>
+                                <strong class="error text-danger" data-dz-errormessage></strong>
+                              </div>
+                            </div>
+                            <div class="flex-shrink-0 ms-3">
+                              <button data-dz-remove class="btn btn-sm btn-danger">Delete</button>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <!-- end column left -->
+
+          <!-- start column right -->
+          <div class="col-6">
+
+            <!-- start attributes card -->
+            <div class="card">
+              <div class="card-body">
+                <h2 class="card-title">Attributes</h2>
+                <div class="row">
+                  <div class="col-6">
+                    <label for="diameter" class="form-label input-title mt-20">*Diameter</label>
+                    <select id="diameter" class="form-control select2 regular-select" style="width: 100%;">
+                      <option></option>
+                      <option>Hook Block / Overhaul Ball</option>
+                      <option>Chain Lifting Assembly</option>
+                      <option>Custom Lifting Device</option>
+                      <option>Fall Protection Equipment</option>
+                    </select>
+
+                    <label for="length" class="form-label input-title mt-20">*Length</label>
+
+                    <div class="d-flex justify-content-between align-items-center">
+                      <select id="length" class="form-control select2 regular-select" style="width: 100%;">
+                        <option></option>
+                        <option>Feet</option>
+                        <option>Meters</option>
+                      </select>
+                      <svg id="length-icon" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none" style="margin-left: 5%;">
+                        <path d="M20.0781 21.4848H5.07812C4.52813 21.4848 4.05729 21.289 3.66563 20.8973C3.27396 20.5056 3.07812 20.0348 3.07812 19.4848V5.4848C3.07812 4.9348 3.27396 4.46397 3.66563 4.0723C4.05729 3.68064 4.52813 3.4848 5.07812 3.4848H20.0781C20.6281 3.4848 21.099 3.68064 21.4906 4.0723C21.8823 4.46397 22.0781 4.9348 22.0781 5.4848V19.4848C22.0781 20.0348 21.8823 20.5056 21.4906 20.8973C21.099 21.289 20.6281 21.4848 20.0781 21.4848ZM5.07812 8.4848H20.0781V5.4848H5.07812V8.4848ZM8.07812 10.4848H5.07812V19.4848H8.07812V10.4848ZM17.0781 10.4848V19.4848H20.0781V10.4848H17.0781ZM15.0781 10.4848H10.0781V19.4848H15.0781V10.4848Z" fill="black" />
+                      </svg>
+                    </div>
+
+                    <div id="Feet" class="length-units">
+                      <div class="d-flex align-items-center justify-content-between mt-2">
+                        <h3 class="input-title mb-0">Feet</h3>
+                        <input class="form-control w-75" type="text" placeholder="" id="feet-length-input">
+                      </div>
+
+                      <div class="d-flex align-items-center justify-content-between mt-2">
+                        <h3 class="input-title mb-0">Inches</h3>
+                        <input class="form-control w-75" type="text" placeholder="" id="inches-length-input">
+                      </div>
+
+                      <div class="d-flex justify-content-end mt-2">
+                        <a href="" class="me-2"><u>Cancel</u></a>
+                        <a href=""><u>Store</u></a>
+                      </div>
+                    </div>
+
+
+                    <div id="Meters" class="length-units">
+                      <div class="d-flex align-items-center justify-content-between mt-2">
+                        <h3 class="input-title mb-0">Meters</h3>
+                        <input class="form-control w-75" type="text" placeholder="" id="feet-length-input">
+                      </div>
+
+                      <div class="d-flex align-items-center justify-content-between mt-2">
+                        <h3 class="input-title mb-0">Centimeters</h3>
+                        <input class="form-control w-75" type="text" placeholder="" id="inches-length-input">
+                      </div>
+
+                      <div class="d-flex justify-content-end mt-2">
+                        <a href="" class="me-2"><u>Cancel</u></a>
+                        <a href=""><u>Store</u></a>
+                      </div>
+                    </div>
+
+                    <label for="description" class="form-label input-title mt-20">*Description</label>
+                    <select id="description" class="form-control select2 regular-select" style="width: 100%;">
+                      <option></option>
+                      <option>Hook Block / Overhaul Ball</option>
+                      <option>Chain Lifting Assembly</option>
+                      <option>Custom Lifting Device</option>
+                      <option>Fall Protection Equipment</option>
+                    </select>
+
+                    <label for="other-attributes" class="form-label input-title mt-20">*Other Attributes</label>
+                    <select id="other-attributes" class="form-control select2 regular-select" style="width: 100%;">
+                      <option></option>
+                      <option>Hook Block / Overhaul Ball</option>
+                      <option>Chain Lifting Assembly</option>
+                      <option>Custom Lifting Device</option>
+                      <option>Fall Protection Equipment</option>
+                    </select>
+                  </div>
+
+                  <div class="col-6">
+                    <label for="design-factor" class="form-label input-title mt-20">*Design Factor</label>
+                    <select id="design-factor" class="form-control select2 regular-select" style="width: 100%;">
+                      <option></option>
+                      <option>Hook Block / Overhaul Ball</option>
+                      <option>Chain Lifting Assembly</option>
+                      <option>Custom Lifting Device</option>
+                      <option>Fall Protection Equipment</option>
+                    </select>
+
+                    <label for="rope-construction" class="form-label input-title mt-20">*Rope Construction</label>
+                    <select id="rope-construction" class="form-control select2 regular-select" style="width: 100%;">
+                      <option></option>
+                      <option>Hook Block / Overhaul Ball</option>
+                      <option>Chain Lifting Assembly</option>
+                      <option>Custom Lifting Device</option>
+                      <option>Fall Protection Equipment</option>
+                    </select>
+
+                    <h3 class="input-title mt-20">Capacity (WLL)</h3>
+                    <input class="form-control" type="text" placeholder="" id="capacity-wll-input">
+
+                    <h3 class="input-title mt-20">Proof Load Value</h3>
+                    <input class="form-control" type="text" placeholder="" id="proof-load-input">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- start gps card -->
+            <div class="card">
+              <div class="card-body">
+                <h2 class="card-title">GPS</h2>
+                <div class="row">
+                  <div class="col-6">
+                    <label for="latitude" class="form-label input-title mt-20">Latitude</label>
+                    <select id="latitude" class="form-control select2 regular-select" style="width: 100%;">
+                      <option></option>
+                      <option>Hook Block / Overhaul Ball</option>
+                      <option>Chain Lifting Assembly</option>
+                      <option>Custom Lifting Device</option>
+                      <option>Fall Protection Equipment</option>
+                    </select>
+                  </div>
+                  <div class="col-6">
+                    <label for="longitude" class="form-label input-title mt-20">Longitude</label>
+                    <select id="longitude" class="form-control select2 regular-select" style="width: 100%;">
+                      <option></option>
+                      <option>Hook Block / Overhaul Ball</option>
+                      <option>Chain Lifting Assembly</option>
+                      <option>Custom Lifting Device</option>
+                      <option>Fall Protection Equipment</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- start linking assets card -->
+            <div class="card">
+              <div class="card-body">
+                <h2 class="card-title">Linking Assets</h2>
+                <div class="row">
+                  <div class="col-12">
+                    <h3 class="input-title mt-20">Parent Asset (Link)</h3>
+                    <input class="form-control" type="text" placeholder="" id="parent-asset-input">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- start asset details card -->
+            <div class="card">
+              <div class="card-body">
+                <h2 class="card-title">Asset Details</h2>
+                <div class="row">
+                  <div class="col-6">
+                    <label for="asset-status" class="form-label input-title mt-20">Asset Status</label>
+                    <select id="asset-status" class="form-control select2 regular-select" style="width: 100%;">
+                      <option></option>
+                      <option>Hook Block / Overhaul Ball</option>
+                      <option>Chain Lifting Assembly</option>
+                      <option>Custom Lifting Device</option>
+                      <option>Fall Protection Equipment</option>
+                    </select>
+                  </div>
+                  <div class="col-6">
+                    <label for="pre-saved-comments" class="form-label input-title mt-20">Pre-Saved Comments</label>
+                    <select id="pre-saved-comments" class="form-control select2 regular-select" style="width: 100%;">
+                      <option></option>
+                      <option>Re-Web</option>
+                      <option>Replace Chain</option>
+                      <option>Replace Latch</option>
+                      <option>Test & Certify</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-12">
+                    <h3 class="input-title mt-20 mb-2">Comments</h3>
+                    <input class="form-control" type="text" placeholder="" id="comments-location-input">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- start event schedules card -->
+            <div class="card">
+              <div class="card-body">
+                <div class="d-flex align-items-center justify-content-between">
+                  <h2 class="card-title">Event Schedules</h2>
+                  <button id="myBtn" type="button" class="btn btn-dark btn-group-b" style="width: 111px; height: 27px; padding: 0; font-size: 11px; font-family: Century Gothic Paneuropean;">Add A Schedule</button>
+                </div>
+                <div class="table-responsive">
+                  <table class="table table-striped mb-0 align-middle">
+                    <thead style="border-bottom: 1px solid #EC1C24;">
+                      <tr>
+                        <th>
+                          <div class="d-flex align-items-center">
+                            Event
+                            <i class="bx bx-sort fs-5"></i>
+                          </div>
+                        </th>
+                        <th>
+                          <div class="d-flex align-items-center">
+                            Due Date
+                            <i class="bx bx-sort fs-5"></i>
+                          </div>
+                        </th>
+                        <th>
+                          <div class="d-flex align-items-center">
+                            Assignee
+                            <i class="bx bx-sort fs-5"></i>
+                          </div>
+                        </th>
+                        <th colspan="2">
+                          <div class="d-flex align-items-center">
+                            Job
+                            <i class="bx bx-sort fs-5"></i>
+                          </div>
+                        </th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Periodic Inspection-B30.9-2</td>
+                        <td>10/22/2008 12:00 PM EDT</td>
+                        <td>Ben Trott</td>
+                        <td>Admin</td>
+                        <td>
+                          <div class="d-flex justify-content-around">
+                            <a href=""><u>Edit</u></a>
+                            <a href=""><u>Delete</u></a>
+                          </div>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+
+            <!-- bottom buttons -->
+            <div class="mt-2" style="float: right;">
+              <button type="button" class="btn btn-dark btn-group-b" style="width: 60px; height: 28px; padding: 0; font-size: 11px; font-family: Century Gothic Paneuropean;">
+                Save
+              </button>
+              <button type="button" class="btn btn-dark btn-group-b" style="width: 140px; height: 28px; padding: 0; font-size: 11px; font-family: Century Gothic Paneuropean;">
+                Save And Start Event
+              </button>
+              <button type="button" class="btn btn-dark btn-group-outline-r" style="width: 70px; height: 28px; padding: 0; font-size: 11px; font-family: Century Gothic Paneuropean;">
+                Cancel
+              </button>
+            </div>
+          </div>
+          <!-- end column right -->
+        </div>
+      </div>
+      <!-- end page content -->
+    </div>
+    <!-- container-fluid -->
+  </div>
+  <!-- End Page-content -->
+
+  <!-- MODAL -->
+  <div id="myModal" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+      <h2 class="card-title">Schedule Event</h2>
+      <h3 class="input-title mt-20">Event Type</h3>
+      <select class="form-select" aria-label="Select event type">
+        <option selected></option>
+        <option value="1">One</option>
+        <option value="2">Two</option>
+        <option value="3">Three</option>
+      </select>
+
+      <label for="event-date" class="form-label input-title mt-20 mb-2">Set the due date:</label>
+      <div class="input-group" id="event-date">
+        <input type="text" class="form-control" placeholder="" data-date-format="dd M, yyyy" data-date-container='#event-date' data-provide="datepicker">
+        <span class="input-group-text"><i class="mdi mdi-calendar"></i></span>
+      </div>
+
+      <div class="input-title mt-1">
+        <a href=""><u>Today</u></a>
+        <span> | </span>
+        <a href=""><u>Tomorrow</u></a>
+        <span> | </span>
+        <a href=""><u>Next Month</u></a>
+        <span> | </span>
+        <a href=""><u>In 3 Months</u></a>
+        <span> | </span>
+        <a href=""><u>In 6 Months</u></a>
+        <span> | </span>
+        <a href=""><u>Next Year</u></a>
+      </div>
+
+      <h3 class="input-title mt-20 mb-0">Assignee</h3>
+      <p class="mb-3" style="font-weight: 300;">Select the person or group who will be assigned this task</p>
+      <div class="row">
+        <div class="col-6">
+          <input class="form-control" type="text" placeholder="" id="assignee-name-input">
+        </div>
+        <div class="col-6">
+          <select class="form-select" aria-label="Assign task">
+            <option selected></option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+        </div>
+      </div>
+      <div class="d-flex mt-1">
+        <input class="form-check-input me-2" type="checkbox" id="email-check">
+        <p style="font-weight: 300;">Send email notification to user or group</p>
+      </div>
+
+      <div>
+        <div class="mt-2" style="float: right;">
+          <button type="button" class="btn btn-group-b" style="width: 139.999px; height: 27.38px; padding: 0; font-size: 11px; font-family: Century Gothic Paneuropean;">
+            Save And Start Event
+          </button>
+          <button type="button" class="btn btn-group-outline-r close" style="width: 70px; height: 28px; padding: 0; font-size: 11px; font-family: Century Gothic Paneuropean;">
+            Cancel
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- end main content-->
+
+
+<!-- sidemenu script from skote -->
+<script src="/dashboard/shared/assets/libs/simplebar/simplebar.min.js"></script>
+
+
+<!-- file upload scripts from skote -->
+<script src="/dashboard/shared/assets/js/pages/form-file-upload.init.js"></script>
+<script src="/dashboard/shared/assets/js/pages/form-file-upload.init.js"></script>
+
+<!-- date input scripts from skote -->
+<script src="/dashboard/shared/assets/libs/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
+
+<!-- select input scripts for Select2 -->
+<script src="/dashboard/shared/assets/libs/select2/js/select2.min.js"></script>
+<script src="/dashboard/shared/assets/js/pages/form-advanced.init.js"></script>
+
+<!-- javascript to open and close modal -->
+<script>
+  // Get the modal
+  let modal = document.getElementById("myModal");
+
+  // Get the button that opens the modal
+  let btn = document.getElementById("myBtn");
+
+  // Get the <span> element that closes the modal
+  let span = document.getElementsByClassName("close")[0];
+
+  // When the user clicks the button, open the modal 
+  btn.onclick = function() {
+    modal.style.display = "block";
+  }
+
+  // When the user clicks on <span> (x), close the modal
+  span.onclick = function() {
+    modal.style.display = "none";
+  }
+
+  // When the user clicks anywhere outside of the modal, close it
+  window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }
+</script>
+
+<!-- javscript for Select2 -->
+<script>
+  $('#asset-type').select2({
+    placeholder: "Choose",
+  });
+
+  //allows all dropdown options not in #asset-type to have a border-top
+  $('.regular-select').select2({
+    placeholder: '',
+    minimumResultsForSearch: Infinity,
+    dropdownCssClass: "regular-dropdown"
+  });
+
+  // show additional inputs based on *Length select value
+  $(document).ready(function() {
+    // hide the sub-panes
+    $('.length-units').hide();
+
+    // When our select2 changes...
+    $('#length').change(function() {
+      // ... we can get all the selected options
+      let selected = $(this).select2('data');
+
+      // Hide all the panes again
+      $('.length-units').hide();
+      // Go through the list of options
+      selected.forEach(function(option) {
+        // and show the one with this id
+        $("#" + option.id).show()
+        $("#length-icon").hide();
+      })
+    });
+  });
+</script>
