@@ -367,7 +367,8 @@ input[type="date"]:in-range::-webkit-datetime-edit-text {
   padding: 20px;
   border: 1px solid #888;
   width: 790px;
-  height: 448.393px;
+  max-width: 90%;
+  height: auto;
 }
 
 /* The Close Button */
@@ -570,6 +571,7 @@ input:checked+.slider:after {
   border: 1px solid black;
   box-shadow: none;
 }
+
 //start global style
 body {
   background: #F8F8FB;
@@ -712,6 +714,16 @@ thead {
     padding-top: 15px;
   }
 
+}
+.search-input {
+  margin-right: 10px;
+  width: 360px;
+  max-width: 60vw;
+}
+.modal-content {
+  .card-title {
+    white-space: nowrap;
+  }
 }
 //end 2.1 inake list
 

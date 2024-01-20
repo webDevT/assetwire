@@ -838,71 +838,89 @@
     <!-- End Page-content -->
 
     <!-- MODAL -->
-    <div id="myModal" class="modal">
+    <div id="filterModal" class="modal">
         <!-- Modal content -->
         <div class="modal-content">
-            <h2 class="card-title">Schedule Event</h2>
-            <h3 class="input-title mt-20">Event Type</h3>
+            <div class="row">
+                <div class="col-md-2">
+                   <h2 class="card-title">Filter Search</h2> 
+                </div>
+                <div class="col-md-10 d-flex align-items-center justify-content-between">
+                 
+                        <div class="d-flex justify-content-between align-items-center">
+<input class="form-control search-input" type="text" placeholder="" id="search-input">
+                        
+                        <i style="font-size: 22px; color: #212121;" class="bx bx-search"></i>
+                        </div>
+                        
+                        <i style="font-size: 30px; color: #EC1C24;" class="bx bx-x"></i>
+                     
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <h3 class="input-title mt-20">Intake Number</h3>
             <select class="form-select" aria-label="Select event type">
                 <option selected></option>
                 <option value="1">One</option>
                 <option value="2">Two</option>
                 <option value="3">Three</option>
             </select>
-
-            <label for="event-date" class="form-label input-title mt-20 mb-2">Set the due date:</label>
-            <div class="input-group" id="event-date">
-                <input type="text" class="form-control" placeholder="" data-date-format="dd M, yyyy"
-                    data-date-container='#event-date' data-provide="datepicker">
-                <span class="input-group-text"><i class="mdi mdi-calendar"></i></span>
-            </div>
-
-            <div class="input-title mt-1">
-                <a href=""><u>Today</u></a>
-                <span> | </span>
-                <a href=""><u>Tomorrow</u></a>
-                <span> | </span>
-                <a href=""><u>Next Month</u></a>
-                <span> | </span>
-                <a href=""><u>In 3 Months</u></a>
-                <span> | </span>
-                <a href=""><u>In 6 Months</u></a>
-                <span> | </span>
-                <a href=""><u>Next Year</u></a>
-            </div>
-
-            <h3 class="input-title mt-20 mb-0">Assignee</h3>
-            <p class="mb-3" style="font-weight: 300;">Select the person or group who will be assigned this task</p>
-            <div class="row">
-                <div class="col-6">
-                    <input class="form-control" type="text" placeholder="" id="assignee-name-input">
                 </div>
-                <div class="col-6">
-                    <select class="form-select" aria-label="Assign task">
-                        <option selected></option>
-                        <option value="1">One</option>
-                        <option value="2">Two</option>
-                        <option value="3">Three</option>
-                    </select>
-                </div>
-            </div>
-            <div class="d-flex mt-1">
-                <input class="form-check-input me-2" type="checkbox" id="email-check">
-                <p style="font-weight: 300;">Send email notification to user or group</p>
-            </div>
 
-            <div>
-                <div class="mt-2" style="float: right;">
-                    <button type="button" class="btn btn-group-b"
-                        style="width: 139.999px; height: 27.38px; padding: 0; font-size: 11px; font-family: Century Gothic Paneuropean;">
-                        Save And Start Event
-                    </button>
-                    <button type="button" class="btn btn-group-outline-r close"
-                        style="width: 70px; height: 28px; padding: 0; font-size: 11px; font-family: Century Gothic Paneuropean;">
-                        Cancel
-                    </button>
+                <div class="col-md-6">
+                    <h3 class="input-title mt-20">Customer Name</h3>
+            <select class="form-select" aria-label="Select event type">
+                <option selected></option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+            </select>
                 </div>
+
+                <div class="col-md-6">
+                    <h3 class="input-title mt-20">Department</h3>
+            <select class="form-select" aria-label="Select event type">
+                <option selected></option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+            </select>
+                </div>
+
+                <div class="col-md-6">
+                    <h3 class="input-title mt-20">Date Received</h3>
+            <select class="form-select" aria-label="Select event type">
+                <option selected></option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+            </select>
+                </div>
+
+                <div class="col-md-6">
+                    <h3 class="input-title mt-20">Sub-Department</h3>
+            <select class="form-select" aria-label="Select event type">
+                <option selected></option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+            </select>
+                </div>
+
+                <div class="col-md-6">
+                    <h3 class="input-title mt-20">Received By</h3>
+            <select class="form-select" aria-label="Select event type">
+                <option selected></option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+            </select>
+                </div>
+
             </div>
+        
         </div>
     </div>
 </div>
@@ -927,7 +945,13 @@
 <!-- javascript to open and close modal -->
 <script>
     // Get the modal
-    let modal = document.getElementById("myModal");
+    let modal = document.getElementById("filterModal");
+
+document.addEventListener('click', function(event) {
+    if (event.target.classList.contains('modal')) {
+        modal.style.display = "none";
+    }
+});
 
     // Get the button that opens the modal
     let btn = document.getElementById("myBtn");
