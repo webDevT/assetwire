@@ -1215,7 +1215,7 @@ body[data-layout=horizontal][data-layout-size=boxed] .container-fluid, body[data
 }
 
 .waves-effect.waves-success .waves-ripple {
-  background-color: rgba(52, 195, 143, 0.4);
+  background-color: rgba(0, 128, 129, 0.4);
 }
 
 .waves-effect.waves-info .waves-ripple {
@@ -1678,16 +1678,16 @@ body[data-layout=horizontal][data-layout-size=boxed] .container-fluid, body[data
 }
 
 .form-check-success .form-check-input:checked {
-  background-color: #34c38f;
-  border-color: #34c38f;
+  background-color: #008081;
+  border-color: #008081;
 }
 
 .form-radio-success .form-check-input:checked {
-  border-color: #34c38f;
-  background-color: #34c38f;
+  border-color: #008081;
+  background-color: #008081;
 }
 .form-radio-success .form-check-input:checked:after {
-  background-color: #34c38f;
+  background-color: #008081;
 }
 
 .form-check-info .form-check-input:checked {
@@ -2606,10 +2606,10 @@ input[type=checkbox].tui-full-calendar-checkbox-round + span {
   color: #50a5f1;
 }
 .swal2-icon.swal2-success [class^=swal2-success-line] {
-  background-color: #34c38f;
+  background-color: #008081;
 }
 .swal2-icon.swal2-success .swal2-success-ring {
-  border-color: rgba(52, 195, 143, 0.3);
+  border-color: rgba(0, 128, 129, 0.3);
 }
 .swal2-icon.swal2-warning {
   border-color: #f1b44c;
@@ -2717,8 +2717,8 @@ div:where(.swal2-container) div:where(.swal2-popup) {
 }
 
 .toast-success {
-  border: 2px solid #34c38f !important;
-  background-color: rgba(52, 195, 143, 0.8) !important;
+  border: 2px solid #008081 !important;
+  background-color: rgba(0, 128, 129, 0.8) !important;
 }
 
 .toast-info {
@@ -3052,7 +3052,7 @@ input[switch=default]:checked + label:before {
 }
 
 input[switch=bool]:checked + label {
-  background-color: #34c38f;
+  background-color: #008081;
 }
 
 input[switch=default]:checked + label {
@@ -3064,7 +3064,7 @@ input[switch=primary]:checked + label {
 }
 
 input[switch=success]:checked + label {
-  background-color: #34c38f;
+  background-color: #008081;
 }
 
 input[switch=info]:checked + label {
@@ -3107,7 +3107,7 @@ input[switch=dark]:checked + label:before {
   background-color: #eff2f7;
 }
 .sp-container button.sp-choose {
-  background-color: #34c38f;
+  background-color: #008081;
   margin-left: 5px;
   margin-right: 0;
 }
@@ -5658,4 +5658,16 @@ thead {
         -ms-flex-pack: center;
             justify-content: center;
   }
+}
+.main-content-custom--full {
+  width: 100%;
+  margin-left: 0;
+}
+
+table .badge {
+  width: 100%;
+  border-radius: 50px;
+}table .badge {
+  width: 100%;
+  border-radius: 50px;
 }
