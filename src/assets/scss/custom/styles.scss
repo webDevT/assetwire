@@ -973,3 +973,9 @@ table .badge {
 .mr-15 {
   margin-right: 15px;
 }
+.icons-wrapper i {
+  margin-left: 15px;
+}
+.icons-wrapper i:first-child {
+  margin-left: 0;
+}

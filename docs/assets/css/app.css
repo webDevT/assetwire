@@ -1391,7 +1391,7 @@ body[data-layout=horizontal][data-layout-size=boxed] .container-fluid, body[data
 }
 .social-list-item:hover {
   color: var(--bs-secondary-color);
-  background-color: #eff2f7;
+  background-color: #BDBDBD;
 }
 
 .w-xs {
@@ -1742,16 +1742,16 @@ body[data-layout=horizontal][data-layout-size=boxed] .container-fluid, body[data
 }
 
 .form-check-light .form-check-input:checked {
-  background-color: #eff2f7;
-  border-color: #eff2f7;
+  background-color: #BDBDBD;
+  border-color: #BDBDBD;
 }
 
 .form-radio-light .form-check-input:checked {
-  border-color: #eff2f7;
-  background-color: #eff2f7;
+  border-color: #BDBDBD;
+  background-color: #BDBDBD;
 }
 .form-radio-light .form-check-input:checked:after {
-  background-color: #eff2f7;
+  background-color: #BDBDBD;
 }
 
 .form-check-dark .form-check-input:checked {
@@ -2416,7 +2416,7 @@ input[type=checkbox].tui-full-calendar-checkbox-round + span {
   border-color: #f6f6f6;
 }
 .fc-unthemed td.fc-today {
-  background: #f6f8fa;
+  background: #c2c2c2;
 }
 
 .fc-button {
@@ -2475,7 +2475,7 @@ input[type=checkbox].tui-full-calendar-checkbox-round + span {
 }
 
 .fc-day-grid-event.fc-h-event.fc-event.fc-start.fc-end.bg-dark .fc-content {
-  color: #eff2f7;
+  color: #BDBDBD;
 }
 
 [dir=rtl] .fc-header-toolbar {
@@ -2741,8 +2741,8 @@ div:where(.swal2-container) div:where(.swal2-popup) {
 }
 
 .toast-light {
-  border: 2px solid #eff2f7 !important;
-  background-color: rgba(239, 242, 247, 0.8) !important;
+  border: 2px solid #BDBDBD !important;
+  background-color: rgba(189, 189, 189, 0.8) !important;
 }
 
 .toast-dark {
@@ -3013,7 +3013,7 @@ input[switch] + label:after {
   content: "";
   position: absolute;
   right: 3px;
-  background-color: #eff2f7;
+  background-color: #BDBDBD;
   -webkit-box-shadow: none;
           box-shadow: none;
   border-radius: 2rem;
@@ -3038,7 +3038,7 @@ input[switch]:checked + label:before {
 }
 input[switch]:checked + label:after {
   right: 33px;
-  background-color: #eff2f7;
+  background-color: #BDBDBD;
 }
 
 input[switch=bool] + label {
@@ -3082,7 +3082,7 @@ input[switch=dark]:checked + label {
   background-color: #212121;
 }
 input[switch=dark]:checked + label:before {
-  color: #eff2f7;
+  color: #BDBDBD;
 }
 
 .square-switch {
@@ -3103,7 +3103,7 @@ input[switch=dark]:checked + label:before {
   color: #212121;
 }
 .sp-container button.sp-palette-toggle {
-  background-color: #eff2f7;
+  background-color: #BDBDBD;
 }
 .sp-container button.sp-choose {
   background-color: #008081;
@@ -3112,7 +3112,7 @@ input[switch=dark]:checked + label:before {
 }
 
 .sp-palette-container {
-  border-left: 1px solid #eff2f7;
+  border-left: 1px solid #BDBDBD;
 }
 
 .sp-input {
@@ -3524,7 +3524,7 @@ table.dataTable.dtr-inline.collapsed > tbody > tr > td.dtr-control:before {
 }
 .table-rep-plugin .btn-group .btn-default {
   background-color: #74788d;
-  color: #eff2f7;
+  color: #BDBDBD;
   border: 1px solid #74788d;
 }
 .table-rep-plugin .btn-group .btn-default.btn-primary {
@@ -3552,7 +3552,7 @@ table.dataTable.dtr-inline.collapsed > tbody > tr > td.dtr-control:before {
   color: var(--bs-body-color) !important;
 }
 .table-rep-plugin .checkbox-row:hover {
-  background-color: #f6f8fa !important;
+  background-color: #c2c2c2 !important;
 }
 .table-rep-plugin .checkbox-row label {
   display: inline-block;
@@ -3576,7 +3576,7 @@ table.dataTable.dtr-inline.collapsed > tbody > tr > td.dtr-control:before {
   outline: none !important;
 }
 .table-rep-plugin .checkbox-row label::after {
-  color: #eff2f7;
+  color: #BDBDBD;
   display: inline-block;
   font-size: 11px;
   height: 16px;
@@ -3773,7 +3773,7 @@ table.dataTable.dtr-inline.collapsed > tbody > tr > td.dtr-control:before {
 }
 
 .jqsfield {
-  color: #eff2f7 !important;
+  color: #BDBDBD !important;
   font-size: 12px !important;
   line-height: 18px !important;
   font-family: var(--bs-font-sans-serif) !important;
@@ -5889,4 +5889,12 @@ table .badge {
 
 .mr-15 {
   margin-left: 15px;
+}
+
+.icons-wrapper i {
+  margin-right: 15px;
+}
+
+.icons-wrapper i:first-child {
+  margin-right: 0;
 }
