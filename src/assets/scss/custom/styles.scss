@@ -816,7 +816,7 @@ table .badge {
 .inspect-card {
   .link {
     margin-top: 10px;
-    display: block;
+    display: inline-block;
   }
 }
 .card--transparent {
@@ -916,7 +916,7 @@ table .badge {
   font-weight: 400;
 }
 .link {
-  display: block;
+  display: inline-block;
 }
 .input-title {
   font-weight: 500;
