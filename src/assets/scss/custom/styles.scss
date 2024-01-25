@@ -1,5 +1,5 @@
 /* Custom css for inspector webpages */
-
+@import url('https://fonts.cdnfonts.com/css/century-gothic-paneuropean');
 .title {
   color: $black;
   font-family: "Poppins";
@@ -588,6 +588,13 @@ button {
 //end global style 
 
 //start sidebar styles
+#sidebar-menu ul li a {
+  display: flex;
+  span {
+    display: flex;
+    align-items: center;
+  }
+}
 #sidebar-menu ul li a,
 #sidebar-menu ul li a i {
   color: #000;
@@ -595,11 +602,11 @@ button {
 }
 #sidebar-menu ul li a i {
   font-size: 22px;
-  min-width: 25px;
+  min-width: 30px;
 }
 #sidebar-menu ul li a svg {
   fill: #000;
-  margin-right: 10px;
+  margin-right: 6px;
 }
 #sidebar-menu ul li a.active {
   font-weight: 700;
@@ -607,7 +614,7 @@ button {
     fill: $red;
   }
   i {
-    color: red;
+    color: $red;
   }
 
 }
@@ -619,7 +626,7 @@ button {
     fill: $red;
   }
   i {
-    color: red;
+    color: $red;
   }
 
 }
@@ -696,7 +703,7 @@ thead {
   border-bottom: 2px solid $red;
 }
 .table {
-   color: red;
+   color: $red;
 }
 @media screen and (max-width: 567px) {
   .page-title-right {
@@ -978,4 +985,75 @@ table .badge {
 }
 .icons-wrapper i:first-child {
   margin-left: 0;
+}
+
+//start event style 
+.event-card {
+  text-align: center;
+  p {
+    min-height: 50px;
+  }
+  svg {
+    fill: #212121;
+  }
+}
+.event-image-wrapper {
+  height: 100px;
+  margin-bottom: 20px;
+  i {
+    font-size: 100px;
+  } 
+}
+svg:hover {
+  fill: $red;
+}
+.input-sm {
+  max-width: calc(100% - 70px);
+}
+
+//end event style
+
+svg.active {
+  fill: $red;
+}
+.mr-5 {
+  margin-right: 5px;
+}
+.btn-outline-danger {
+  background: #fff;
+}
+.table-striped2 {
+  td {
+    background: #E8E8E8;
+  }
+}
+.font-weight-bold {
+  font-weight: 700;
+}
+.dropzone {
+  cursor: pointer;
+}
+.card--border {
+  border: 2px solid #212121;
+}
+.blue,
+.blue:hover {
+  color: #007bff;
+}
+.link {
+  word-wrap: break-word;
+}
+.font-weight-medium {
+  font-weight: 500;
+}
+.table-filter-wrapper {
+  .card-title {
+    margin-right: 20px;
+  }
+}
+.btn {
+  font-family: "Century Gothic Paneuropean", sans-serif;
+}
+.ml-20 {
+  margin-left: 20px;
 }

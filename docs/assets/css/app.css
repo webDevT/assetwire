@@ -8,6 +8,7 @@ File: Main Css File
 */
 @import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap");
 /* =============================Custom Variables========================== */
+@import url("https://fonts.cdnfonts.com/css/century-gothic-paneuropean");
 #page-topbar {
   position: fixed;
   top: 0;
@@ -1223,7 +1224,7 @@ body[data-layout=horizontal][data-layout-size=boxed] .container-fluid, body[data
 }
 
 .waves-effect.waves-warning .waves-ripple {
-  background-color: rgba(241, 180, 76, 0.4);
+  background-color: rgba(245, 130, 32, 0.4);
 }
 
 .waves-effect.waves-danger .waves-ripple {
@@ -1703,16 +1704,16 @@ body[data-layout=horizontal][data-layout-size=boxed] .container-fluid, body[data
 }
 
 .form-check-warning .form-check-input:checked {
-  background-color: #f1b44c;
-  border-color: #f1b44c;
+  background-color: #F58220;
+  border-color: #F58220;
 }
 
 .form-radio-warning .form-check-input:checked {
-  border-color: #f1b44c;
-  background-color: #f1b44c;
+  border-color: #F58220;
+  background-color: #F58220;
 }
 .form-radio-warning .form-check-input:checked:after {
-  background-color: #f1b44c;
+  background-color: #F58220;
 }
 
 .form-check-danger .form-check-input:checked {
@@ -2611,8 +2612,8 @@ input[type=checkbox].tui-full-calendar-checkbox-round + span {
   border-color: rgba(0, 128, 129, 0.3);
 }
 .swal2-icon.swal2-warning {
-  border-color: #f1b44c;
-  color: #f1b44c;
+  border-color: #F58220;
+  color: #F58220;
 }
 
 .swal2-styled:focus {
@@ -2726,8 +2727,8 @@ div:where(.swal2-container) div:where(.swal2-popup) {
 }
 
 .toast-warning {
-  border: 2px solid #f1b44c !important;
-  background-color: rgba(241, 180, 76, 0.8) !important;
+  border: 2px solid #F58220 !important;
+  background-color: rgba(245, 130, 32, 0.8) !important;
 }
 
 .toast-danger {
@@ -3071,7 +3072,7 @@ input[switch=info]:checked + label {
 }
 
 input[switch=warning]:checked + label {
-  background-color: #f1b44c;
+  background-color: #F58220;
 }
 
 input[switch=danger]:checked + label {
@@ -5444,6 +5445,20 @@ button {
   text-decoration: underline !important;
 }
 
+#sidebar-menu ul li a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+#sidebar-menu ul li a span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 #sidebar-menu ul li a,
 #sidebar-menu ul li a i {
   color: #000;
@@ -5453,12 +5468,12 @@ button {
 
 #sidebar-menu ul li a i {
   font-size: 22px;
-  min-width: 25px;
+  min-width: 30px;
 }
 
 #sidebar-menu ul li a svg {
   fill: #000;
-  margin-left: 10px;
+  margin-left: 6px;
 }
 
 #sidebar-menu ul li a.active {
@@ -5468,7 +5483,7 @@ button {
   fill: #EC0C1B;
 }
 #sidebar-menu ul li a.active i {
-  color: red;
+  color: #EC0C1B;
 }
 
 #sidebar-menu ul li a:hover {
@@ -5479,7 +5494,7 @@ button {
   fill: #EC0C1B;
 }
 #sidebar-menu ul li a:hover i {
-  color: red;
+  color: #EC0C1B;
 }
 
 .main-content-custom {
@@ -5561,7 +5576,7 @@ thead {
 }
 
 .table {
-  color: red;
+  color: #EC0C1B;
 }
 
 @media screen and (max-width: 567px) {
@@ -5897,4 +5912,83 @@ table .badge {
 
 .icons-wrapper i:first-child {
   margin-right: 0;
+}
+
+.event-card {
+  text-align: center;
+}
+.event-card p {
+  min-height: 50px;
+}
+.event-card svg {
+  fill: #212121;
+}
+
+.event-image-wrapper {
+  height: 100px;
+  margin-bottom: 20px;
+}
+.event-image-wrapper i {
+  font-size: 100px;
+}
+
+svg:hover {
+  fill: #EC0C1B;
+}
+
+.input-sm {
+  max-width: calc(100% - 70px);
+}
+
+svg.active {
+  fill: #EC0C1B;
+}
+
+.mr-5 {
+  margin-left: 5px;
+}
+
+.btn-outline-danger {
+  background: #fff;
+}
+
+.table-striped2 td {
+  background: #E8E8E8;
+}
+
+.font-weight-bold {
+  font-weight: 700;
+}
+
+.dropzone {
+  cursor: pointer;
+}
+
+.card--border {
+  border: 2px solid #212121;
+}
+
+.blue,
+.blue:hover {
+  color: #007bff;
+}
+
+.link {
+  word-wrap: break-word;
+}
+
+.font-weight-medium {
+  font-weight: 500;
+}
+
+.table-filter-wrapper .card-title {
+  margin-left: 20px;
+}
+
+.btn {
+  font-family: "Century Gothic Paneuropean", sans-serif;
+}
+
+.ml-20 {
+  margin-right: 20px;
 }
