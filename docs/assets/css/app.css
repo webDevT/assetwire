@@ -5992,3 +5992,39 @@ svg.active {
 .ml-20 {
   margin-right: 20px;
 }
+
+.width-50 {
+  width: 50px;
+  border-radius: 50px;
+}
+
+.select-dark {
+  background-color: #000;
+  background-image: url("../images/shape.svg");
+  color: #fff;
+}
+.select-dark option {
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #000;
+}
+
+.form-control--fill {
+  background-color: #E8E8E8;
+}
+
+.ml-10 {
+  margin-right: 10px;
+}
+
+svg {
+  fill: #000;
+}
+
+.button-wrapper {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.button-wrapper .btn {
+  margin-bottom: 20px;
+}
