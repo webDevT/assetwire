@@ -1440,16 +1440,53 @@
                                 <p class="font-weight-light">Upload images or documents you would like all users to have access to.</p>
 
                                 <div class="mt-3">
-                                    <div class="dropzone dz-clickable">
-                                        
-                                        <div class="dz-message needsclick">
-                                            <div class="mb-3">
-                                                <i class="display-4 text-muted bx bxs-cloud-upload"></i>
+                                     <!-- start dropzone -->
+                                     <div class="mt-3">
+                                        <div class="dropzone" id="dropzone1">
+                                            <div class="fallback">
+                                                <input name="file" type="file" multiple="multiple">
                                             </div>
-                                    
-                                            <h4>Drop files here or click to upload.</h4>
+                                            <div class="dz-message needsclick">
+                                                <div class="mb-3">
+                                                    <i class="display-4 text-muted bx bxs-cloud-upload"></i>
+                                                </div>
+
+                                                <h4>Drop files here or click to upload.</h4>
+                                            </div>
                                         </div>
+
+                                        <ul class="list-unstyled mb-0" id="dropzone-preview1">
+                                            <li class="mt-2" id="dropzone-preview-list1">
+
+                                                <div class="border rounded">
+                                                    <div class="d-flex p-2">
+                                                        <div class="flex-shrink-0 me-3">
+                                                            <div class="avatar-sm bg-light rounded">
+                                                                <img data-dz-thumbnail
+                                                                    class="img-fluid rounded d-block"
+                                                                    src="https://img.themesbrand.com/judia/new-document.png"
+                                                                    alt="Dropzone-Image">
+                                                            </div>
+                                                        </div>
+                                                        <div class="flex-grow-1">
+                                                            <div class="pt-1">
+                                                                <h5 class="fs-md mb-1" data-dz-name>&nbsp;</h5>
+                                                                <p class="fs-sm text-muted mb-0" data-dz-size></p>
+                                                                <strong class="error text-danger"
+                                                                    data-dz-errormessage></strong>
+                                                            </div>
+                                                        </div>
+                                                        <div class="flex-shrink-0 ms-3">
+                                                            <button data-dz-remove
+                                                                class="btn btn-sm btn-danger">Delete</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
                                     </div>
+
+                                    <!-- end dropzone -->
                                     
                                     <ul class="list-unstyled mb-0" id="dropzone-preview">
                                         
@@ -1669,7 +1706,7 @@
 </script>
 
 
-
+<!-- start scripts -->
 <!-- JAVASCRIPT -->
 <script src="assets/libs/jquery/jquery.min.js"></script>
 <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -1678,3 +1715,6 @@
 <script src="assets/libs/node-waves/waves.min.js"></script>
 <script src="assets/libs/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
 <script src="assets/libs/@chenfengyuan/datepicker/datepicker.min.js"></script>
+<script src="assets/libs/dropzone/dropzone-min.js"></script>
+<script src="assets/js/pages/form-file-upload.init.js"></script>
+<!-- end scripts -->

@@ -132,17 +132,33 @@
                         <!-- start card -->
                         <div class="card">
                             <div class="card-body">
-                                <h2 class="card-title  mb-3">1. The duplicate asset ("the loser")</h2>
-                                <p>This is the asset that will be the "loser" of the merge. All event information will
-                                    be copied over to the "winner" you will select in the next step. The loser will then
-                                    be deleted.</p>
+                                <h2 class="card-title  mb-3">1. The duplicate asset ("the loser")</h2>                               
+                            </div>
+                        </div>
+                        <!-- end card -->
 
+                        <!-- start card -->
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="card-title">
+                                    2. Select the asset you want to keep ("the winner")
+                                </div>
+                                <p>This is the asset that will still exist - the "winner" of the merge. The asset information will remain on this asset and all event information will be merged onto this asset.</p>
+ <h3 class="input-title mt-3">Smart Search</h3>
+                                <div class="d-flex justifu-content-between align-items-center">                                      
+                                        <input class="form-control" type="text" placeholder="" value="">
 
-                                <div class="table-responsive">
+                                    <button type="button" class="btn btn-dark waves-effect waves-light nowrap ml-20">
+                                        Load
+                                    </button>
+                                </div>
+
+                                <!-- start responsive table -->
+                                <div class="table-responsive mt-3">
                                     <table class="table align-middle table-nowrap mb-0 table-striped">
                                         <thead class="">
                                             <tr>
-
+                                  
                                                 <th class="align-middle">Serial Number
                                                     <i class="bx bx-sort"></i>
                                                 </th>
@@ -158,7 +174,7 @@
                                                 <th class="align-middle">Date Identified
                                                     <i class="bx bx-sort"></i>
                                                 </th>
-
+                                           
                                             </tr>
                                         </thead>
                                         <tbody class="">
@@ -172,7 +188,8 @@
                                                 </td>
 
                                                 <td>
-                                                    UNIROPE LTD
+                                                    SUTHERLAND-SCHULTZ INC. <br>
+                                                    (1716)
                                                 </td>
 
                                                 <td>
@@ -182,31 +199,27 @@
                                                 <td>
                                                     10/22/2008
                                                 </td>
-                                            </tr>
 
+                                               
+                                            </tr>
+                        
                                         </tbody>
                                     </table>
-                                    <!-- end table-responsive -->
+                                </div>
+                                <!-- end responsive table -->
+
 
                                     <!-- start buttons wrapper -->
                                     <div class="button-wrapper button-wrapper--end mt-3">
                                         <button type="button" class="btn btn-dark waves-effect waves-light">
-                                            Confirm this asset as the loser
+                                            Confirm this asset as the winner
+                                        </button>
+
+                                        <button type="button" class="btn btn-outline-danger waves-effect waves-light">
+                                            Back To Step 1
                                         </button>
                                     </div>
                                     <!-- end buttons wrapper -->
-
-                                </div>
-                            </div>
-                        </div>
-                        <!-- end card -->
-
-                        <!-- start card -->
-                        <div class="card">
-                            <div class="card-body">
-                                <div class="card-title">
-                                    2. Select the asset you want to keep ("the winner")
-                                </div>
                             </div>
                         </div>
                         <!-- end card -->
@@ -241,7 +254,7 @@
                                 </p>
 
                                 <h2 class="card-title  mb-2 mt-3">
-What will be deleted?
+                                   What will be deleted?
                                 </h2>
 
                                 <p>

@@ -570,7 +570,318 @@
 
 
                 </div>
+<div class="row">
+    <div class="col-xl-3">
 
+        <!-- start bordered card -->
+        <div class="card card--border">
+            <div class="card-body">
+
+                <h2 class="card-title  mb-2">Formatting Dates</h2>
+                <p>
+                    Dates in your import file must be a formatted date value in Excel. Dates must have
+                    the format YYYY-MM-DD HH:mm. </p>
+                <p>
+                    This applies to Date Performed, Next Event Date and form criteria that are setup as
+                    a date type.
+                </p>
+
+                <h2 class="card-title  mb-2 mt-3">Are signature criteria types supported?</h2>
+                <p>
+                    No. The event importer does not support the signature data type. Signatures must be signed by editing the imported event and signing on screen. </p>
+
+                <h2 class="card-title  mb-2 mt-3">What template should I use?</h2>
+                <p>
+                    If you record Recommendations or Deficiencies during your events then use the template with Observations. Both templates will include all event form (checklist) criteria. You are not required to fill out the event form for the import. </p>
+
+                <h2 class="card-title  mb-2 mt-3">Is there a maximum number of records I can import?</h2>
+                <p>
+                    Yes. We recommend a maximum of 5000 rows per import. For larger imports you can split the import into multiple files. </p>
+            </div>
+        </div>
+        <!-- end bordererd card -->
+    </div>
+
+    <div class="col-lg-12">
+        <div class="table-responsive">
+            <table class="table align-middle table-nowrap mb-0 table-striped">
+                <thead class="">
+                    <tr>
+                        <th>
+                           
+                        </th>
+                        <th class="align-middle">Asset Type
+                            <i class="bx bx-sort"></i>
+                        </th>
+                        <th class="align-middle">Serial Number
+                            <i class="bx bx-sort"></i>
+                        </th>
+                        <th class="align-middle">RFID Number
+                            <i class="bx bx-sort"></i>
+                        </th>
+                        <th class="align-middle">Reference Number
+                            <i class="bx bx-sort"></i>
+                        </th>
+                        <th class="align-middle">Owner
+                            <i class="bx bx-sort"></i>
+                        </th>
+                        <th class="align-middle">Asset Status
+                            <i class="bx bx-sort"></i>
+                        </th>
+                        <th class="align-middle">
+                            Next Scheduled Date
+                            <i class="bx bx-sort"></i>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody class="">
+                    <tr>
+                        <td height="60">
+                        </td>
+                        <td></td>
+                        <td></td>
+                        <td>
+                           
+                        </td>
+                        <td>
+                            
+                        </td>
+                        <td>
+                           
+                        </td>
+                        <td>
+                          
+                        </td>
+                        <td>
+                           
+                        </td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+        <!-- end table-responsive -->
+
+        <!-- start input button row -->
+        <h3 class="input-title mt-3">Smart Search</h3>
+        <div class="d-flex justifu-content-between align-items-center">                                      
+                <input class="form-control" type="text" placeholder="" value="">
+
+            <button type="button" class="btn btn-dark waves-effect waves-light nowrap ml-20">
+                Load
+            </button>
+        </div>
+        <!-- end input button row -->
+
+       <!-- start card -->
+        <div class="card">
+            <div class="card-body">
+
+                <div class="table-filter-wrapper">
+
+                    <div class="table-title">
+                        <button id="myBtn" type="button" class="filter-button active">
+                            <i class="bx bx-customize"></i>
+                            Filter Search
+                        </button>
+                    </div>
+
+                    <div class="table-filter__text">
+                        0 of 3 items in the results are selected
+
+                    </div>
+                </div>
+
+                <!-- start table responsive -->
+                <div class="table-responsive">
+                    <table class="table align-middle table-nowrap mb-0 table-striped">
+                        <thead class="">
+                            <tr>
+                                <th style="width: 20px;">
+                                    <div class="form-check font-size-16 align-middle">
+                                        <input class="form-check-input" type="checkbox"
+                                            id="transactionCheck01">
+                                        <label class="form-check-label"
+                                            for="transactionCheck01"></label>
+                                    </div>
+                                </th>
+                                <th class="align-middle">Asset Type
+                                    <i class="bx bx-sort"></i>
+                                </th>
+                                <th class="align-middle">Owner
+                                    <i class="bx bx-sort"></i>
+                                </th>
+                                <th class="align-middle">Performed By
+                                    <i class="bx bx-sort"></i>
+                                </th>
+                                <th class="align-middle">Date Performed
+                                    <i class="bx bx-sort"></i>
+                                </th>
+                                <th class="align-middle">Event Status
+                                    <i class="bx bx-sort"></i>
+                                </th>
+                                <th class="align-middle">Quote Price
+                                    <i class="bx bx-sort"></i>
+                                </th>
+
+                                <th class="align-middle">L2 Approved
+                                    <i class="bx bx-sort"></i>
+                                </th>
+
+                                <th class="align-middle">
+
+                                </th>
+
+                            </tr>
+                        </thead>
+                        <tbody class="">
+                            <tr>
+                                <td>
+                                    <div class="form-check font-size-16">
+                                        <input class="form-check-input" type="checkbox"
+                                            id="transactionCheck02">
+                                        <label class="form-check-label"
+                                            for="transactionCheck02"></label>
+                                    </div>
+                                </td>
+
+                                <td>UNI-LOC® WR Sling</td>
+                                <td>
+                                    UNIROPE LTD.
+                                </td>
+                                <td>
+                                    John Doe
+                                </td>
+                                <td>
+                                    11/15/2023
+                                </td>
+                                <td>
+                                    <span
+                                        class="badge badge-pill badge-soft-success font-size-12">Pased</span>
+                                </td>
+                                <td>
+                                    $ 1,500.00
+                                </td>
+                                <td>
+                                    <span class="badge badge-pill badge-soft-danger font-size-12">Not
+                                        Approved</span>
+                                </td>
+
+                                <td>
+                                    <div class="links-row">
+                                        <a href="" class="link ml-10">Edit</a>
+                                    <a href="" class="link">Print </a>
+                                    <a href="" class="link">Email</a>
+                                    </div>
+                                    
+                                </td>
+
+
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <div class="form-check font-size-16">
+                                        <input class="form-check-input" type="checkbox"
+                                            id="transactionCheck02">
+                                        <label class="form-check-label"
+                                            for="transactionCheck02"></label>
+                                    </div>
+                                </td>
+
+                                <td>Boom Pendant</td>
+                                <td>
+                                    UNIROPE LTD.
+                                </td>
+                                <td>
+                                    John Doe
+                                </td>
+                                <td>
+                                    11/15/2023
+                                </td>
+                                <td>
+                                    <span
+                                        class="badge badge-pill badge-soft-success font-size-12">Pased</span>
+                                </td>
+                                <td>
+                                    $ 1,500.00
+                                </td>
+                                <td>
+                                    <span class="badge badge-pill badge-soft-danger font-size-12">Not
+                                        Approved</span>
+                                </td>
+
+                                <td>
+                                    <div class="links-row">
+                                        <a href="" class="link ml-10">Edit</a>
+                                    <a href="" class="link">Print </a>
+                                    <a href="" class="link">Email</a>
+                                    </div>
+                                    
+                                </td>
+
+
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <div class="form-check font-size-16">
+                                        <input class="form-check-input" type="checkbox"
+                                            id="transactionCheck02">
+                                        <label class="form-check-label"
+                                            for="transactionCheck02"></label>
+                                    </div>
+                                </td>
+
+                                <td>Rigging Hardware</td>
+                                <td>
+                                    UNIROPE LTD.
+                                </td>
+                                <td>
+                                    John Doe
+                                </td>
+                                <td>
+                                    11/15/2023
+                                </td>
+                                <td>
+                                    <span
+                                        class="badge badge-pill badge-soft-success font-size-12">Pased</span>
+                                </td>
+                                <td>
+                                    $ 1,500.00
+                                </td>
+                                <td>
+                                    <span class="badge badge-pill badge-soft-danger font-size-12">Not
+                                        Approved</span>
+                                </td>
+
+                                <td>
+                                    <div class="links-row">
+                                        <a href="" class="link ml-10">Edit</a>
+                                    <a href="" class="link">Print </a>
+                                    <a href="" class="link">Email</a>
+                                    </div>
+                                    
+                                </td>
+
+
+                            </tr>
+
+
+
+
+
+
+                        </tbody>
+                    </table>
+                </div>
+                <!-- end table-responsive -->
+            </div>
+        </div>
+        <!-- end card -->
+
+    </div>
+</div>
                 <!-- start button wrapper -->
                 <div class="button-wrapper button-wrapper--end" id="modalButtons">
 
