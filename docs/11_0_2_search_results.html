@@ -1,0 +1,1108 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8" />
+    <title>Dashboard | Skote - Admin & Dashboard Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
+    <meta content="Themesbrand" name="author" />
+    <!-- App favicon -->
+    <link rel="shortcut icon" href="assets/images/favicon.ico">
+
+    <!-- Bootstrap Css -->
+    <link href="assets/css/bootstrap.min.css" id="bootstrap-style" rel="stylesheet" type="text/css" />
+    <!-- Icons Css -->
+    <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+    <!-- App Css-->
+    <link href="assets/css/app.min.css" id="app-style" rel="stylesheet" type="text/css" />
+    <!-- App js -->
+    <script src="assets/js/plugin.js"></script>
+
+</head>
+
+<body data-sidebar="light">
+
+<!-- <body data-layout="horizontal" data-topbar="dark"> -->
+<style>
+
+</style>
+<!-- Begin page -->
+<!-- Begin page -->
+<div id="layout-wrapper" style="font-family: Poppins; margin-top: -79px;">
+    <header id="page-topbar">
+        <div class="navbar-header">
+            <div class="d-flex">
+                <!-- LOGO -->
+                <div class="navbar-brand-box">
+                    <a href="index.html" class="logo logo-dark">
+                        <span class="logo-sm">
+                            <img src="assets/images/logo.svg" alt="" height="22">
+                        </span>
+                        <span class="logo-lg">
+                            <img src="assets/images/logo-dark.png" alt="" height="17">
+                        </span>
+                    </a>
+
+                    <a href="index.html" class="logo logo-light">
+                        <span class="logo-sm">
+                            <img src="assets/images/logo-light.svg" alt="" height="22">
+                        </span>
+                        <span class="logo-lg">
+                            <img src="assets/images/logo-light.png" alt="" height="19">
+                        </span>
+                    </a>
+                </div>
+
+                <!-- App Search-->
+         
+
+
+   
+        </div>
+    </header>
+
+
+    <!-- ============================================================== -->
+    <!-- Start right Content here -->
+    <!-- ============================================================== -->
+    <div class="main-content-custom main-content-custom--full">
+
+        <div class="page-content-sidebar">
+            <div class="container-fluid">
+
+                <!-- start page title -->
+                <div class="row">
+                    <div class="col-12">
+                        <div class="page-title-box d-sm-flex align-items-center justify-content-between">
+                            <h1 class="title">Advanced Search</h1>
+
+                            <div class="page-title-right d-flex align-items-center button-wrapper">
+
+                                <select class="form-select select-dark">
+                                    <option>Print</option>
+                                    <option>This Report</option>
+                                    <option>Selected PDF Reports</option>
+                                    <option>Selected Observation Reports</option>
+                                </select>
+
+                                <button type="button" class="btn btn-dark waves-effect waves-light min-width-100">Summary report</button>
+
+                                <button type="button" class="btn btn-dark waves-effect waves-light">Email</button>
+
+                                <button type="button" class="btn btn-dark waves-effect waves-light">Save</button>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- end page title -->
+
+                <!-- start page content -->
+
+                <!-- start row -->
+                <div class="row gx5">
+                    <div class="col-lg-12">
+                        <div class="card">
+                            <div class="card-body">
+
+                                <div class="table-filter-wrapper">
+
+                                    <div class="table-title">
+                                        <button id="myBtn" type="button" class="filter-button active">
+                                            <i class="bx bx-customize"></i>
+                                            Filter Search
+                                        </button>
+                                    </div>
+
+                                    <div class="table-filter__text">
+                                        0 of 165 items in the results are selected. <a href="" class="link">Select all
+                                            165 items</a> or <a href="" class="link">Clear selection</a> select assets
+                                        to perform mass actions
+
+                                    </div>
+                                </div>
+
+
+                                <div class="table-responsive">
+                                    <table class="table align-middle table-nowrap mb-0 table-striped">
+                                        <thead class="">
+                                            <tr>
+                                                <th style="width: 20px;">
+                                                    <div class="form-check font-size-16 align-middle">
+                                                        <input class="form-check-input" type="checkbox"
+                                                            id="transactionCheck01">
+                                                        <label class="form-check-label"
+                                                            for="transactionCheck01"></label>
+                                                    </div>
+                                                </th>
+                                                <th class="align-middle">ID Number
+                                                    <i class="bx bx-sort"></i>
+                                                </th>
+                                                <th class="align-middle">Order Number
+                                                    <i class="bx bx-sort"></i>
+                                                </th>
+                                                <th class="align-middle">Serial Number
+                                                    <i class="bx bx-sort"></i>
+                                                </th>
+                                                <th class="align-middle">ID Number
+                                                    <i class="bx bx-sort"></i>
+                                                </th>
+                                                <th class="align-middle">Asset Status
+                                                    <i class="bx bx-sort"></i>
+                                                </th>
+                                                <th class="align-middle">Asset Type
+                                                    <i class="bx bx-sort"></i>
+                                                </th>
+                                                <th class="align-middle">Size
+                                                    <i class="bx bx-sort"></i>
+                                                </th>
+
+                                                <th class="align-middle"> Customer Name
+                                                    <i class="bx bx-sort"></i>
+                                                </th>
+
+                                                <th class="align-middle"> Comments
+                                                    <i class="bx bx-sort"></i>
+                                                </th>
+                                               
+
+                                               
+
+                                                <th class="align-middle">
+                                                   
+                                                </th>
+
+                                            </tr>
+                                        </thead>
+                                        <tbody class="">
+
+                                            <tr>
+                                                <td>
+                                                    <div class="form-check font-size-16">
+                                                        <input class="form-check-input" type="checkbox"
+                                                            id="transactionCheck02">
+                                                        <label class="form-check-label"
+                                                            for="transactionCheck02"></label>
+                                                    </div>
+                                                </td>
+                                                <td><a href="" class="link">urtest</a> </td>
+                                                <td>89021436</td>
+                                                <td>
+                                                    12345
+                                                </td>
+                                                <td>
+                                                    6789012
+                                                </td>
+                                                <td>
+                                                    <span class="badge badge-pill badge-soft-success font-size-12">Inspection Complete</span>
+                                                </td>
+
+                                                <td>
+                                                    Rigger's Choice® Chain Sling
+                                                </td>
+
+                                                <td>
+                                                    25 Feet
+                                                </td>
+
+                                                <td>
+                                                    John Doe
+                                                </td>
+
+                                                <td>
+                                                    Pulled to 2xWLL
+                                                </td>
+                                        
+                                                <td>
+                                                    <a href="" class="link ml-10">
+                                                        Edit         
+                                                    </a>
+                                                    <a href="" class="link ml-10">
+                                                        Print
+                                                    </a>
+                                                    <a href="" class="link ml-10">
+                                                        Start Event
+                                                    </a>
+                                                    <a href="" class="link ml-10">
+                                                        Export
+                                                    </a>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>
+                                                    <div class="form-check font-size-16">
+                                                        <input class="form-check-input" type="checkbox"
+                                                            id="transactionCheck02">
+                                                        <label class="form-check-label"
+                                                            for="transactionCheck02"></label>
+                                                    </div>
+                                                </td>
+                                                <td><a href="" class="link">urtest</a> </td>
+                                                <td>89021436</td>
+                                                <td>
+                                                    12345
+                                                </td>
+                                                <td>
+                                                    6789012
+                                                </td>
+                                                <td>
+                                                    <span class="badge badge-pill badge-soft-success-2 font-size-12">In Repair</span>
+                                                </td>
+
+                                                <td>
+                                                    Rigger's Choice® Chain Sling
+                                                </td>
+
+                                                <td>
+                                                    25 Feet
+                                                </td>
+
+                                                <td>
+                                                    John Doe
+                                                </td>
+
+                                                <td>
+                                                    replaced 2 latche kits retagged sling
+                                                </td>
+                                        
+                                                <td>
+                                                    <a href="" class="link ml-10">
+                                                        Edit         
+                                                    </a>
+                                                    <a href="" class="link ml-10">
+                                                        Print
+                                                    </a>
+                                                    <a href="" class="link ml-10">
+                                                        Start Event
+                                                    </a>
+                                                    <a href="" class="link ml-10">
+                                                        Export
+                                                    </a>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>
+                                                    <div class="form-check font-size-16">
+                                                        <input class="form-check-input" type="checkbox"
+                                                            id="transactionCheck02">
+                                                        <label class="form-check-label"
+                                                            for="transactionCheck02"></label>
+                                                    </div>
+                                                </td>
+                                                <td><a href="" class="link">urtest</a> </td>
+                                                <td>89021436</td>
+                                                <td>
+                                                    12345
+                                                </td>
+                                                <td>
+                                                    6789012
+                                                </td>
+                                                <td>
+                                                    <span class="badge badge-pill badge-soft-warning font-size-12">Repair Required</span>
+                                                </td>
+
+                                                <td>
+                                                    Rigger's Choice® Chain Sling
+                                                </td>
+
+                                                <td>
+                                                    25 Feet
+                                                </td>
+
+                                                <td>
+                                                    John Doe
+                                                </td>
+
+                                                <td>
+                                                    replace tag and 2 x 3/8" latch kits RC
+                                                </td>
+                                        
+                                                <td>
+                                                    <a href="" class="link ml-10">
+                                                        Edit         
+                                                    </a>
+                                                    <a href="" class="link ml-10">
+                                                        Print
+                                                    </a>
+                                                    <a href="" class="link ml-10">
+                                                        Start Event
+                                                    </a>
+                                                    <a href="" class="link ml-10">
+                                                        Export
+                                                    </a>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>
+                                                    <div class="form-check font-size-16">
+                                                        <input class="form-check-input" type="checkbox"
+                                                            id="transactionCheck02">
+                                                        <label class="form-check-label"
+                                                            for="transactionCheck02"></label>
+                                                    </div>
+                                                </td>
+                                                <td><a href="" class="link">urtest</a> </td>
+                                                <td>89021436</td>
+                                                <td>
+                                                    12345
+                                                </td>
+                                                <td>
+                                                    6789012
+                                                </td>
+                                                <td>
+                                                    <span class="badge badge-pill badge-soft-danger font-size-12">Awaiting Repair</span>
+                                                </td>
+
+                                                <td>
+                                                    Rigger's Choice® Chain Sling
+                                                </td>
+
+                                                <td>
+                                                    25 Feet
+                                                </td>
+
+                                                <td>
+                                                    John Doe
+                                                </td>
+
+                                                <td>
+                                                    Pulled to 2xWLL
+                                                </td>
+                                        
+                                                <td>
+                                                    <a href="" class="link ml-10">
+                                                        Edit         
+                                                    </a>
+                                                    <a href="" class="link ml-10">
+                                                        Print
+                                                    </a>
+                                                    <a href="" class="link ml-10">
+                                                        Start Event
+                                                    </a>
+                                                    <a href="" class="link ml-10">
+                                                        Export
+                                                    </a>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>
+                                                    <div class="form-check font-size-16">
+                                                        <input class="form-check-input" type="checkbox"
+                                                            id="transactionCheck02">
+                                                        <label class="form-check-label"
+                                                            for="transactionCheck02"></label>
+                                                    </div>
+                                                </td>
+                                                <td><a href="" class="link">urtest</a> </td>
+                                                <td>89021436</td>
+                                                <td>
+                                                    12345
+                                                </td>
+                                                <td>
+                                                    6789012
+                                                </td>
+                                                <td>
+                                                    <span class="badge badge-pill badge-soft-danger font-size-12">Inspection Overdue</span>
+                                                </td>
+
+                                                <td>
+                                                    Rigger's Choice® Chain Sling
+                                                </td>
+
+                                                <td>
+                                                    25 Feet
+                                                </td>
+
+                                                <td>
+                                                    John Doe
+                                                </td>
+
+                                                <td>
+                                                    replaced 2 latche kits retagged sling
+                                                </td>
+                                        
+                                                <td>
+                                                    <a href="" class="link ml-10">
+                                                        Edit         
+                                                    </a>
+                                                    <a href="" class="link ml-10">
+                                                        Print
+                                                    </a>
+                                                    <a href="" class="link ml-10">
+                                                        Start Event
+                                                    </a>
+                                                    <a href="" class="link ml-10">
+                                                        Export
+                                                    </a>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>
+                                                    <div class="form-check font-size-16">
+                                                        <input class="form-check-input" type="checkbox"
+                                                            id="transactionCheck02">
+                                                        <label class="form-check-label"
+                                                            for="transactionCheck02"></label>
+                                                    </div>
+                                                </td>
+                                                <td><a href="" class="link">urtest</a> </td>
+                                                <td>89021436</td>
+                                                <td>
+                                                    12345
+                                                </td>
+                                                <td>
+                                                    6789012
+                                                </td>
+                                                <td>
+                                                    <span class="badge badge-pill badge-soft-success font-size-12">Repair Complete</span>
+                                                </td>
+
+                                                <td>
+                                                    Rigger's Choice® Chain Sling
+                                                </td>
+
+                                                <td>
+                                                    25 Feet
+                                                </td>
+
+                                                <td>
+                                                    John Doe
+                                                </td>
+
+                                                <td>
+                                                    replace tag and 2 x 3/8" latch kits RC
+                                                </td>
+                                        
+                                                <td>
+                                                    <a href="" class="link ml-10">
+                                                        Edit         
+                                                    </a>
+                                                    <a href="" class="link ml-10">
+                                                        Print
+                                                    </a>
+                                                    <a href="" class="link ml-10">
+                                                        Start Event
+                                                    </a>
+                                                    <a href="" class="link ml-10">
+                                                        Export
+                                                    </a>
+                                                </td>
+                                            </tr>
+
+
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <!-- end table-responsive -->
+
+                               
+
+                            </div>
+
+                            
+                        </div>
+                         <!-- start pagination -->
+                         <div class="pagination-wrapper">
+                            <ul class="pagination justify-content-center pagination-rounded">
+                                <li class="page-item">
+                                    <a href="javascript: void(0);" class="page-link"><i class="mdi mdi-chevron-left"></i></a>
+                                </li>
+                                <li class="page-item">
+                                    <a href="javascript: void(0);" class="page-link">1</a>
+                                </li>
+                                <li class="page-item active">
+                                    <a href="javascript: void(0);" class="page-link">2</a>
+                                </li>
+                                <li class="page-item">
+                                    <a href="javascript: void(0);" class="page-link">3</a>
+                                </li>
+                                <li class="page-item">
+                                    <a href="javascript: void(0);" class="page-link">4</a>
+                                </li>
+                                <li class="page-item">
+                                    <a href="javascript: void(0);" class="page-link">5</a>
+                                </li>
+                                <li class="page-item">
+                                    <a href="javascript: void(0);" class="page-link"><i class="mdi mdi-chevron-right"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <!-- end pagination -->
+                    </div>
+                </div>
+                <!-- end row -->
+<div class="content-logo">
+    <img src="assets/images/logo-dark.png" alt="">
+</div>
+            </div>
+            <!-- end page content -->
+        </div>
+        <!-- container-fluid -->
+    </div>
+    <!-- End Page-content -->
+
+    <!-- MODAL -->
+    <div id="filterModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content modal-content--xl">
+            <div class="row">
+
+                <div class="col-md-4">
+                    
+                     <div class="col-md-10 d-flex align-items-center justify-content-between">
+                 
+                        <div class="d-flex justify-content-between align-items-center">
+                            <h2 class="card-title mb-0">Filter Search</h2> 
+<input class="form-control search-input ml-20" type="text" placeholder="" id="search-input">
+                        
+                        <i style="font-size: 22px; color: #212121;" class="bx bx-search"></i>
+                        </div>                                                      
+                </div> 
+                </div>
+
+                <div class="col-md-8 d-flex justify-content-end align-items-center">
+                    <button class="btn btn-dark">
+                        View Filters
+                    </button>
+                    <i style="font-size: 30px; color: #EC1C24;" class="bx bx-x close ml-20"></i>
+                </div>
+
+             
+                
+            </div>
+
+            <div class="row">
+
+                <div class="col-xl-3 col-lg-6">
+                    <!-- start collapse item -->
+                    <ul class="list-unstyled categories-list">
+                        <li>
+                            <div class="custom-accordion">
+                                <a class="d-flex align-items-center collapsed mb-2" data-bs-toggle="collapse" href="#categories-collapse" role="button" aria-expanded="false" aria-controls="categories-collapse">
+                                    <h3 class="card-title mb-0">General</h3>
+                                    <i class="mdi mdi-chevron-up accor-down-icon ml-10 font-size-24"></i>
+                                </a>
+                                <div class="collapse" id="categories-collapse">
+                                    <div class="card border-0 shadow-none mb-0">
+                                        <ul class="list-unstyled mb-0 ml-0 pl-0">
+
+                                            <li class="mb-3">
+                                                <h3 class="input-title">Event State</h3>  
+                                            <select class="form-select">
+                                                <option></option>
+                                                <option>1234</option>
+                                                <option>1234</option>
+                                            </select>   
+                                            </li>
+
+                                            <li class="mb-3">
+                                                <h3 class="input-title">Search Type</h3>  
+                                            <select class="form-select">
+                                                <option></option>
+                                                <option>1234</option>
+                                                <option>1234</option>
+                                            </select>   
+                                            </li>                                                              
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <!-- end collapse item -->
+                </div>
+
+                <div class="col-xl-3 col-lg-6">
+                    <!-- start collapse item -->
+                    <ul class="list-unstyled categories-list">
+                        <li>
+                            <div class="custom-accordion">
+                                <a class="d-flex align-items-center collapsed mb-2" data-bs-toggle="collapse" href="#categories-collapse1" role="button" aria-expanded="false" aria-controls="categories-collapse">
+                                    <h3 class="card-title mb-0">Identifiers</h3>
+                                    <i class="mdi mdi-chevron-up accor-down-icon ml-10 font-size-24"></i>
+                                </a>
+                                <div class="collapse" id="categories-collapse1">
+                                    <div class="card border-0 shadow-none mb-0">
+                                        <ul class="list-unstyled mb-0 ml-0 pl-0">
+
+                                            <li class="mb-3">
+                                                <h3 class="input-title">RFID Number</h3> 
+                                                <input class="form-control" type="text" placeholder=""> 
+                                             
+                                            </li>
+                                            
+                                            <li class="mb-3">
+                                                <h3 class="input-title">Serial Number</h3>  
+                                                <input class="form-control" type="text" placeholder="">    
+                                            </li>
+
+                                            <li class="mb-3">
+                                                <h3 class="input-title">Reference Number</h3>  
+                                                <input class="form-control" type="text" placeholder="">    
+                                            </li>                                                              
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <!-- end collapse item -->
+                </div>
+
+                <div class="col-xl-3 col-lg-6">
+                    <!-- start collapse item -->
+                    <ul class="list-unstyled categories-list">
+                        <li>
+                            <div class="custom-accordion">
+                                <a class="d-flex align-items-center collapsed mb-2" data-bs-toggle="collapse" href="#categories-collapse2" role="button" aria-expanded="false" aria-controls="categories-collapse">
+                                    <h3 class="card-title mb-0">Ownership</h3>
+                                    <i class="mdi mdi-chevron-up accor-down-icon ml-10 font-size-24"></i>
+                                </a>
+                                <div class="collapse" id="categories-collapse2">
+                                    <div class="card border-0 shadow-none mb-0">
+                                        <ul class="list-unstyled mb-0 ml-0 pl-0">
+
+                                            <li class="mb-3">
+                                                <h3 class="input-title">Assigned To</h3>  
+                                            <select class="form-select">
+                                                <option></option>
+                                                <option>1234</option>
+                                                <option>1234</option>
+                                            </select>   
+                                            </li>
+
+                                            <li class="mb-3">
+                                                <h3 class="input-title">Owner</h3>  
+                                                <div class="d-flex align-items-center">
+                                                    <input class="form-control" type="text" value="">
+                                                    <i style="font-size: 30px; color: #EC1C24;" class="bx bx-x"></i>
+                                                    <i style="font-size: 22px; color: #212121;" class="bx bx-search"></i>
+                                                </div>   
+                                            </li>  
+                                            
+                                            <li class="mb-3">
+                                                <h3 class="input-title">Freeform Location</h3>  
+                                                <input class="form-control" type="text" placeholder="">    
+                                            </li> 
+
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <!-- end collapse item -->
+                </div>
+
+                <div class="col-xl-3 col-lg-6">
+                    <!-- start collapse item -->
+                    <ul class="list-unstyled categories-list">
+                        <li>
+                            <div class="custom-accordion">
+                                <a class="d-flex align-items-center collapsed mb-2" data-bs-toggle="collapse" href="#categories-collapse3" role="button" aria-expanded="false" aria-controls="categories-collapse">
+                                    <h3 class="card-title mb-0">Event Details</h3>
+                                    <i class="mdi mdi-chevron-up accor-down-icon ml-10 font-size-24"></i>
+                                </a>
+                                <div class="collapse" id="categories-collapse3">
+                                    <div class="card border-0 shadow-none mb-0">
+                                        <ul class="list-unstyled mb-0 ml-0 pl-0">
+
+                                            <li class="mb-3">
+                                                <h3 class="input-title">Event Type Group</h3>  
+                                            <select class="form-select">
+                                                <option></option>
+                                                <option>1234</option>
+                                                <option>1234</option>
+                                            </select>   
+                                            </li>
+
+                                            <li class="mb-3">
+                                                <h3 class="input-title">Event Type</h3>  
+                                            <select class="form-select">
+                                                <option></option>
+                                                <option>1234</option>
+                                                <option>1234</option>
+                                            </select>   
+                                            </li> 
+                                            
+                                            <li class="mb-3">
+                                                <h3 class="input-title">Job Book</h3>  
+                                            <select class="form-select">
+                                                <option></option>
+                                                <option>1234</option>
+                                                <option>1234</option>
+                                            </select>   
+                                            </li>
+
+                                            <li class="mb-3">
+                                                <h3 class="input-title">GPS</h3>  
+                                            <select class="form-select">
+                                                <option></option>
+                                                <option>1234</option>
+                                                <option>1234</option>
+                                            </select>   
+                                            </li>
+
+                                            <li class="mb-3">
+                                                <!-- start checkbox -->
+            <div class="form-check font-size-16">
+                <input class="form-check-input" type="checkbox" id="1">
+                <label class="form-check-label" for="1"></label>
+                <label for="1" class="input-title font-weight-light mb-0">Show Most Recent Events Only</label>
+            </div>
+            <!-- end checkbox -->  
+                                            </li>
+
+                                              
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <!-- end collapse item -->
+                </div>
+
+                <div class="col-xl-3 col-lg-6">
+                    <!-- start collapse item -->
+                    <ul class="list-unstyled categories-list">
+                        <li>
+                            <div class="custom-accordion">
+                                <a class="d-flex align-items-center collapsed mb-2" data-bs-toggle="collapse" href="#categories-collapse5" role="button" aria-expanded="false" aria-controls="categories-collapse">
+                                    <h3 class="card-title mb-0">Order Details</h3>
+                                    <i class="mdi mdi-chevron-up accor-down-icon ml-10 font-size-24"></i>
+                                </a>
+                                <div class="collapse" id="categories-collapse5">
+                                    <div class="card border-0 shadow-none mb-0">
+                                        <ul class="list-unstyled mb-0 ml-0 pl-0">
+
+                                            <li class="mb-3">
+                                                <h3 class="input-title">Order Number</h3>  
+                                                <input class="form-control" type="text" placeholder="">
+                                            </li>
+
+                                            <li class="mb-3">
+                                                <h3 class="input-title">Purchase Order</h3>  
+                                                <input class="form-control" type="text" placeholder="">  
+                                            </li> 
+ 
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <!-- end collapse item -->
+                </div>
+
+                <div class="col-xl-3 col-lg-6">
+                    <!-- start collapse item -->
+                    <ul class="list-unstyled categories-list">
+                        <li>
+                            <div class="custom-accordion">
+                                <a class="d-flex align-items-center collapsed mb-2" data-bs-toggle="collapse" href="#categories-collapse6" role="button" aria-expanded="false" aria-controls="categories-collapse">
+                                    <h3 class="card-title mb-0">Resolution</h3>
+                                    <i class="mdi mdi-chevron-up accor-down-icon ml-10 font-size-24"></i>
+                                </a>
+                                <div class="collapse" id="categories-collapse6">
+                                    <div class="card border-0 shadow-none mb-0">
+                                        <ul class="list-unstyled mb-0 ml-0 pl-0">
+
+                                            <li class="mb-3">
+                                                <h3 class="input-title">Result</h3>  
+                                            <select class="form-select">
+                                                <option></option>
+                                                <option>1234</option>
+                                                <option>1234</option>
+                                            </select>   
+                                            </li>
+
+                                            <li class="mb-3">
+                                                <h3 class="input-title">Event Status</h3>  
+                                            <select class="form-select">
+                                                <option></option>
+                                                <option>1234</option>
+                                                <option>1234</option>
+                                            </select>   
+                                            </li> 
+                                            
+                                            <li class="mb-3">
+                                                <h3 class="input-title">Event Book</h3>  
+                                            <select class="form-select">
+                                                <option></option>
+                                                <option>1234</option>
+                                                <option>1234</option>
+                                            </select>   
+                                            </li>
+
+                                            <li class="mb-3">
+                                                <h3 class="input-title">GPS</h3>  
+                                            <select class="form-select">
+                                                <option></option>
+                                                <option>1234</option>
+                                                <option>1234</option>
+                                            </select>   
+                                            </li>
+
+                                            <li class="mb-3">
+                                                <!-- start checkbox -->
+            <div class="form-check font-size-16">
+                <input class="form-check-input" type="checkbox" id="1">
+                <label class="form-check-label" for="1"></label>
+                <label for="1" class="input-title font-weight-light mb-0">Show Most Recent Events Only</label>
+            </div>
+            <!-- end checkbox -->  
+                                            </li>
+
+                                              
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <!-- end collapse item -->
+                </div>
+
+                <div class="col-xl-3 col-lg-6">
+                    <!-- start collapse item -->
+                    <ul class="list-unstyled categories-list">
+                        <li>
+                            <div class="custom-accordion">
+                                <a class="d-flex align-items-center collapsed mb-2" data-bs-toggle="collapse" href="#categories-collapse7" role="button" aria-expanded="false" aria-controls="categories-collapse">
+                                    <h3 class="card-title mb-0">Dates and Times</h3>
+                                    <i class="mdi mdi-chevron-up accor-down-icon ml-10 font-size-24"></i>
+                                </a>
+                                <div class="collapse" id="categories-collapse7">
+                                    <div class="card border-0 shadow-none mb-0">
+                                        <ul class="list-unstyled mb-0 ml-0 pl-0">
+
+                                            <li class="mb-3">
+                                                <h3 class="input-title">Due Date</h3>  
+                                            <select class="form-select">
+                                                <option></option>
+                                                <option>1234</option>
+                                                <option>1234</option>
+                                            </select>   
+                                            </li>
+
+                                            <li class="mb-3">
+                                                <h3 class="input-title">Completed Date</h3>  
+                                            <select class="form-select">
+                                                <option></option>
+                                                <option>1234</option>
+                                                <option>1234</option>
+                                            </select>   
+                                            </li> 
+                                            
+                                            <li class="mb-3">
+                                                <h3 class="input-title">From Date</h3>  
+                                                <div class="input-group" id="datepicker1">
+                                                    <input type="text" class="form-control" placeholder="10/22/2008"
+                                                        data-date-format="dd M, yyyy hh:ii" data-date-container="#datepicker1"
+                                                        data-provide="datepicker">
+                                                    <span class="input-group-text"><i class="mdi mdi-calendar"></i></span>
+                                                </div> 
+                                            </li>
+
+                                            <li class="mb-3">
+                                                <h3 class="input-title">To Date</h3>  
+                                                <div class="input-group" id="datepicker1">
+                                                    <input type="text" class="form-control" placeholder="10/22/2008"
+                                                        data-date-format="dd M, yyyy hh:ii" data-date-container="#datepicker1"
+                                                        data-provide="datepicker">
+                                                    <span class="input-group-text"><i class="mdi mdi-calendar"></i></span>
+                                                </div>   
+                                            </li>
+
+                                            <li class="mb-3">
+                                                <h3 class="input-title">Date Range</h3>  
+                                            <select class="form-select">
+                                                <option></option>
+                                                <option>1234</option>
+                                                <option>1234</option>
+                                            </select>   
+                                            </li>
+                                              
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <!-- end collapse item -->
+                </div>
+
+                <div class="col-xl-3 col-lg-6">
+                    <!-- start collapse item -->
+                    <ul class="list-unstyled categories-list">
+                        <li>
+                            <div class="custom-accordion">
+                                <a class="d-flex align-items-center collapsed mb-2" data-bs-toggle="collapse" href="#categories-collapse8" role="button" aria-expanded="false" aria-controls="categories-collapse">
+                                    <h3 class="card-title mb-0">Asset Details</h3>
+                                    <i class="mdi mdi-chevron-up accor-down-icon ml-10 font-size-24"></i>
+                                </a>
+                                <div class="collapse" id="categories-collapse8">
+                                    <div class="card border-0 shadow-none mb-0">
+                                        <ul class="list-unstyled mb-0 ml-0 pl-0">
+
+                                            <li class="mb-3">
+                                                <h3 class="input-title">Asset Status</h3>  
+                                            <select class="form-select">
+                                                <option></option>
+                                                <option>1234</option>
+                                                <option>1234</option>
+                                            </select>   
+                                            </li>
+
+                                            <li class="mb-3">
+                                                <h3 class="input-title">Asset Type Group</h3>  
+                                            <select class="form-select">
+                                                <option></option>
+                                                <option>1234</option>
+                                                <option>1234</option>
+                                            </select>   
+                                            </li> 
+                                            
+                                            <li class="mb-3">
+                                                <h3 class="input-title">Asset Type</h3>  
+                                            <select class="form-select">
+                                                <option></option>
+                                                <option>1234</option>
+                                                <option>1234</option>
+                                            </select>   
+                                            </li>
+
+                                            <li class="mb-3">
+                                                <h3 class="input-title">GPS</h3>  
+                                            <select class="form-select">
+                                                <option></option>
+                                                <option>1234</option>
+                                                <option>1234</option>
+                                            </select>   
+                                            </li>
+
+                                            <li class="mb-3">
+                                                <!-- start checkbox -->
+            <div class="form-check font-size-16">
+                <input class="form-check-input" type="checkbox" id="1">
+                <label class="form-check-label" for="1"></label>
+                <label for="1" class="input-title font-weight-light mb-0">Show Most Recent Events Only</label>
+            </div>
+            <!-- end checkbox -->  
+                                            </li>
+
+                                              
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <!-- end collapse item -->
+                </div>
+
+             
+
+                
+
+            </div>
+        
+        </div>
+    </div>
+</div>
+<!-- end main content-->
+
+<!-- date input scripts from skote -->
+<!-- JAVASCRIPT -->
+<script src="assets/libs/jquery/jquery.min.js"></script>
+<script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="assets/libs/metismenu/metisMenu.min.js"></script>
+<script src="assets/libs/simplebar/simplebar.min.js"></script>
+<script src="assets/libs/node-waves/waves.min.js"></script>
+<script src="assets/libs/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
+<script src="assets/libs/@chenfengyuan/datepicker/datepicker.min.js"></script>
+
+<!-- select input scripts for Select2 -->
+<script src="/dashboard/shared/assets/libs/select2/js/select2.min.js"></script>
+<script src="/dashboard/shared/assets/js/pages/form-advanced.init.js"></script>
+
+<!-- javascript to open and close modal -->
+<script>
+    // Get the modal
+    let modal = document.getElementById("filterModal");
+
+document.addEventListener('click', function(event) {
+    if (event.target.classList.contains('modal')) {
+        modal.style.display = "none";
+    }
+});
+
+    // Get the button that opens the modal
+    let btn = document.getElementById("myBtn");
+
+    // Get the <span> element that closes the modal
+    let span = document.getElementsByClassName("close")[0];
+
+    // When the user clicks the button, open the modal 
+    btn.onclick = function () {
+        modal.style.display = "block";
+    }
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function () {
+        modal.style.display = "none";
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function (event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+</script>
+
+<!-- javscript for Select2 -->
+<script>
+    $('#asset-type').select2({
+        placeholder: "Choose",
+    });
+
+    //allows all dropdown options not in #asset-type to have a border-top
+    $('.regular-select').select2({
+        placeholder: '',
+        minimumResultsForSearch: Infinity,
+        dropdownCssClass: "regular-dropdown"
+    });
+
+    // show additional inputs based on *Length select value
+    $(document).ready(function () {
+        // hide the sub-panes
+        $('.length-units').hide();
+
+        // When our select2 changes...
+        $('#length').change(function () {
+            // ... we can get all the selected options
+            let selected = $(this).select2('data');
+
+            // Hide all the panes again
+            $('.length-units').hide();
+            // Go through the list of options
+            selected.forEach(function (option) {
+                // and show the one with this id
+                $("#" + option.id).show()
+                $("#length-icon").hide();
+            })
+        });
+    });
+</script>
+

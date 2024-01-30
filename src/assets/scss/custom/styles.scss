@@ -904,6 +904,9 @@ table .badge {
 }
 
 //start l2 modal style
+.modal-content--sm {
+  width: 530px;
+}
 .modal-content--xs {
   width: 350px;
 }
@@ -1071,7 +1074,7 @@ svg.active {
   border-radius: 50px;
 }
 .select-dark {
-  background-color: $black;
+  background-color: #212121;
   background-image: url('../images/shape.svg');
   color: #fff;
   option {
@@ -1092,9 +1095,28 @@ svg {
 .button-wrapper {
   flex-wrap: wrap;
   .btn {
-    margin-bottom: 20px;
+    margin: 5px;
+  }
+  .form-select {
+    width: 130px;
+    margin: 5px;
+
   }
 }
 .nowrap {
   white-space: nowrap;
+}
+.categories-list li ul.pl-0 {
+  padding-left: 0;
+}
+.categories-list li a {
+  padding-left: 0;
+  padding-right: 0;
+}
+.min-width-100 {
+  min-width: 130px !important;
+}
+.badge-soft-success-2 {
+  color: #4D6424;
+  background-color: rgba(77, 100, 36, 0.18);
 }
