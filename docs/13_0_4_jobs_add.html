@@ -1,0 +1,307 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Dashboard | Skote - Admin & Dashboard Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
+    <meta content="Themesbrand" name="author" />
+    <!-- App favicon -->
+    <link rel="shortcut icon" href="assets/images/favicon.ico">
+    <!-- Bootstrap Css -->
+    <link href="assets/css/bootstrap.min.css" id="bootstrap-style" rel="stylesheet" type="text/css" />
+    <!-- Icons Css -->
+    <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+    <!-- App Css-->
+    <link href="assets/css/app.min.css" id="app-style" rel="stylesheet" type="text/css" />
+    <!-- App js -->
+    <script src="assets/js/plugin.js"></script>
+</head>
+<body data-sidebar="light">
+
+<!-- <body data-layout="horizontal" data-topbar="dark"> -->
+
+<!-- Begin page -->
+<div id="layout-wrapper" style="font-family: Poppins; margin-top: -79px;">
+    <header id="page-topbar">
+        <div class="navbar-header">
+            <div class="d-flex">
+                <!-- LOGO -->
+                <div class="navbar-brand-box">
+                    <a href="index.html" class="logo logo-dark">
+                        <span class="logo-sm">
+                            <img src="assets/images/logo.svg" alt="" height="22">
+                        </span>
+                        <span class="logo-lg">
+                            <img src="assets/images/logo-dark.png" alt="" height="17">
+                        </span>
+                    </a>
+
+                    <a href="index.html" class="logo logo-light">
+                        <span class="logo-sm">
+                            <img src="assets/images/logo-light.svg" alt="" height="22">
+                        </span>
+                        <span class="logo-lg">
+                            <img src="assets/images/logo-light.png" alt="" height="19">
+                        </span>
+                    </a>
+                </div>
+
+                <!-- App Search-->
+         
+
+
+   
+        </div>
+    </header>
+
+    <!-- start main content -->
+    <div class="main-content-custom main-content-custom--full">
+
+        <div class="page-content-sidebar">
+            <div class="container-fluid">
+
+                <!-- start page title -->
+                <div class="row mb-3">
+                    <div class="col-md-3 d-flex align-items-center">
+                        <h1 class="title mb-0">ADD JOBS</h1>
+                    </div>
+                </div>
+                <!-- end page title -->
+
+                <!-- start page content -->
+                <div class="row">
+                    <div class="col-xl-10">                     
+                        <!-- start card -->
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="card-title mb-3">
+                                    Job Details
+                                </div>
+
+                                <div class="row">
+
+                                    <div class="col-md-2">
+                                        * What type of job is this?
+                                    </div>
+
+                                    <div class="col-md-10">
+                                        <div class="">
+                                            <div class="form-check mb-2">
+                                                <input id="tag-radio" class="form-check-input" type="radio" name="1" value="newAsset" checked="">
+                                                <label class="form-check-label unirope-radio-label" for="inlineRadio1">
+                                                    Event Job - Jobs that are based on scheduled events or tasks to complete on an existing asset. For example, events or repairs.
+                                                </label>
+                                            </div>
+
+                                            <div class="form-check">
+                                                <input id="tag-radio" class="form-check-input" type="radio" name="1" value="newAsset" checked="">
+                                                <label class="form-check-label unirope-radio-label" for="inlineRadio1">
+                                                    Asset Job - Jobs that are completed during the manufacturing or assembly phase and include specific assets or equipment.
+                                                </label>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="row mt-5">
+                                    <div class="col-md-4 ">
+
+                                        <div>
+                                            <h3 class="input-title">*Job ID</h3>
+                                            <input class="form-control" type="text" placeholder="" value="MTS1208">
+                                        </div>
+
+                                        <div class="mt-3">
+                                            <h3 class="input-title">*Title</h3>
+                                            <input class="form-control" type="text" placeholder="" value="MTS Agility Tooling Oct 2023">
+                                        </div>
+
+                                        <div class="mt-3">
+                                            <h3 class="input-title">*Owner</h3>
+                                            <div class="d-flex align-items-center">
+                                                <input class="form-control" type="text" value="UNIROPE LTD">
+                                                <i style="font-size: 30px; color: #EC1C24;" class="bx bx-x ms-2"></i>
+                                                <i style="font-size: 22px; color: #212121;" class="bx bx-search ms-2"></i>
+                                            </div>
+                                        </div>
+
+                                        <div class="mt-3">
+                                            <h3 class="input-title">Status</h3>
+                                            <input class="form-control" type="text" placeholder="">
+                                            <div class="form-check font-size-16 mt-2">
+                                                <input class="form-check-input" type="checkbox" id="1" checked>
+                                                <label class="form-check-label" for="1"></label>
+                                                <label for="1" class="input-title fw-regular mb-0">Open</label>
+                                            </div>
+                                        </div>
+
+                                        <div class="mt-3">
+                                            <h3 class="input-title">Description</h3>
+                                            <textarea name="" id="" cols="30" rows="5" class="form-control" spellcheck="false"></textarea>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="col-md-4">
+
+                                        <div>
+                                            <h3 class="input-title">Date Created</h3>
+                                            <div class="input-group" id="datepicker1">
+                                                <input type="text" class="form-control" placeholder="11/15/2023 10:47 AM" data-date-format="dd M, yyyy hh:ii" data-date-container="#datepicker1" data-provide="datepicker" value="11/07/2023 12:02 PM EST">
+                                                <span class="input-group-text"><i class="mdi mdi-calendar"></i></span>
+                                            </div>
+                                        </div>
+
+                                        <div>
+                                            <h3 class="input-title mt-3">Date Started</h3>
+                                            <div class="input-group" id="datepicker1">
+                                                <input type="text" class="form-control" placeholder="" data-date-format="dd M, yyyy hh:ii" data-date-container="#datepicker1" data-provide="datepicker" value="10/23/2023 12:00 AM EDT">
+                                                <span class="input-group-text"><i class="mdi mdi-calendar"></i></span>
+                                            </div>
+                                        </div>
+
+                                        <div>
+                                            <h3 class="input-title mt-3">Estimated Completion Date</h3>
+                                            <div class="input-group" id="datepicker1">
+                                                <input type="text" class="form-control" placeholder="" data-date-format="dd M, yyyy hh:ii" data-date-container="#datepicker1" data-provide="datepicker">
+                                                <span class="input-group-text"><i class="mdi mdi-calendar"></i></span>
+                                            </div>
+                                        </div>
+
+                                        <div>
+                                            <h3 class="input-title mt-3">Actual Completed Date</h3>
+                                            <div class="input-group" id="datepicker1">
+                                                <input type="text" class="form-control" placeholder="" data-date-format="dd M, yyyy hh:ii" data-date-container="#datepicker1" data-provide="datepicker" value="10/25/2023 12:00 AM EDT">
+                                                <span class="input-group-text"><i class="mdi mdi-calendar"></i></span>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="col-md-4">
+
+                                        <div>
+                                            <h3 class="input-title">Duration</h3>
+                                            <input class="form-control" type="text" placeholder="" value="3 days">
+                                        </div>
+
+                                        <div class="mt-3">
+                                            <h3 class="input-title">PO Number</h3>
+                                            <input class="form-control" type="text" placeholder="">
+                                        </div>
+
+                                        <div class="mt-3">
+                                            <h3 class="input-title">Work Performed</h3>
+                                            <textarea name="" id="" cols="30" rows="5" class="form-control" spellcheck="false" value="">inspect, repair, certify chain slings, magnets; visual inspection of hoist rings, shackles, eye bolts</textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                              
+
+                            </div>
+                        </div>
+                        <!-- end card -->
+
+                          <!-- start button wrapper -->
+                <div class="button-wrapper button-wrapper--end">
+
+                    <button type="button" class="btn btn-dark waves-effect waves-light">Save</button>
+
+                    <button type="button" class="btn btn-outline-danger waves-effect waves-light">Cancel</button>
+
+                </div>
+                <!-- end button wrapper -->
+
+                    </div>
+
+
+
+                </div>
+                <!-- end page content -->
+
+
+                <div class="content-logo">
+                    <img src="assets/images/logo-dark.png" alt="">
+                </div>
+            </div>
+            <!-- end container-fluid -->
+        </div>  
+    </div>
+</div>
+<!-- end page-->
+
+<!-- start modal -->
+<div id="modal" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content modal-content--sm">
+        <div class="d-flex align-items-center justify-content-between mb-2">
+            <div class="card-title mb-0">
+                Filter Search
+            </div>
+            <i style="font-size: 30px; color: #EC1C24;" class="bx bx-x close" id="close"></i>
+        </div>
+        <div class="input-title mb-2">
+            Show
+        </div>
+
+        <div class="radio-wrapper justify-content-start">
+            <div class="form-check form-check-inline">
+                <input id="tag-radio" class="form-check-input" type="radio" name="1" value="">
+                <label class="form-check-label unirope-radio-label" for="inlineRadio1">All Jobs</label>
+            </div>
+
+            <div class="form-check form-check-inline ms-3">
+                <input id="tag-radio" class="form-check-input" type="radio" name="1" value="newAs">
+                <label class="form-check-label unirope-radio-label" for="inlineRadio1">Only Jobs I am Assigned to</label>
+            </div>
+
+        </div>
+
+        <div class="d-flex align-items-center mt-3">
+            <input class="form-control" type="text" value="">
+            <i style="font-size: 30px; color: #EC1C24;" class="bx bx-x ml-10"></i>
+            <i style="font-size: 22px; color: #212121;" class="bx bx-search ml-10"></i>
+        </div>
+
+    </div>
+</div>
+</div>
+<!-- end modal -->
+
+<!-- start scripts -->
+<!-- start scripts -->
+<!-- JAVASCRIPT -->
+<script src="assets/libs/jquery/jquery.min.js"></script>
+<script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="assets/libs/metismenu/metisMenu.min.js"></script>
+<script src="assets/libs/simplebar/simplebar.min.js"></script>
+<script src="assets/libs/node-waves/waves.min.js"></script>
+<script src="assets/libs/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
+<script src="assets/libs/@chenfengyuan/datepicker/datepicker.min.js"></script>
+<script>
+    let modalBtn = document.getElementById("modalBtn");
+    let modal = document.getElementById("modal");
+    let close = document.getElementById("close");
+    close.onclick = function () {
+        modal.style.display = "none";
+    }
+    modalBtn.onclick = function () {
+        modal.style.display = "block";
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function (event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+
+
+</script>
+<!-- end scripts -->
+

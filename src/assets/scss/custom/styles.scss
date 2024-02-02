@@ -1120,3 +1120,82 @@ svg {
   color: #4D6424;
   background-color: rgba(77, 100, 36, 0.18);
 }
+
+.view-filters {
+  display: none;
+}
+#viewColumns {
+  display: none;
+}
+@media screen and (max-width: 992px) {
+  .filter-modal-header {
+
+  }
+  .buttons-filters {
+    justify-content: space-between !important;
+    margin-top: 20px;
+  }
+  .search-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start !important;
+    input {
+      margin-left: 0;
+    }
+  }
+}
+.text-15 {
+  font-size: 15px;
+}
+
+.info-accordion.categories-list li ul {
+    padding-left: 40px;
+    i:hover {
+      color: $black;
+    }
+    a {
+      color: $blue;
+    }
+  }
+  .info-accordion.categories-list li a {
+    color: $blue;
+    i {
+      color: $black;
+    }
+    i:hover {
+      color: $black;
+    }
+  }
+  .info-accordion a {
+    color: $blue;
+  }
+.info-accordion a {
+  text-decoration: underline !important;
+}
+.info-accordion a.collapsed {
+  text-decoration: none !important;
+}
+.fw-meium {
+  font-weight: 500;
+}
+tr,
+td {
+  border-bottom: none !important;
+}
+.fw-regular {
+  font-weight: 400;
+}
+.table-filter-wrapper--between {
+  justify-content: space-between;
+  .btn {
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+}
+.width-330 {
+  width: 330px;
+  max-width: 100%;
+}
+.text-right {
+  text-align: right;
+}

@@ -6071,3 +6071,102 @@ svg {
   color: #4D6424;
   background-color: rgba(77, 100, 36, 0.18);
 }
+
+.view-filters {
+  display: none;
+}
+
+#viewColumns {
+  display: none;
+}
+
+@media screen and (max-width: 992px) {
+  .buttons-filters {
+    -webkit-box-pack: justify !important;
+        -ms-flex-pack: justify !important;
+            justify-content: space-between !important;
+    margin-top: 20px;
+  }
+  .search-wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start !important;
+        -ms-flex-align: start !important;
+            align-items: flex-start !important;
+  }
+  .search-wrap input {
+    margin-right: 0;
+  }
+}
+.text-15 {
+  font-size: 15px;
+}
+
+.info-accordion.categories-list li ul {
+  padding-right: 40px;
+}
+.info-accordion.categories-list li ul i:hover {
+  color: #000;
+}
+.info-accordion.categories-list li ul a {
+  color: #007BFF;
+}
+
+.info-accordion.categories-list li a {
+  color: #007BFF;
+}
+.info-accordion.categories-list li a i {
+  color: #000;
+}
+.info-accordion.categories-list li a i:hover {
+  color: #000;
+}
+
+.info-accordion a {
+  color: #007BFF;
+}
+
+.info-accordion a {
+  text-decoration: underline !important;
+}
+
+.info-accordion a.collapsed {
+  text-decoration: none !important;
+}
+
+.fw-meium {
+  font-weight: 500;
+}
+
+tr,
+td {
+  border-bottom: none !important;
+}
+
+.fw-regular {
+  font-weight: 400;
+}
+
+.table-filter-wrapper--between {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.table-filter-wrapper--between .btn {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.width-330 {
+  width: 330px;
+  max-width: 100%;
+}
+
+.text-right {
+  text-align: left;
+}
