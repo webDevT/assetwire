@@ -1199,3 +1199,27 @@ td {
 .text-right {
   text-align: right;
 }
+.pt-0 {
+  padding-top: 0;
+}
+.text-left {
+  text-align: left;
+}
+.width-100 {
+  width: 100%;
+}
+.table-title {
+  display: flex;
+  align-items: center;
+}
+.td-blank {
+  height: 65px;
+}
+.width-360 {
+  width: 360px;
+  max-width: 100%;
+}
+.event-card p.mb-0 {
+  height: auto;
+  min-height: auto;
+}

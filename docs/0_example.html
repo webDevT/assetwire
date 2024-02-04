@@ -141,7 +141,7 @@
                     </div>
 
                     <div class="col-md-2 d-flex justify-content-end">
-                        <button class="btn btn-dark">
+                        <button class="btn btn-sm btn-dark">
                             Import
                         </button>
                     </div>
@@ -568,6 +568,62 @@
 
                     </div>
 
+                    <div class="card">
+                        <div class="card-body">
+                            <h2 class="card-title  mb-3">UNI-LOC® WR Sling Summary</h2>
+
+                            <div class="d-flex justify-content-between mb-3">
+                                <div>
+                                    Description
+                                </div>
+
+                                <div>
+                                    3/8" x c/w
+                                </div>
+                            </div>
+
+                            <div class="d-flex justify-content-between mb-3">
+                                <div>
+                                    Serial Number
+                                </div>
+
+                                <a class="link">
+                                    1234
+                                </a>
+                            </div>
+
+                            <div class="d-flex justify-content-between mb-3">
+                                <div>
+                                    RFID Number
+                                </div>
+                            </div>
+
+                            <div class="d-flex justify-content-between mb-3">
+                                <div>
+                                    Reference Number
+                                </div>
+                            </div>
+
+                            <div class="d-flex justify-content-between mb-3">
+                                <div>
+                                    Customer Assigned Serial Number
+                                </div>
+                            </div>
+
+                            <div class="d-flex justify-content-between mb-3">
+                                <div>
+                                    Packing Slips
+                                </div>
+                            </div>
+
+                            <div class="d-flex justify-content-between mb-3">
+                                <div>
+                                    Inspection Tag
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
 
                 </div>
 <div class="row">
@@ -669,7 +725,7 @@
         <div class="d-flex justifu-content-between align-items-center">                                      
                 <input class="form-control" type="text" placeholder="" value="">
 
-            <button type="button" class="btn btn-dark waves-effect waves-light nowrap ml-20">
+            <button type="button" class="btn btn-sm btn-dark waves-effect waves-light nowrap ml-20">
                 Load
             </button>
         </div>
@@ -1262,40 +1318,6 @@
 
 </script>
 
-<!-- javscript for Select2 -->
-<script>
-    $('#asset-type').select2({
-        placeholder: "Choose",
-    });
-
-    //allows all dropdown options not in #asset-type to have a border-top
-    $('.regular-select').select2({
-        placeholder: '',
-        minimumResultsForSearch: Infinity,
-        dropdownCssClass: "regular-dropdown"
-    });
-
-    // show additional inputs based on *Length select value
-    $(document).ready(function () {
-        // hide the sub-panes
-        $('.length-units').hide();
-
-        // When our select2 changes...
-        $('#length').change(function () {
-            // ... we can get all the selected options
-            let selected = $(this).select2('data');
-
-            // Hide all the panes again
-            $('.length-units').hide();
-            // Go through the list of options
-            selected.forEach(function (option) {
-                // and show the one with this id
-                $("#" + option.id).show()
-                $("#length-icon").hide();
-            })
-        });
-    });
-</script>
 
 
 
