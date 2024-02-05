@@ -1223,3 +1223,39 @@ td {
   height: auto;
   min-height: auto;
 }
+.image-card i:before {
+  display: block;
+  width: 100%;
+  font-size: 160px;
+}
+.image-card i {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  width: 100%;
+}
+.image-card {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 20%;
+  
+}
+.image-card input {
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (max-width: 992px) {
+ .image-card {
+  width: 33%;
+ }
+
+}
+@media screen and (max-width: 768px) {
+  .image-card {
+    width: 50%;
+   }
+  .image-card i:before {
+    font-size: 35vw;
+ }
+}

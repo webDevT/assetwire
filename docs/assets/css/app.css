@@ -6205,3 +6205,47 @@ td {
   height: auto;
   min-height: auto;
 }
+
+.image-card i:before {
+  display: block;
+  width: 100%;
+  font-size: 160px;
+}
+
+.image-card i {
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
+  width: 100%;
+}
+
+.image-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  width: 20%;
+}
+
+.image-card input {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media screen and (max-width: 992px) {
+  .image-card {
+    width: 33%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .image-card {
+    width: 50%;
+  }
+  .image-card i:before {
+    font-size: 35vw;
+  }
+}
