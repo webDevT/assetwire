@@ -70,9 +70,9 @@
 
                         <div class="button-wrapper button-wrapper--end">
 
-                            <button type="button" class="btn btn-dark waves-effect waves-light">Continue</button>
+                            <button type="button" class="btn btn-sm btn-dark waves-effect waves-light">Continue</button>
 
-                            <button type="button" class="btn btn-outline-danger waves-effect waves-light">Cancel</button>
+                            <button type="button" class="btn btn-sm btn-outline-danger waves-effect waves-light">Cancel</button>
 
                         </div>
 
@@ -323,9 +323,9 @@
 
 <div class="button-wrapper button-wrapper--end" id="modalButtons">
 
-                                <button type="button" class="btn btn-dark waves-effect waves-light">Save</button>
+                                <button type="button" class="btn btn-sm btn-dark waves-effect waves-light">Save</button>
     
-                                <button type="button" class="btn btn-outline-danger waves-effect waves-light">Cancel</button>
+                                <button type="button" class="btn btn-sm btn-outline-danger waves-effect waves-light">Cancel</button>
     
                             </div>
                 </div>
@@ -342,18 +342,8 @@
 
 <!-- sidemenu script from skote -->
 <script src="/dashboard/shared/assets/libs/simplebar/simplebar.min.js"></script>
-
-
-<!-- file upload scripts from skote -->
-<script src="/dashboard/shared/assets/js/pages/form-file-upload.init.js"></script>
-<script src="/dashboard/shared/assets/js/pages/form-file-upload.init.js"></script>
-
 <!-- date input scripts from skote -->
 <script src="/dashboard/shared/assets/libs/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
-
-<!-- select input scripts for Select2 -->
-<script src="/dashboard/shared/assets/libs/select2/js/select2.min.js"></script>
-<script src="/dashboard/shared/assets/js/pages/form-advanced.init.js"></script>
 
 <!-- javascript to open and close modal -->
 <script>
@@ -401,40 +391,7 @@ document.addEventListener('click', function(event) {
 }
 </script>
 
-<!-- javscript for Select2 -->
-<script>
-    $('#asset-type').select2({
-        placeholder: "Choose",
-    });
 
-    //allows all dropdown options not in #asset-type to have a border-top
-    $('.regular-select').select2({
-        placeholder: '',
-        minimumResultsForSearch: Infinity,
-        dropdownCssClass: "regular-dropdown"
-    });
-
-    // show additional inputs based on *Length select value
-    $(document).ready(function () {
-        // hide the sub-panes
-        $('.length-units').hide();
-
-        // When our select2 changes...
-        $('#length').change(function () {
-            // ... we can get all the selected options
-            let selected = $(this).select2('data');
-
-            // Hide all the panes again
-            $('.length-units').hide();
-            // Go through the list of options
-            selected.forEach(function (option) {
-                // and show the one with this id
-                $("#" + option.id).show()
-                $("#length-icon").hide();
-            })
-        });
-    });
-</script>
 @@include("partials/vendor-scripts.html")
 <script src="assets/libs/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
 <script src="assets/libs/@chenfengyuan/datepicker/datepicker.min.js"></script>

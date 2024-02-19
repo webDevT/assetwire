@@ -340,7 +340,7 @@
 
                                     </div>
 
-                                    <button class="btn btn-dark" id="myBtn">
+                                    <button class="btn btn-sm btn-dark" id="myBtn">
                                         Add A Schedule
                                     </button>
                                 </div>
@@ -510,7 +510,7 @@
 
                                     </div>
 
-                                    <button class="btn btn-dark">
+                                    <button class="btn btn-sm btn-dark">
                                         Add A Schedule
                                     </button>
                                 </div>
@@ -707,10 +707,10 @@
 
       <div>
         <div class="mt-2 d-flex justify-content-end align-items-center">
-          <button type="button" class="btn btn-dark">
+          <button type="button" class="btn btn-sm btn-dark">
             Save And Start Event
           </button>
-          <button type="button" class="btn btn-outline-danger close ml-20" style="">
+          <button type="button" class="btn btn-sm btn-outline-danger close ml-20" style="">
             Cancel
           </button>
         </div>
@@ -738,7 +738,7 @@
         <button type="button" class="btn btn-dark ml-20">
          Load
         </button>
-        <button type="button" class="btn btn-outline-danger close ml-20" style="">
+        <button type="button" class="btn btn-sm btn-outline-danger close ml-20" style="">
           Cancel
         </button>
       </div>
@@ -777,10 +777,10 @@
       
       <div>
         <div class="mt-2 d-flex justify-content-end align-items-center">
-          <button type="button" class="btn btn-dark">
+          <button type="button" class="btn btn-sm btn-dark">
             Connect To Order
           </button>
-          <button type="button" class="btn btn-outline-danger close ml-20" style="">
+          <button type="button" class="btn btn-sm btn-outline-danger close ml-20" style="">
             Cancel
           </button>
         </div>
@@ -822,7 +822,7 @@
       
       <div>
         <div class="mt-2 d-flex justify-content-end align-items-center">
-          <button type="button" class="btn btn-dark">
+          <button type="button" class="btn btn-sm btn-dark">
            Search
           </button>
       
@@ -901,43 +901,6 @@
     }
     
 </script>
-
-<!-- javscript for Select2 -->
-<script>
-    $('#asset-type').select2({
-        placeholder: "Choose",
-    });
-
-    //allows all dropdown options not in #asset-type to have a border-top
-    $('.regular-select').select2({
-        placeholder: '',
-        minimumResultsForSearch: Infinity,
-        dropdownCssClass: "regular-dropdown"
-    });
-
-    // show additional inputs based on *Length select value
-    $(document).ready(function () {
-        // hide the sub-panes
-        $('.length-units').hide();
-
-        // When our select2 changes...
-        $('#length').change(function () {
-            // ... we can get all the selected options
-            let selected = $(this).select2('data');
-
-            // Hide all the panes again
-            $('.length-units').hide();
-            // Go through the list of options
-            selected.forEach(function (option) {
-                // and show the one with this id
-                $("#" + option.id).show()
-                $("#length-icon").hide();
-            })
-        });
-    });
-</script>
-
-
 
 <!-- App js -->
 <script src="assets/js/app.js"></script>

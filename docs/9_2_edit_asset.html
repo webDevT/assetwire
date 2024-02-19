@@ -138,7 +138,7 @@
                     </div>
 
                     <div class="col-md-2 d-flex justify-content-end">
-                        <button class="btn btn-dark">
+                        <button class="btn btn-sm  btn-dark">
                             Import
                         </button>
                     </div>
@@ -571,15 +571,15 @@
                 <!-- start button wrapper -->
                 <div class="button-wrapper button-wrapper--end" id="modalButtons">
 
-                    <button type="button" class="btn btn-dark waves-effect waves-light">Save</button>
+                    <button type="button" class="btn btn-sm btn-dark waves-effect waves-light">Save</button>
 
-                    <button type="button" class="btn btn-dark waves-effect waves-light">Save And Start Event</button>
+                    <button type="button" class="btn btn-sm btn-dark waves-effect waves-light">Save And Start Event</button>
 
-                    <button type="button" class="btn btn-outline-danger waves-effect waves-light">Cancel</button>
+                    <button type="button" class="btn btn-sm btn-outline-danger waves-effect waves-light">Cancel</button>
 
-                    <button type="button" class="btn btn-outline-danger waves-effect waves-light">Merge</button>
+                    <button type="button" class="btn btn-sm btn-outline-danger waves-effect waves-light">Merge</button>
 
-                    <button type="button" class="btn btn-outline-danger waves-effect waves-light">Delete</button>
+                    <button type="button" class="btn btn-sm btn-outline-danger waves-effect waves-light">Delete</button>
 
                 </div>
                 <!-- end button wrapper -->
@@ -606,304 +606,9 @@
 <!-- end main content-->
 
 
-<!-- start schedule event MODAL -->
-<div id="myModal" class="modal">
-    <!-- Modal content -->
-    <div class="modal-content">
-        <h2 class="card-title">Schedule Event</h2>
-        <h3 class="input-title mt-20">Event Type</h3>
-        <select class="form-select" aria-label="Select event type">
-            <option selected></option>
-            <option value="1">One</option>
-            <option value="2">Two</option>
-            <option value="3">Three</option>
-        </select>
-
-        <div class="row">
-            <div class="col-md-6">
-                <label for="event-date" class="form-label input-title mt-20 mb-2">Set the due date:</label>
-                <div class="input-group" id="event-date">
-                    <input type="text" class="form-control" placeholder="" data-date-format="dd M, yyyy"
-                        data-date-container='#event-date' data-provide="datepicker">
-                    <span class="input-group-text"><i class="mdi mdi-calendar"></i></span>
-                </div>
-            </div>
-        </div>
-
-
-        <div class="input-title mt-1">
-            <a href=""><u>Today</u></a>
-            <span> | </span>
-            <a href=""><u>Tomorrow</u></a>
-            <span> | </span>
-            <a href=""><u>Next Month</u></a>
-            <span> | </span>
-            <a href=""><u>In 3 Months</u></a>
-            <span> | </span>
-            <a href=""><u>In 6 Months</u></a>
-            <span> | </span>
-            <a href=""><u>Next Year</u></a>
-        </div>
-
-        <h3 class="input-title mt-20 mb-0">Assignee</h3>
-        <p class="mb-3" style="font-weight: 300;">Select the person or group who will be assigned this task</p>
-        <div class="row">
-            <div class="col-6">
-                <input class="form-control" type="text" placeholder="" value="Ben Trott" id="assignee-name-input">
-            </div>
-            <div class="col-6">
-                <select class="form-select" aria-label="Assign task">
-                    <option selected>Not on a job</option>
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
-                </select>
-            </div>
-        </div>
-        <div class="d-flex mt-1">
-            <input class="form-check-input me-2" type="checkbox" id="email-check">
-            <p style="font-weight: 300;">Send email notification to user or group</p>
-        </div>
-
-        <div>
-            <div class="mt-2 d-flex justify-content-end align-items-center">
-                <button type="button" class="btn btn-dark">
-                    Save And Start Event
-                </button>
-                <button type="button" class="btn btn-outline-danger close ml-20" style="">
-                    Cancel
-                </button>
-            </div>
-        </div>
-    </div>
-</div>
-</div>
-<!-- end schedule event MODAL -->
-
-<!-- start connectToOrder MODAL -->
-<div id="connectToOrderModal" class="modal">
-    <!-- Modal content -->
-    <div class="modal-content">
-        <h2 class="card-title">Connect To Order</h2>
-        <h3 class="input-title mt-20">Order Number</h3>
-
-        <div class="d-flex justify-content-between">
-            <select class="form-select" aria-label="Select event type">
-                <option selected>Order Number</option>
-                <option value="1">One</option>
-                <option value="2">Two</option>
-                <option value="3">Three</option>
-            </select>
-            <div class="d-flex justify-content-end align-items-center">
-                <button type="button" class="btn btn-dark ml-20">
-                    Load
-                </button>
-                <button type="button" class="btn btn-outline-danger close ml-20" style="">
-                    Cancel
-                </button>
-            </div>
-
-        </div>
-
-
-
-        <div class="table-responsive">
-            <table class="table align-middle table-nowrap mt-3 mb-0 table-striped">
-                <thead class="">
-                    <tr>
-
-                        <th class="align-middle text-center">State
-                        </th>
-                        <th class="align-middle text-center">Event
-                        </th>
-                        <th class="align-middle text-center">Due Date
-                        </th>
-                        <th class="align-middle text-center">Completed
-                        </th>
-                    </tr>
-                </thead>
-                <tbody class="">
-                    <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-
-        <h3 class="input-title mt-20">Total: 0</h3>
-
-        <div>
-            <div class="mt-2 d-flex justify-content-end align-items-center">
-                <button type="button" class="btn btn-dark">
-                    Connect To Order
-                </button>
-                <button type="button" class="btn btn-outline-danger close ml-20" style="">
-                    Cancel
-                </button>
-            </div>
-        </div>
-    </div>
-</div>
-</div>
-<!-- end connectToOrder MODAL -->
-
-<!-- start summury filter MODAL -->
-<div id="filterModal" class="modal">
-    <!-- Modal content -->
-    <div class="modal-content modal-content--xs">
-        <div class="d-flex justify-content-between align-items-center">
-            <h2 class="card-title">Filter Search</h2>
-            <div class="close" id="close"> <i style="font-size: 30px; color: #EC1C24;" class="bx bx-x"></i></div>
-        </div>
-
-        <h3 class="input-title mt-20">Show</h3>
-
-        <div class="d-flex justify-content-between mb-4">
-
-            <div class="form-check">
-                <input class="form-check-input" type="checkbox" id="transactionCheck02">
-                <label class="form-check-label" for="transactionCheck02">Open</label>
-            </div>
-
-            <div class="form-check">
-                <input class="form-check-input" type="checkbox" id="transactionCheck02">
-                <label class="form-check-label" for="transactionCheck02">Completed</label>
-            </div>
-
-            <div class="form-check">
-                <input class="form-check-input" type="checkbox" id="transactionCheck02">
-                <label class="form-check-label" for="transactionCheck02">Closed</label>
-            </div>
-
-        </div>
-
-        <div>
-            <div class="mt-2 d-flex justify-content-end align-items-center">
-                <button type="button" class="btn btn-dark">
-                    Search
-                </button>
-
-            </div>
-        </div>
-    </div>
-</div>
-</div>
-<!-- end summary filter MODAL -->
-
-<!-- date input scripts from skote -->
-<script src="/dashboard/shared/assets/libs/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
-
-<!-- select input scripts for Select2 -->
-<script src="/dashboard/shared/assets/libs/select2/js/select2.min.js"></script>
-<script src="/dashboard/shared/assets/js/pages/form-advanced.init.js"></script>
-
-<!-- javascript to open and close modal -->
-<script>
-    // Get the modal
-    let modal = document.getElementById("myModal");
-    let modal2 = document.getElementById("connectToOrderModal");
-    let modal3 = document.getElementById("filterModal");
-
-    document.addEventListener('click', function (event) {
-        if (event.target.classList.contains('modal')) {
-            modal.style.display = "none";
-        }
-    });
-
-    document.addEventListener('click', function (event) {
-        if (event.target.classList.contains('modal')) {
-            modal2.style.display = "none";
-        }
-    });
-
-    document.addEventListener('click', function (event) {
-        if (event.target.classList.contains('modal')) {
-            modal3.style.display = "none";
-        }
-    });
-
-
-
-
-
-    // Get the button that opens the modal
-    let btn = document.getElementById("myBtn");
-    let btn2 = document.getElementById("connectToOrderBtn");
-    let btn3 = document.getElementById("filterBtn");
-
-    // Get the <span> element that closes the modal
-    let span = document.getElementById("close");
-
-    // When the user clicks the button, open the modal 
-    btn.onclick = function () {
-        modal.style.display = "block";
-    }
-    btn2.onclick = function () {
-        modal2.style.display = "block";
-    }
-    btn3.onclick = function () {
-        modal3.style.display = "block";
-    }
-
-    // When the user clicks on <span> (x), close the modal
-    span.onclick = function () {
-        modal3.style.display = "none";
-    }
-
-    // When the user clicks anywhere outside of the modal, close it
-    window.onclick = function (event) {
-        if (event.target == modal) {
-            modal.style.display = "none";
-        }
-    }
-
-</script>
-
-<!-- javscript for Select2 -->
-<script>
-    $('#asset-type').select2({
-        placeholder: "Choose",
-    });
-
-    //allows all dropdown options not in #asset-type to have a border-top
-    $('.regular-select').select2({
-        placeholder: '',
-        minimumResultsForSearch: Infinity,
-        dropdownCssClass: "regular-dropdown"
-    });
-
-    // show additional inputs based on *Length select value
-    $(document).ready(function () {
-        // hide the sub-panes
-        $('.length-units').hide();
-
-        // When our select2 changes...
-        $('#length').change(function () {
-            // ... we can get all the selected options
-            let selected = $(this).select2('data');
-
-            // Hide all the panes again
-            $('.length-units').hide();
-            // Go through the list of options
-            selected.forEach(function (option) {
-                // and show the one with this id
-                $("#" + option.id).show()
-                $("#length-icon").hide();
-            })
-        });
-    });
-</script>
-
-
-
 <!-- App js -->
 <script src="assets/js/app.js"></script>
 
-<script src="assets/libs/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
-<script src="assets/libs/@chenfengyuan/datepicker/datepicker.min.js"></script>
 <script src="assets/js/app.js"></script>
 <!-- JAVASCRIPT -->
 <script src="assets/libs/jquery/jquery.min.js"></script>
