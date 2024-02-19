@@ -1,0 +1,251 @@
+@@include("partials/main.html")
+<head>
+    @@include("partials/title-meta.html", {"title": "Edit Asset"})
+    @@include("partials/head-css.html")
+</head>
+@@include("partials/body.html")
+
+<!-- Begin page -->
+<div id="layout-wrapper" style="margin-top: -79px;">
+    @@include("partials/topbar.html")
+
+    <!-- Left Sidebar Start -->
+    <div class="vertical-menu">
+        <div data-simplebar class="h-100">
+            <div id="sidebar-menu">
+                <ul class="metismenu list-unstyled" id="side-menu">
+
+                    <li class="menu-title" key="t-menu"></li>
+
+                    <li>
+                        <a href="" class="waves-effect">
+                            <i class="bx bx bx-file"></i>                    
+                            <span key="t-dashboards">Summary</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="" class="waves-effect active">
+                            <i class="mdi mdi-playlist-edit"></i>                           
+                            <span key="t-dashboards">Edit Asset</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="" class="waves-effect">
+                            
+                            <i class="bx bx-calendar-event"></i>
+                            <span key="t-dashboards">Perform a Scheduled Event</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="javascript: void(0);" class="has-arrow waves-effect">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M15 22V20H19V10H5V14H3V6C3 5.45 3.19583 4.97917 3.5875 4.5875C3.97917 4.19583 4.45 4 5 4H6V2H8V4H16V2H18V4H19C19.55 4 20.0208 4.19583 20.4125 4.5875C20.8042 4.97917 21 5.45 21 6V20C21 20.55 20.8042 21.0208 20.4125 21.4125C20.0208 21.8042 19.55 22 19 22H15ZM8 24L6.6 22.6L9.175 20H1V18H9.175L6.6 15.4L8 14L13 19L8 24ZM5 8H19V6H5V8Z"/>
+                                </svg>
+                                
+                            <span key="t-dashboards">Perform an Unscheduled Event</span>
+                        </a>
+                        <ul class="sub-menu" aria-expanded="false">
+                            <li><a href="index.html" key="t-default" class="">New Product</a>
+                            </li>
+                            <li><a href="dashboard-saas.html" key="t-saas">Periodic Inspection-B30.9-2</a></li>
+                            <li><a href="dashboard-crypto.html" key="t-crypto">Proof Test - Mobile Test Bed</a></li>
+                            <li><a href="dashboard-blog.html" key="t-blog">Proof Test-300K Test Bed</a></li>
+                            <li><a href="dashboard-job.html" key="t-jobs">Proof Test-1200K Test Bed</a></li>
+                            <li><a href="dashboard-job.html" key="t-jobs">Proof Test-150K Test Bed</a></li>
+                            <li><a href="dashboard-job.html" key="t-jobs">Proof Test-300K Test Bed</a></li>
+                            <li><a href="dashboard-job.html" key="t-jobs">Proof Test-500K Test Bed</a></li>
+                            <li><a href="dashboard-job.html" key="t-jobs">Proof Test-Vertical Test Bed</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- Left Sidebar End -->
+
+    <!-- end page content -->
+    <div class="main-content-custom">
+        <div class="page-content-sidebar">
+            <div class="container-fluid container-sidebar mb-5">
+
+                <!-- start page title -->
+                <div class="row mb-3">
+                    <div class="col-md-10 d-flex align-items-center">
+                        <h1 class="title mb-0">Merge Assets</h1>
+                    </div>
+                </div>
+                <!-- end page title -->
+
+                <!-- start page content -->
+                <div class="row mt-2">
+                    <div class="col-xl-9">
+                        
+                        <!-- start card -->
+                        <div class="card">
+                            <div class="card-body">
+                                <h2 class="card-title  mb-3">1. The duplicate asset ("the loser")</h2>                               
+                            </div>
+                        </div>
+                        <!-- end card -->
+
+                        <!-- start card -->
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="card-title">
+                                    2. Select the asset you want to keep ("the winner")
+                                </div>
+                                <p>This is the asset that will still exist - the "winner" of the merge. The asset information will remain on this asset and all event information will be merged onto this asset.</p>
+ <h3 class="input-title mt-3">Smart Search</h3>
+                                <div class="d-flex justifu-content-between align-items-center">                                      
+                                        <input class="form-control" type="text" placeholder="" value="">
+
+                                    <button type="button" class="btn btn-dark waves-effect waves-light nowrap ml-20">
+                                        Load
+                                    </button>
+                                </div>
+
+                                <!-- start responsive table -->
+                                <div class="table-responsive mt-3">
+                                    <table class="table align-middle table-nowrap mb-0 table-striped">
+                                        <thead class="">
+                                            <tr>
+                                  
+                                                <th class="align-middle">Serial Number
+                                                    <i class="bx bx-sort"></i>
+                                                </th>
+                                                <th class="align-middle">RFID Number
+                                                    <i class="bx bx-sort"></i>
+                                                </th>
+                                                <th class="align-middle">Customer Name
+                                                    <i class="bx bx-sort"></i>
+                                                </th>
+                                                <th class="align-middle">Asset Type
+                                                    <i class="bx bx-sort"></i>
+                                                </th>
+                                                <th class="align-middle">Date Identified
+                                                    <i class="bx bx-sort"></i>
+                                                </th>
+                                           
+                                            </tr>
+                                        </thead>
+                                        <tbody class="">
+                                            <tr>
+                                                <td>
+                                                    1234
+                                                </td>
+
+                                                <td>
+
+                                                </td>
+
+                                                <td>
+                                                    SUTHERLAND-SCHULTZ INC. <br>
+                                                    (1716)
+                                                </td>
+
+                                                <td>
+                                                    UNI-LOC® WR Sling
+                                                </td>
+
+                                                <td>
+                                                    10/22/2008
+                                                </td>
+
+                                               
+                                            </tr>
+                        
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <!-- end responsive table -->
+
+
+                                    <!-- start buttons wrapper -->
+                                    <div class="button-wrapper button-wrapper--end mt-3">
+                                        <button type="button" class="btn btn-dark waves-effect waves-light">
+                                            Confirm this asset as the winner
+                                        </button>
+
+                                        <button type="button" class="btn btn-outline-danger waves-effect waves-light">
+                                            Back To Step 1
+                                        </button>
+                                    </div>
+                                    <!-- end buttons wrapper -->
+                            </div>
+                        </div>
+                        <!-- end card -->
+
+                        <!-- start card -->
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="card-title">
+                                    3. Confirm Merge
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end card -->
+
+                        <!-- start buttons wrapper -->
+                        <div class="button-wrapper button-wrapper--end" id="modalButtons">       
+                            <button type="button" class="btn btn-outline-danger waves-effect waves-light">Cancel merge</button>       
+                        </div>
+                        <!-- end buttons wrapper -->
+
+
+                    </div>
+
+                    <div class="col-xl-3">
+                        <!-- start bordered card -->
+                        <div class="card card--border">
+                            <div class="card-body">
+
+                                <h2 class="card-title  mb-2">What will be copied?</h2>
+                                <p>
+                                    All recorded events from the duplicate asset will be copied over to the "winner".
+                                </p>
+
+                                <h2 class="card-title  mb-2 mt-3">
+                                   What will be deleted?
+                                </h2>
+
+                                <p>
+                                    The duplicate asset will be deleted including all of its attributes.
+                                </p>
+
+                                <h2 class="card-title  mb-2 mt-3">Can this operation be undone?</h2>
+
+                                <p>
+                                    No - this is a final operation so please ensure you have selected the correct
+                                    duplicate.
+                                </p>
+
+                                <h2 class="card-title  mb-2 mt-3">
+                                    When will the asset be merged?
+                                </h2>
+
+                                <p>
+                                    Once you confirm the merge the process of moving the events will start. You will
+                                    receive an email confirmation once its completed.
+                                </p>
+
+                            </div>
+                        </div>
+                        <!-- end bordererd card -->
+                    </div>
+
+                </div>
+                <!-- end page content -->
+            </div>
+        </div>
+
+        <!-- start bottom logo -->
+        <div class="content-logo">
+            <img src="assets/images/logo-dark.png" alt="">
+        </div>
+         <!-- end bottom logo -->
+
+    </div>
+    <!-- end page content -->

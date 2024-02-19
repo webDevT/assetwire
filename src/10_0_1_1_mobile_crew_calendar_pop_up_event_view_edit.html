@@ -1,0 +1,251 @@
+@@include("partials/main.html")
+
+<head>
+    @@include("partials/title-meta.html", {"title": "Edit Asset"})
+    @@include("partials/head-css.html")
+    <link rel="stylesheet" type="text/css" href="assets/libs/tui-time-picker/tui-time-picker.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/libs/tui-date-picker/tui-date-picker.min.css">
+    <link href="assets/libs/tui-calendar/tui-calendar.min.css" rel="stylesheet" type="text/css" />
+</head>
+@@include("partials/body.html")
+
+<!-- Begin page -->
+<div id="layout-wrapper" style="margin-top: -79px;">
+    @@include("partials/topbar.html")
+
+    <!-- start page content -->
+    <div class="main-content-custom main-content-custom--full">
+        <div class="page-content">
+            <div class="container-fluid">
+
+                <!-- start page title -->
+                <div class="row mb-3">
+                    <div class="col-md-10 d-flex align-items-center">
+                        <h1 class="title mb-0">mobile crew Calendar</h1>
+                    </div>
+
+                    <div class="col-md-2 d-flex justify-content-end">
+                        <button class="btn btn-sm btn-dark">
+                            Mobile Crew Timer
+                        </button>
+
+                    </div>
+                </div>
+                <!-- end page title -->
+
+                <div class="row">
+                    <div class="col-lg-8">
+                        
+                                <div id="lnb">
+                                
+                                    <div id="right">
+                                        <div id="menu" class="mb-3">
+                                 <h4 id="renderRange" class="render-range fw-bold pt-1" style="font-size: 50px;"></h4>
+                                            
+
+                                        </div>
+                                    </div>
+                                
+                                    
+                                   
+                                
+                                    <div id="calendar" style="height: 530px;overflow: hidden;"></div>
+
+
+                                    <span id="menu-navi" class="d-sm-flex flex-wrap text-center text-sm-start justify-content-sm-between">
+
+                                        <div class="dropdown align-self-start mt-3 mt-sm-0 mb-2">
+                                            <button id="dropdownMenu-calendarType" style="opacity: 0;" type="button"
+                                                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                                <i id="calendarTypeIcon" class="calendar-icon ic_view_month" style="margin-right: 4px;"></i>
+                                                <span id="calendarTypeName"></span>&nbsp;
+                                              
+                                            </button>
+                                          
+                                        </div>
+
+                                        <div class="d-sm-flex flex-wrap align-items-center d-flex gap-1">
+                                            <div class="btn-group mb-2" role="group" aria-label="Basic example">
+                                                <button type="button" class="btn btn-calendar move-day" data-action="move-prev">
+                                                    <i class="calendar-icon ic-arrow-line-left mdi mdi-chevron-left"
+                                                        data-action="move-prev"></i>
+                                                </button>
+                                                <h4 id="renderMonth" class="render-range fw-bold mb-0 d-flex align-items-center justify-content-center ml-10 mr-10" style="font-size: 13px;text-transform: uppercase;"></h4>
+                                                <button type="button" class="btn btn-calendar move-day" data-action="move-next">
+                                                    <i class="calendar-icon ic-arrow-line-right mdi mdi-chevron-right"
+                                                        data-action="move-next"></i>
+                                                </button>
+                                            </div>
+                        
+                        
+                                    
+                                        </div>
+                        
+                                    </span>
+
+                                </div>
+                           
+                    </div>
+
+                    <div class="col-xl-1">
+                     
+                    </div>
+                    <div class="col-xl-3">
+                        <h4 class="render-range fw-bold pt-1" style="font-size: 16px;">March, 2024</h4>
+                                            
+                       <div id="calendar1" style="height: 250px;overflow: hidden;"></div>
+
+                       <h4 class="render-range fw-bold pt-1 mt-5" style="font-size: 16px;">April, 2024</h4>
+
+                       <div id="calendar2" class="" style="height: 250px;overflow: hidden;"></div>
+                       
+                    </div>
+                </div>
+                <!-- end row -->
+
+
+
+                </div>
+               
+
+
+            </div>
+        </div>
+    </div>
+    <!-- end page content -->
+    <!-- start bottom logo -->
+    <div class="content-logo">
+        <img src="assets/images/logo-dark.png" alt="">
+    </div>
+    <!-- end bottom logo -->
+
+    <!-- start  MODAL -->
+<div id="modal" class="modal" style="display: block;">
+    <!-- Modal content -->
+    <div class="modal-content modal-content--xs">
+        <div class="d-flex justify-content-between align-items-center">
+            <h2 class="card-title">Edit Date Information</h2>
+            <div class="close" id="close"> <i style="font-size: 30px; color: #EC1C24;" class="bx bx-x"></i></div>
+        </div>
+
+        <div class="mt-3">
+            <h3 class="input-title">Event Type</h3>
+            <select class="form-select">
+                <option>Visual Inspection</option>
+                <option>Visual Inspection</option>
+                <option>Visual Inspection</option>
+            </select>
+        </div>
+
+        <div class="mt-3">
+            <h3 class="input-title">Mobile Crew Members</h3>
+           <input type="text" class="form-control" value="John Doue">
+        </div>
+
+        <div class="mt-3">
+          
+           <input type="text" class="form-control" value="John Doue">
+        </div>
+
+        <div class="mt-3">
+          
+            <input type="text" class="form-control" value="John Doue">
+         </div>
+
+         <div class="mt-3">
+          
+            <input type="text" class="form-control" value="John Doue">
+         </div>
+
+         <div class="mt-3">
+          
+            <input type="text" class="form-control" value="John Doue">
+         </div>
+
+        <a href="" class="link">Add Crew Member</a>
+
+        <div class="mt-3">
+            <h3 class="input-title">Start Date</h3>
+            <div class="input-group" id="datepicker1">
+                <input type="text" class="form-control" placeholder="10/22/2008"
+                    data-date-format="dd M, yyyy hh:ii" data-date-container="#datepicker1"
+                    data-provide="datepicker">
+                <span class="input-group-text"><i class="mdi mdi-calendar"></i></span>
+            </div>
+        </div>
+
+        <div class="mt-3">
+            <h3 class="input-title">End Date</h3>
+            <div class="input-group" id="datepicker1">
+                <input type="text" class="form-control" placeholder="10/22/2008"
+                    data-date-format="dd M, yyyy hh:ii" data-date-container="#datepicker1"
+                    data-provide="datepicker">
+                <span class="input-group-text"><i class="mdi mdi-calendar"></i></span>
+            </div>
+        </div>
+
+            </div>
+        
+    </div>
+</div>
+</div>
+<!-- end  MODAL -->
+
+@@include("partials/right-sidebar.html")
+        
+@@include("partials/vendor-scripts.html")
+
+<script src="https://uicdn.toast.com/tui.code-snippet/latest/tui-code-snippet.min.js"></script>
+<script src="assets/libs/tui-dom/tui-dom.min.js"></script>
+
+<script src="assets/libs/tui-time-picker/tui-time-picker.min.js"></script>
+<script src="assets/libs/tui-date-picker/tui-date-picker.min.js"></script>
+
+<script src="assets/libs//moment/min/moment.min.js"></script>
+<script src="assets/libs/chance/chance.min.js"></script>
+
+<script src="assets/libs/tui-calendar/tui-calendar.min.js"></script>
+
+<script src="assets/js/pages/calendars.js"></script>
+<script src="assets/js/pages/schedules.js"></script>
+<script src="assets/js/pages/calendar.init.js"></script>
+<script src="assets/libs/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
+<script src="assets/libs/@chenfengyuan/datepicker/datepicker.min.js"></script>
+
+<!-- App js -->
+<script src="assets/js/app.js"></script>
+<script>
+     let modal = document.getElementById("modal");
+     let btn = document.getElementById("btnModal");
+     let span = document.getElementById("close");
+
+     btn.onclick = function () {
+        modal.style.display = "block";
+    }
+    window.onclick = function (event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+    span.onclick = function () {
+        modal.style.display = "none";
+    }
+</script>
+
+<script>
+    var today = new Date();
+var nextMonth1 = new Date(today.getFullYear(), today.getMonth() + 1, 1);
+var nextMonth2 = new Date(today.getFullYear(), today.getMonth() + 2, 1);
+
+var calendar1 = new tui.Calendar('#calendar1', {
+    defaultView: 'month',
+    date: nextMonth1,
+    // Другие параметры конфигурации первого календаря
+});
+
+var calendar2 = new tui.Calendar('#calendar2', {
+    defaultView: 'month',
+    date: nextMonth2,
+    // Другие параметры конфигурации второго календаря
+});
+</script>

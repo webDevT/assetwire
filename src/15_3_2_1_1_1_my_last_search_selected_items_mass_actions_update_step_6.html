@@ -1,0 +1,258 @@
+@@include("partials/main.html")
+
+<head>
+
+    @@include("partials/title-meta.html", {"title": "Dashboard"})
+
+    @@include("partials/head-css.html")
+
+</head>
+
+@@include("partials/body.html")
+
+<!-- Begin page -->
+<div id="layout-wrapper">
+    @@include("partials/topbar.html")
+
+    <!-- ========== Left Sidebar Start ========== -->
+    <div class="vertical-menu">
+
+        <div data-simplebar class="h-100">
+
+            <!--- Sidemenu -->
+            <div id="sidebar-menu" class="mt-3">
+                <!-- Left Menu Start -->
+                <ul class="metismenu list-unstyled" id="side-menu">
+
+                    <li>
+                        <a href="javascript: void(0);" class="has-arrow waves-effect">
+                            <i class="bx bx-user-circle"></i>
+                            <span key="t-dashboards">My Account</span>
+                        </a>
+                        <ul class="sub-menu" aria-expanded="false">
+                            <li><a href="#">Details</a></li>
+                            <li><a href="#" key="" >Email Notifications</a></li>
+                            <li><a href="#" key="" >Change Password</a></li>
+                            <li><a href="#" key="">Mobile Passcode</a></li>
+                            <li><a href="#" key="">Mobile Offline Collection</a></li>
+                            <li><a href="#" key="" class="active">Downloads</a></li>
+                            <li><a href="#" key="">Export Events</a></li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="#" class="waves-effect">
+                          <i class="bx bx-bookmark"></i>
+                          <span key="t-chat active">Manage Saved Items</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="waves-effect">
+                          <i class="mdi mdi-gavel"></i>
+                          <span key="t-chat active">Manage Rules</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="waves-effect active">
+                            <svg width="20" height="13" viewBox="0 0 20 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0 13V11H10V13H0ZM0 8V6H5V8H0ZM0 3V1H5V3H0ZM18.6 13L14.75 9.15C14.35 9.43333 13.9125 9.64583 13.4375 9.7875C12.9625 9.92917 12.4833 10 12 10C10.6167 10 9.4375 9.5125 8.4625 8.5375C7.4875 7.5625 7 6.38333 7 5C7 3.61667 7.4875 2.4375 8.4625 1.4625C9.4375 0.4875 10.6167 0 12 0C13.3833 0 14.5625 0.4875 15.5375 1.4625C16.5125 2.4375 17 3.61667 17 5C17 5.48333 16.9292 5.9625 16.7875 6.4375C16.6458 6.9125 16.4333 7.35 16.15 7.75L20 11.6L18.6 13ZM12 8C12.8333 8 13.5417 7.70833 14.125 7.125C14.7083 6.54167 15 5.83333 15 5C15 4.16667 14.7083 3.45833 14.125 2.875C13.5417 2.29167 12.8333 2 12 2C11.1667 2 10.4583 2.29167 9.875 2.875C9.29167 3.45833 9 4.16667 9 5C9 5.83333 9.29167 6.54167 9.875 7.125C10.4583 7.70833 11.1667 8 12 8Z"/>
+                                </svg>
+                                
+                          <span key="t-chat active">My Last Search</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="waves-effect">
+                          <i class="mdi mdi-flag-outline"></i>
+                          <span key="t-chat active">My Last Report</span>
+                        </a>
+                    </li>
+
+                   
+
+                </ul>
+            </div>
+            <!-- Sidebar -->
+        </div>
+    </div>
+    <!-- Left Sidebar End -->
+
+    <!-- ============================================================== -->
+    <!-- Start right Content here -->
+    <!-- ============================================================== -->
+    <div class="main-content-custom">
+        <div class="page-content-sidebar pt-0">
+            <div class="container-fluid">
+
+
+                 <!-- start page title -->
+                 <div class="row">
+                    <div class="col-12">
+                        <div class="page-title-box d-sm-flex align-items-center justify-content-between">
+                            <h1 class="title">Assetwire</h1>
+                        </div>
+                    </div>
+                </div>
+                <!-- end page title -->
+
+                <div class="row">
+                    <div class="col-lg-10">
+
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="card-title mb-0">
+                                    1. Select Items to Mass Update
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="card-title">
+                                    2. Choose Operation
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="card-title">
+                                    3. Operation Details
+                                </div>
+                                <p>
+                                    Choose the fields you would like to mass update for the 2 selected items
+                                </p>
+
+                                <div class="col-md-10">
+                                    <div class="row">
+                                        <div class="col-md-6">
+
+                                        <div class="form-check font-size-16 mt-3">
+                                            <input class="form-check-input" type="checkbox" id="2">
+                                            <label for="2" class="input-title fw-medium mb-0 width-100">Identified
+                                                <div class="input-group mt-1 " id="datepicker1">
+                                                    <input type="text" class="form-control" placeholder="" data-date-format="dd M, yyyy hh:ii" data-date-container="#datepicker1" data-provide="datepicker">
+                                                    <span class="input-group-text"><i class="mdi mdi-calendar"></i></span>
+                                                </div>
+                                            </label>
+                                        </div>
+
+                                        <div class="form-check font-size-16 mt-3">
+                                            <input class="form-check-input " type="checkbox" id="3">
+                                            <label for="3" class="input-title fw-medium mb-0 width-100">Assigned To
+                                                <select class="form-select mt-1">
+                                                    <option></option>
+                                                    <option></option>
+                                                    <option></option>
+                                                </select>
+                                            </label>
+                                        </div>
+
+                                        <div class="form-check font-size-16 mt-3">
+                                            <input class="form-check-input " type="checkbox" id="4">
+                                            <label for="4" class="input-title fw-medium mb-0 width-100">Owner
+                                                <div class="d-flex align-items-center mt-1">
+                                                    <input class="form-control" type="text" value="" value="">
+                                                    <i style="font-size: 30px; color: #EC1C24;" class="bx bx-x"></i>
+                                                    <i style="font-size: 22px; color: #212121;" class="bx bx-search"></i>
+                                                </div>
+                                            </label>
+                                        </div>
+
+                                        <div class="form-check font-size-16 mt-3">
+                                            <input class="form-check-input " type="checkbox" id="5">
+                                            <label for="5" class="input-title fw-medium mb-0 width-100">Location
+                                                <div class="d-flex align-items-center mt-1">
+                                                    <input class="form-control" type="text" value="" value="">
+                                                    <i style="font-size: 30px; color: #EC1C24;" class="bx bx-x"></i>
+                                                    <i style="font-size: 22px; color: #212121;" class="bx bx-search"></i>
+                                                </div>
+                                            </label>
+                                        </div>
+
+                                        <div class="form-check font-size-16 mt-3">
+                                            <input class="form-check-input" type="checkbox" id="6">
+                                            <label for="6" class="input-title fw-medium mb-0 width-100">Freeform Location
+                                                <div class="input-group mt-1 " id="datepicker1">
+                                                    <input type="text" class="form-control" placeholder="" data-date-format="dd M, yyyy hh:ii" data-date-container="#datepicker1" data-provide="datepicker">
+                                                    <span class="input-group-text"><i class="mdi mdi-calendar"></i></span>
+                                                </div>
+                                            </label>
+                                        </div>
+
+
+                                    </div>
+                                    <div class="col-md-6">
+
+                                        <div class="form-check font-size-16 mt-3">
+                                            <input class="form-check-input " type="checkbox" id="7">
+                                            <label for="7" class="input-title fw-medium mb-0 width-100">Asset Status
+                                                <select class="form-select mt-1">
+                                                    <option></option>
+                                                    <option></option>
+                                                    <option></option>
+                                                </select>
+                                            </label>
+                                        </div>
+
+                                        <div class="form-check font-size-16 mt-3">
+                                            <input class="form-check-input " type="checkbox" id="7">
+                                            <label for="7" class="input-title fw-medium mb-0 width-100">General Comments
+                                               <input type="text" class="form-control mt-1">
+                                            </label>
+                                        </div>
+
+                                        <div class="form-check font-size-16 mt-3">
+                                            <input class="form-check-input " type="checkbox" id="7">
+                                            <label for="7" class="input-title fw-medium mb-0 width-100">Parent Asset (Link)
+                                               <input type="text" class="form-control mt-1">
+                                            </label>
+                                        </div>
+
+                                    </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="card-title">
+                                    4. Confirm
+                                </div>                            
+                            </div>
+                        </div>
+
+<div class="button-wrapper button-wrapper--end" id="modalButtons">
+                    <button type="button" class="btn btn-sm btn-dark waves-effect waves-light">Next</button>
+                    <button type="button" class="btn btn-sm btn-outline-danger waves-effect waves-light">Cancel</button>
+                </div>
+                    </div>
+                </div>
+
+                
+
+               
+              
+           
+            </div>
+        </div>
+    </div>
+    <!-- end main content-->
+</div>
+<!-- END layout-wrapper -->
+
+<!-- start scripts   -->
+@@include("partials/vendor-scripts.html")
+<script src="assets/js/app.js"></script>
+<script src="assets/libs/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
+<script src="assets/libs/@chenfengyuan/datepicker/datepicker.min.js"></script>
+
+</body>
+
+</html>

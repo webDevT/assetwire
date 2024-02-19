@@ -1,0 +1,289 @@
+@@include("partials/main.html")
+<head>
+    @@include("partials/title-meta.html", {"title": "Edit Asset"})
+    @@include("partials/head-css.html")
+</head>
+@@include("partials/body.html")
+
+<!-- Begin page -->
+<div id="layout-wrapper" style="margin-top: -79px;">
+    @@include("partials/topbar.html")
+
+    <!-- Left Sidebar Start -->
+    <div class="vertical-menu">
+        <div data-simplebar class="h-100">
+            <div id="sidebar-menu">
+                <ul class="metismenu list-unstyled" id="side-menu">
+
+                    <li class="menu-title" key="t-menu"></li>
+
+                    <li>
+                        <a href="" class="waves-effect">
+                            <i class="bx bx bx-file"></i>                    
+                            <span key="t-dashboards">Summary</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="" class="waves-effect">
+                            <i class="mdi mdi-playlist-edit"></i>                           
+                            <span key="t-dashboards">Edit Asset</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="" class="waves-effect active">
+                            
+                            <i class="bx bx-calendar-event"></i>
+                            <span key="t-dashboards">Perform a Scheduled Event</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="javascript: void(0);" class="has-arrow waves-effect">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M15 22V20H19V10H5V14H3V6C3 5.45 3.19583 4.97917 3.5875 4.5875C3.97917 4.19583 4.45 4 5 4H6V2H8V4H16V2H18V4H19C19.55 4 20.0208 4.19583 20.4125 4.5875C20.8042 4.97917 21 5.45 21 6V20C21 20.55 20.8042 21.0208 20.4125 21.4125C20.0208 21.8042 19.55 22 19 22H15ZM8 24L6.6 22.6L9.175 20H1V18H9.175L6.6 15.4L8 14L13 19L8 24ZM5 8H19V6H5V8Z"/>
+                                </svg>
+                                
+                            <span key="t-dashboards">Perform an Unscheduled Event</span>
+                        </a>
+                        <ul class="sub-menu" aria-expanded="false">
+                            <li><a href="index.html" key="t-default" class="">New Product</a>
+                            </li>
+                            <li><a href="dashboard-saas.html" key="t-saas">Periodic Inspection-B30.9-2</a></li>
+                            <li><a href="dashboard-crypto.html" key="t-crypto">Proof Test - Mobile Test Bed</a></li>
+                            <li><a href="dashboard-blog.html" key="t-blog">Proof Test-300K Test Bed</a></li>
+                            <li><a href="dashboard-job.html" key="t-jobs">Proof Test-1200K Test Bed</a></li>
+                            <li><a href="dashboard-job.html" key="t-jobs">Proof Test-150K Test Bed</a></li>
+                            <li><a href="dashboard-job.html" key="t-jobs">Proof Test-300K Test Bed</a></li>
+                            <li><a href="dashboard-job.html" key="t-jobs">Proof Test-500K Test Bed</a></li>
+                            <li><a href="dashboard-job.html" key="t-jobs">Proof Test-Vertical Test Bed</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- Left Sidebar End -->
+
+    <!-- end page content -->
+    <div class="main-content-custom">
+        <div class="page-content-sidebar">
+            <div class="container-fluid container-sidebar mb-5">
+
+                <!-- start page title -->
+                <div class="row mb-3">
+                    <div class="col-md-10 d-flex align-items-center">
+                        <h1 class="title mb-0">Manage scheduled events</h1>
+                    </div>
+                </div>
+                <!-- end page title -->
+
+                <!-- start page content -->
+                <div class="row mt-2">
+                    <div class="col-xl-9">                    
+                       <!-- start card -->
+        <div class="card">
+            <div class="card-body">
+
+                <div class="d-flex align-items-center justify-content-between">
+
+                    <div class="table-title">
+                        <button id="myBtn" type="button" class="filter-button active">
+                            <i class="bx bx-customize"></i>
+                            Filter Search
+                        </button>
+                    </div>
+
+
+                <button class="btn btn-dark">
+                    Add A Schedule
+                </button>
+                </div>
+
+                
+
+                <!-- start table responsive -->
+                <div class="table-responsive">
+                    <table class="table align-middle table-nowrap mb-0 table-striped">
+                        <thead class="">
+                            <tr>
+                               
+                                <th class="align-middle">State
+                                    <i class="bx bx-sort"></i>
+                                </th>
+                                <th class="align-middle">Event
+                                    <i class="bx bx-sort"></i>
+                                </th>
+                                <th class="align-middle">Due Date
+                                    <i class="bx bx-sort"></i>
+                                </th>
+                                <th class="align-middle">Completed
+                                    <i class="bx bx-sort"></i>
+                                </th>
+                                <th class="align-middle">Completed By
+                                    <i class="bx bx-sort"></i>
+                                </th>
+                                <th class="align-middle">Result
+                                    <i class="bx bx-sort"></i>
+                                </th>
+
+                                <th class="align-middle">Event Status
+                                    <i class="bx bx-sort"></i>
+                                </th>
+
+                                <th class="align-middle">
+                                    Asset Status
+                                </th>
+
+                                <th class="align-middle">
+                                   
+                                </th>
+
+                            </tr>
+                        </thead>
+                        <tbody class="">
+                            <tr>
+                                <td>
+                                    <span class="badge badge-pill badge-soft-success font-size-12">Complete</span>
+                                </td>
+
+                                <td>Periodic Inspection <br>
+                                     - B30.9-2</td>
+
+                                    <td>
+                                        No due date
+                                    </td>
+                                <td>
+                                    10/22/2008 <br>
+                                    12:00 PM EDT
+                                </td>
+                                <td>
+                                    Cory Eskra
+                                </td>
+                                <td>
+                                    <span class="badge badge-pill badge-soft-danger font-size-12">Fall</span>
+                                </td>
+
+                                <td>
+                                    
+                                </td>
+
+                                <td>
+                                  
+                                </td>
+                              
+                                <td>
+                                    <div class="links-row">
+                                        <a href="" class="link ml-10">Edit</a>
+                                    <a href="" class="link">Print </a>
+                                    <a href="" class="link">Email</a>
+                                    </div>
+                                    
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <span class="badge badge-pill badge-soft-warning font-size-12">Upcoming</span>
+                                </td>
+
+                                <td>Check In</td>
+
+                                    <td>
+                                        11/31/2023 <br>
+                                         12:00 PM EDT
+                                    </td>
+                                <td>
+                                   
+                                </td>
+                                <td>
+                                   
+                                </td>
+                                <td>
+                                    
+                                </td>
+                                
+                                <td>
+                                    
+                                </td>
+
+                                <td>
+                                  
+                                </td>
+                              
+                                <td>
+                                    <div class="links-row">
+                                        <a href="" class="link ml-10">Edit</a>
+                                    <a href="" class="link">Print </a>
+                                    <a href="" class="link">Email</a>
+                                    </div>
+                                    
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <span class="badge badge-pill badge-soft-danger font-size-12">Overdue</span>
+                                </td>
+
+                                <td>Proof Test - <br>
+                                    Mobile Test Bed</td>
+
+                                    <td>
+                                        05/11/2023 <br>
+                                         12:00 PM EDT
+                                    </td>
+                                <td>
+                                  
+                                </td>
+                                <td>
+                                  
+                                </td>
+                                <td>
+                                    
+                                </td>
+                                
+                                <td>
+                                    
+                                </td>
+
+                                <td>
+                                  
+                                </td>
+                              
+                                <td>
+                                    <div class="links-row">
+                                        <a href="" class="link ml-10">Edit</a>
+                                    <a href="" class="link">Print </a>
+                                    <a href="" class="link">Email</a>
+                                    </div>
+                                    
+                                </td>
+                            </tr>
+                            
+                        </tbody>
+                    </table>
+                </div>
+                <!-- end table-responsive -->
+            </div>
+        </div>
+        <!-- end card -->
+                    </div>
+
+                    <div class="col-xl-3">
+                    </div>
+
+                </div>
+                <!-- end page content -->
+            </div>
+        </div>
+
+        <!-- start bottom logo -->
+        <div class="content-logo">
+            <img src="assets/images/logo-dark.png" alt="">
+        </div>
+         <!-- end bottom logo -->
+
+    </div>
+    <!-- end page content -->

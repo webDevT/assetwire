@@ -1,0 +1,360 @@
+@@include("partials/main.html")
+
+<head>
+
+    @@include("partials/title-meta.html", {"title": "Dashboard"})
+
+    @@include("partials/head-css.html")
+
+</head>
+
+@@include("partials/body.html")
+
+<!-- Begin page -->
+<div id="layout-wrapper">
+    @@include("partials/topbar.html")
+
+    <!-- ========== Left Sidebar Start ========== -->
+    <div class="vertical-menu">
+
+        <div data-simplebar class="h-100">
+
+            <!--- Sidemenu -->
+            <div id="sidebar-menu" class="mt-3">
+                <!-- Left Menu Start -->
+                <ul class="metismenu list-unstyled" id="side-menu">
+
+                    <li>
+                        <a href="javascript: void(0);" class="has-arrow waves-effect">
+                            <i class="bx bx-cog"></i>
+                            <span key="t-dashboards">Settings</span>
+                        </a>
+                        <ul class="sub-menu" aria-expanded="false">
+                            <li><a href="14_1_0_setup_settings_organizations.html">Organizations</a></li>
+                            <li><a href="14_1_1_setup_settings_system_settings.html" key="">System Settings</a></li>
+                            <li><a href="14_1_2_setup_settings_branding.html" key="">Branding</a></li>
+                        </ul>
+                    </li>
+
+
+                    <li>
+                        <a href="javascript: void(0);" class="has-arrow waves-effect">
+                            <i class="mdi mdi-home-account"></i>
+                            <span key="t-ecommerce">Owners, Users & Locations</span>
+                        </a>
+                        <ul class="sub-menu" aria-expanded="false">
+                            <li><a href="14_2_0_setup_owners_users_&_locations_customers.html">Customers</a></li>
+                            <li><a href="14_2_1_setup_owners_users_&_locations_users.html">Users</a></li>
+                            <li><a href="14_2_2_setup_owners_users_&_locations_user_groups.html">User Groups</a></li>
+                            <li><a href="14_2_3_setup_owners_users_&_locations_user_registrations.html">User
+                                    Registrations</a></li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="javascript: void(0);" class="has-arrow waves-effect">
+                            <i class="bx bx-window"></i>
+                            <span key="t-crypto">Assets & Events</span>
+                        </a>
+                        <ul class="sub-menu" aria-expanded="false">
+                            <li><a href="14_3_setup_assets_&_events_event_type_groups_&_pdf_report_style.html">Event
+                                    Type Groups & PDF Report Style</a></li>
+                            <li><a href="14_4_setup_assets_&_events_event_types.html">Event Types</a></li>
+                            <li><a href="14_5_setup_assets_&_events_event_statuses.html">Event Statuses</a></li>
+                            <li><a href="14_6_setup_sssets_&_events_job_books.html">Job Books</a></li>
+                            <li><a href="14_8_setup_assets_&_events_asset_type_groups.html">Asset Type Groups</a></li>
+                            <li><a href="14_9_setup_assets_&_events_asset_types.html">Asset Types</a></li>
+                            <li><a href="14_10_setup_assets_&_events_asset_statuses.html">Asset Statuses</a></li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="javascript: void(0);" class="has-arrow waves-effect">
+                            <i class="bx bx-export"></i>
+                            <span key="t-email">Import</span>
+                        </a>
+                        <ul class="sub-menu" aria-expanded="false">
+                            <li><a href="14_11_setup_import_import_owners.html" >Import Owners</a></li>
+                            <li><a href="14_12_setup_import_import_assets.html" >Import Assets</a></li>
+                            <li><a href="14_13_setup_import_import_events.html" >Import Events</a></li>
+                            <li><a href="14_14_setup_import_import_open_events.html">Import Open Events</a></li>
+                            <li><a href="14_15_setup_import_import_auto_attributes.html">Import Auto Attributes</a></li>
+                            <li><a href="14_16_setup_import_import_users.html" >Import Users</a></li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="javascript: void(0);" class="has-arrow waves-effect">
+                            <i class="bx bx-grid"></i>
+                            <span key="t-invoices">Templates</span>
+                        </a>
+                        <ul class="sub-menu" aria-expanded="false">
+                            <li><a href="14_17_setup_templates_auto_attributes.html" >Auto-Attributes</a></li>
+                            <li><a href="14_18_setup_templates_comment_templates.html" >Comment Templates</a></li>
+                            <li><a href="14_19_setup_templates_search_column_layout.html">Search Column Layout</a></li>
+                            <li><a href="#">Reporting Column Layout</a></li>
+                            <li><a href="14_20_setup_templates_manage_asset_code_mappings.html" class="active">Manage Asset Code
+                                    Mappings</a></li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="javascript: void(0);" class="has-arrow waves-effect">
+                            <i class="bx bx-lock"></i>
+                            <span key="t-projects">Security</span>
+                        </a>
+                        <ul class="sub-menu" aria-expanded="false">
+                            <li><a href="14_21_setup_security_password_policy.html">Password Policy</a></li>
+                            <li><a href="14_22_setup_security_account_lockout_policy.html">Account Lockout Policy</a>
+                            </li>
+                            <li><a href="14_23_setup_security_locked_out_accounts.html">Locked Out Accounts</a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </div>
+            <!-- Sidebar -->
+        </div>
+    </div>
+    <!-- Left Sidebar End -->
+
+    <!-- ============================================================== -->
+    <!-- Start right Content here -->
+    <!-- ============================================================== -->
+    <div class="main-content-custom">
+        <div class="page-content-sidebar pt-0">
+            <div class="container-fluid">
+                <div class="row mb-3">
+                    <div class="col-md-10 d-flex align-items-center">
+                        <h1 class="title mb-0">Manage Asset Code Mappings</h1>
+                    </div>
+
+                    <div class="col-md-2 d-flex justify-content-end">
+                        <button class="btn btn-sm btn-dark">
+                            Add
+                        </button>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="card-title">
+                                    Asset Code
+                                </div>
+                                <!-- start table -->
+        <div class="table-responsive">
+            <table class="table align-middle table-nowrap mb-0 table-striped">
+                <thead class="">
+                    <tr>
+                        <th class="align-middle">Asset Code
+                            <i class="bx bx-sort"></i>
+                        </th>
+                        
+                        <th class="align-middle">Asset Type
+                            <i class="bx bx-sort"></i>
+                        </th>
+
+                        <th>
+
+                        </th>
+                    </tr>
+                </thead>
+                <tbody class="">
+
+                    <tr>                      
+                        <td>WST</td>
+                        <td>Used-Wire Rope Sling</td>                       
+                        <td class="text-right">
+                            <div class="links-wrapper">
+                                <a href="" class="link">
+                                Edit
+                            </a>
+                            <a href="" class="link ml-10">
+                                Remove
+                            </a>
+                            </div>                           
+                        </td>
+                    </tr>
+
+                    <tr>                      
+                        <td>WRS</td>
+                        <td>UNI-LOC® WR Sling</td>                       
+                        <td class="text-right">
+                            <div class="links-wrapper">
+                                <a href="" class="link">
+                                Edit
+                            </a>
+                            <a href="" class="link ml-10">
+                                Remove
+                            </a>
+                            </div>                           
+                        </td>
+                    </tr>
+
+                    <tr>                      
+                        <td>UWS</td>
+                        <td>UNI-WEB® Synthetic Sling</td>                       
+                        <td class="text-right">
+                            <div class="links-wrapper">
+                                <a href="" class="link">
+                                Edit
+                            </a>
+                            <a href="" class="link ml-10">
+                                Remove
+                            </a>
+                            </div>                           
+                        </td>
+                    </tr>
+
+                    <tr>                      
+                        <td>UPS</td>
+                        <td>UNI-PATH® Round Sling</td>                       
+                        <td class="text-right">
+                            <div class="links-wrapper">
+                                <a href="" class="link">
+                                Edit
+                            </a>
+                            <a href="" class="link ml-10">
+                                Remove
+                            </a>
+                            </div>                           
+                        </td>
+                    </tr>
+
+                    <tr>                      
+                        <td>TWR</td>
+                        <td>Used-UNI-LOC® WR Sling</td>                       
+                        <td class="text-right">
+                            <div class="links-wrapper">
+                                <a href="" class="link">
+                                Edit
+                            </a>
+                            <a href="" class="link ml-10">
+                                Remove
+                            </a>
+                            </div>                           
+                        </td>
+                    </tr>
+
+                    <tr>                      
+                        <td>TWA</td>
+                        <td>Tirfor® Wire Rope Assembly</td>                       
+                        <td class="text-right">
+                            <div class="links-wrapper">
+                                <a href="" class="link">
+                                Edit
+                            </a>
+                            <a href="" class="link ml-10">
+                                Remove
+                            </a>
+                            </div>                           
+                        </td>
+                    </tr>
+
+
+                </tbody>
+            </table>
+        </div>
+        <!-- end table-responsive -->
+
+        <div class="mt-3">
+            Total: 6
+        </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            
+            </div>
+        </div>
+    </div>
+    <!-- end main content-->
+</div>
+<!-- END layout-wrapper -->
+
+<!-- start  filter MODAL -->
+<div id="filterModal" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content modal-content--xs">
+        <div class="d-flex justify-content-between align-items-center">
+            <h2 class="card-title">Filter Search</h2>
+            <div class="close" id="close"> <i style="font-size: 30px; color: #EC1C24;" class="bx bx-x"></i></div>
+        </div>
+
+        <div class="mt-3">
+            <h3 class="input-title">Name</h3>
+            <input class="form-control" type="text" placeholder="">
+        </div>
+
+        <div class="mt-3">
+            <h3 class="input-title">ID</h3>
+            <input class="form-control" type="text" placeholder="">
+        </div>
+
+        <div class="mt-3">
+            <h3 class="input-title">Organization</h3>
+            <select class="form-select">
+                <option>All</option>
+                <option>1234</option>
+                <option>1234</option>
+            </select>
+        </div>
+
+
+        <div>
+            <div class="mt-2 d-flex justify-content-end align-items-center mt-3">
+                <button type="button" class="btn btn-dark">
+                    Filter
+                </button>
+
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<!-- end filter MODAL -->
+
+<!-- start scripts   -->
+<script src="assets/libs/dropzone/dropzone-min.js"></script>
+<script src="assets/js/pages/form-file-upload.init.js"></script>
+@@include("partials/vendor-scripts.html")
+<script src="assets/js/app.js"></script>
+<!-- end scripts -->
+<script>
+    // Get the modal
+    let modal = document.getElementById("filterModal");
+
+    document.addEventListener('click', function (event) {
+        if (event.target.classList.contains('modal')) {
+            modal.style.display = "none";
+        }
+    });
+    // Get the button that opens the modal
+    let btn = document.getElementById("flilterBtn");
+    let btn2 = document.getElementById("flilterBtn2");
+
+    // Get the <span> element that closes the modal
+    let span = document.getElementById("close");
+
+    // When the user clicks the button, open the modal 
+    btn.onclick = function () {
+        modal.style.display = "block";
+    }
+    btn2.onclick = function () {
+        modal.style.display = "block";
+    }
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function () {
+        modal.style.display = "none";
+    }
+
+
+
+</script>
+</body>
+
+</html>

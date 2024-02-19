@@ -1,0 +1,133 @@
+@@include("partials/main.html")
+
+<head>
+    @@include("partials/title-meta.html", {"title": "Dashboard"})
+    @@include("partials/head-css.html")
+</head>
+@@include("partials/body.html")
+
+<!-- Begin page -->
+<div id="layout-wrapper" style="font-family: Poppins; margin-top: -79px;">
+    @@include("partials/topbar.html")
+
+    <!-- start main content -->
+    <div class="main-content-custom main-content-custom--full">
+
+        <div class="page-content-sidebar">
+            <div class="container-fluid">
+
+                <!-- start page title -->
+                <div class="row mb-3">
+                    <div class="col-md-3 d-flex align-items-center">
+                        <h1 class="title mb-0">UNIROPE LTD</h1>
+                    </div>
+
+                    <div class="col-md-9 d-flex justify-content-end flex-wrap button-wrapper">
+
+                        <button class="btn btn-dark">
+                            Archive
+                        </button>
+
+                        <button class="btn btn-dark ml-10">
+                            Merge
+                        </button>
+
+                        <button class="btn btn-dark ml-10">
+                            Recurring Schedules
+                        </button>
+
+                        <button class="btn btn-dark ml-10">
+                            Associate Event Types
+                        </button>
+
+                        <button class="btn btn-dark ml-10">
+                            Add Division to Place
+                        </button>
+                    </div>
+                </div>
+
+                <h1 class="title mb-3">Recurring Schedules for UNIROPE LTD (Unirope Ltd.)</h1>
+
+                <!-- end page title -->
+
+                <!-- start page content -->
+                <div class="row">
+
+                    <div class="col-xl-7">
+
+                       
+
+                        <!-- start card -->
+                        <div class="card">
+                            <div class="card-body">
+                                                                 <!-- start table -->
+        <div class="table-responsive">
+            <table class="table align-middle table-nowrap mb-0 table-striped">
+                <thead class="">
+                    <tr>
+                      
+                        <th class="align-middle">
+                            Event
+                            <i class="bx bx-sort"></i>
+                        </th>
+                        <th class="align-middle">
+                            Due Date
+                            <i class="bx bx-sort"></i>
+                        </th>
+                        <th class="align-middle">
+                            Assignee
+                            <i class="bx bx-sort"></i>
+                        </th> 
+                        <th class="align-middle">
+                            Job
+                            <i class="bx bx-sort"></i>
+                        </th>                      
+                    </tr>
+                </thead>
+                <tbody class="">
+
+                    <tr>
+                        <td colspan="4">
+                            <p class="fw-regular">
+You must create a Place Event Type before you can associate them with UNIROPE LTD. Click <a href="" class="link">here</a> to create a <br>
+                            new Place Event Type.
+                            </p>
+                            
+                             
+                        </td>
+
+                                              
+                    </tr>
+
+
+                </tbody>
+            </table>
+        </div>
+        <!-- end table-responsive -->
+                            </div>
+                        </div>
+                        <!-- end card -->
+
+                    </div>
+
+
+
+                </div>
+                <!-- end page content -->
+
+
+                <div class="content-logo">
+                    <img src="assets/images/logo-dark.png" alt="">
+                </div>
+            </div>
+            <!-- end container-fluid -->
+        </div>  
+    </div>
+</div>
+<!-- end page-->
+
+<!-- start scripts -->
+@@include("partials/vendor-scripts.html")
+<script src="assets/libs/dropzone/dropzone-min.js"></script>
+<script src="assets/js/pages/form-file-upload.init.js"></script>
+<!-- end scripts -->

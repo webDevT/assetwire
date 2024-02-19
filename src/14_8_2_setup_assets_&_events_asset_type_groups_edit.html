@@ -1,0 +1,278 @@
+@@include("partials/main.html")
+
+<head>
+
+    @@include("partials/title-meta.html", {"title": "Dashboard"})
+
+    @@include("partials/head-css.html")
+
+</head>
+
+@@include("partials/body.html")
+
+<!-- Begin page -->
+<div id="layout-wrapper">
+    @@include("partials/topbar.html")
+
+    <!-- ========== Left Sidebar Start ========== -->
+    <div class="vertical-menu">
+
+        <div data-simplebar class="h-100">
+
+            <!--- Sidemenu -->
+            <div id="sidebar-menu" class="mt-3">
+                <!-- Left Menu Start -->
+                <ul class="metismenu list-unstyled" id="side-menu">
+
+                    <li>
+                        <a href="javascript: void(0);" class="has-arrow waves-effect">
+                            <i class="bx bx-cog"></i>
+                            <span key="t-dashboards">Settings</span>
+                        </a>
+                        <ul class="sub-menu" aria-expanded="false">
+                            <li><a href="14_1_0_setup_settings_organizations.html">Organizations</a></li>
+                            <li><a href="14_1_1_setup_settings_system_settings.html" key="">System Settings</a></li>
+                            <li><a href="14_1_2_setup_settings_branding.html" key="">Branding</a></li>
+                        </ul>
+                    </li>
+
+
+                    <li>
+                        <a href="javascript: void(0);" class="has-arrow waves-effect">
+                            <i class="mdi mdi-home-account"></i>
+                            <span key="t-ecommerce">Owners, Users & Locations</span>
+                        </a>
+                        <ul class="sub-menu" aria-expanded="false">
+                            <li><a href="14_2_0_setup_owners_users_&_locations_customers.html">Customers</a></li>
+                            <li><a href="14_2_1_setup_owners_users_&_locations_users.html">Users</a></li>
+                            <li><a href="14_2_2_setup_owners_users_&_locations_user_groups.html">User Groups</a></li>
+                            <li><a href="14_2_3_setup_owners_users_&_locations_user_registrations.html">User
+                                    Registrations</a></li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="javascript: void(0);" class="has-arrow waves-effect">
+                            <i class="bx bx-window"></i>
+                            <span key="t-crypto">Assets & Events</span>
+                        </a>
+                        <ul class="sub-menu mm-show" aria-expanded="false">
+                            <li><a href="14_3_setup_assets_&_events_event_type_groups_&_pdf_report_style.html">Event
+                                    Type Groups & PDF Report Style</a></li>
+                            <li><a href="14_4_setup_assets_&_events_event_types.html">Event Types</a></li>
+                            <li><a href="14_5_setup_assets_&_events_event_statuses.html">Event Statuses</a></li>
+                            <li><a href="14_6_setup_sssets_&_events_job_books.html">Job Books</a></li>
+                            <li><a href="14_6_setup_sssets_&_events_job_books.html">Event Repairs</a></li>
+                            <li><a href="14_8_setup_assets_&_events_asset_type_groups.html" class="active">Asset Type Groups</a></li>
+                            <li><a href="14_9_setup_assets_&_events_asset_types.html">Asset Types</a></li>
+                            <li><a href="14_10_setup_assets_&_events_asset_statuses.html">Asset Statuses</a></li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="javascript: void(0);" class="has-arrow waves-effect">
+                            <i class="bx bx-export"></i>
+                            <span key="t-email">Import</span>
+                        </a>
+                        <ul class="sub-menu" aria-expanded="false">
+                            <li><a href="14_11_setup_import_import_owners.html">Import Owners</a></li>
+                            <li><a href="14_12_setup_import_import_assets.html">Import Assets</a></li>
+                            <li><a href="14_13_setup_import_import_events.html">Import Events</a></li>
+                            <li><a href="14_14_setup_import_import_open_events.html">Import Open Events</a></li>
+                            <li><a href="14_15_setup_import_import_auto_attributes.html">Import Auto Attributes</a></li>
+                            <li><a href="14_14_setup_import_import_open_events.html">Import Open Events</a></li>
+                            <li><a href="14_16_setup_import_import_users.html">Import Users</a></li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="javascript: void(0);" class="has-arrow waves-effect">
+                            <i class="bx bx-grid"></i>
+                            <span key="t-invoices">Templates</span>
+                        </a>
+                        <ul class="sub-menu" aria-expanded="false">
+                            <li><a href="14_17_setup_templates_auto_attributes.html">Auto-Attributes</a></li>
+                            <li><a href="14_18_setup_templates_comment_templates.html">Comment Templates</a></li>
+                            <li><a href="14_19_setup_templates_search_column_layout.html">Search Column Layout</a></li>
+                            <li><a href="#">Reporting Column Layout</a></li>
+                            <li><a href="14_20_setup_templates_manage_asset_code_mappings.html">Manage Asset Code
+                                    Mappings</a></li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="javascript: void(0);" class="has-arrow waves-effect">
+                            <i class="bx bx-lock"></i>
+                            <span key="t-projects">Security</span>
+                        </a>
+                        <ul class="sub-menu" aria-expanded="false">
+                            <li><a href="14_21_setup_security_password_policy.html">Password Policy</a></li>
+                            <li><a href="14_22_setup_security_account_lockout_policy.html">Account Lockout Policy</a>
+                            </li>
+                            <li><a href="14_23_setup_security_locked_out_accounts.html">Locked Out Accounts</a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </div>
+            <!-- Sidebar -->
+        </div>
+    </div>
+    <!-- Left Sidebar End -->
+
+    <!-- ============================================================== -->
+    <!-- Start right Content here -->
+    <!-- ============================================================== -->
+    <div class="main-content-custom">
+        <div class="page-content-sidebar pt-0">
+            <div class="container-fluid ">
+
+                <!-- start page title -->
+                <div class="row">
+                    <div class="col-12">
+                        <div class="page-title-box d-sm-flex align-items-center justify-content-between">
+                            <h1 class="title">Edit Asset Type Group</h1>
+                        </div>
+                    </div>
+                </div>
+                <!-- end page title -->
+
+                <div class="row">
+
+                    <div class="col-lg-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="row">
+                                 
+                                    <div class="col-md-6 mb-3">
+                                        <h3 class="input-title">Asset Type ID</h3>
+                                        <input class="form-control" type="text" placeholder="">
+                                    </div>
+
+                                     <div class="col-md-6 mb-3">
+                                        <h3 class="input-title">Name</h3>
+                                        <input class="form-control" type="text" placeholder="">
+                                     </div>
+
+                                     <div class="col-md-6 mb-3">
+                                        <h3 class="input-title">Asset Type Code</h3>
+                                        <input class="form-control" type="text" placeholder="">
+                                     </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="card-title mb-3">
+                                    Asset Type ID
+                                </div>
+
+                                <div class="row">
+
+                                    <div class="col-md-6 mb-3">
+                                        <h3 class="input-title">*Diameter</h3>
+                                        <select class="form-select">
+                                            <option></option>
+                                            <option>1234</option>
+                                            <option>1234</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="col-md-6 mb-3">
+                                        <h3 class="input-title">Design Factor</h3>
+                                        <select class="form-select">
+                                            <option></option>
+                                            <option>1234</option>
+                                            <option>1234</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="col-md-6 mb-3">
+                                        <h3 class="input-title">*Length</h3>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <select id="length" class="form-control select2 regular-select" style="width: 100%;">
+                                              <option></option>
+                                              <option>Feet</option>
+                                              <option>Meters</option>
+                                            </select>
+                                            <svg id="length-icon" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none" style="margin-left: 5%;">
+                                              <path d="M20.0781 21.4848H5.07812C4.52813 21.4848 4.05729 21.289 3.66563 20.8973C3.27396 20.5056 3.07812 20.0348 3.07812 19.4848V5.4848C3.07812 4.9348 3.27396 4.46397 3.66563 4.0723C4.05729 3.68064 4.52813 3.4848 5.07812 3.4848H20.0781C20.6281 3.4848 21.099 3.68064 21.4906 4.0723C21.8823 4.46397 22.0781 4.9348 22.0781 5.4848V19.4848C22.0781 20.0348 21.8823 20.5056 21.4906 20.8973C21.099 21.289 20.6281 21.4848 20.0781 21.4848ZM5.07812 8.4848H20.0781V5.4848H5.07812V8.4848ZM8.07812 10.4848H5.07812V19.4848H8.07812V10.4848ZM17.0781 10.4848V19.4848H20.0781V10.4848H17.0781ZM15.0781 10.4848H10.0781V19.4848H15.0781V10.4848Z" fill="black"></path>
+                                            </svg>
+                                          </div>
+                                    </div>
+
+                                    <div class="col-md-6 mb-3">
+                                        <h3 class="input-title">*Rope Construction</h3>
+                                        <select class="form-select">
+                                            <option></option>
+                                            <option>1234</option>
+                                            <option>1234</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="col-md-6 mb-3">
+                                        <h3 class="input-title">*Description</h3>
+                                        <select class="form-select">
+                                            <option></option>
+                                            <option>1234</option>
+                                            <option>1234</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="col-md-6 mb-3">
+                                        <h3 class="input-title">Capacity (WLL)</h3>
+                                        <input type="text" class="form-control">
+                                    </div>
+
+                                    <div class="col-md-6 mb-3">
+                                        <h3 class="input-title">Other Attributes</h3>
+                                        <select class="form-select">
+                                            <option></option>
+                                            <option>1234</option>
+                                            <option>1234</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="col-md-6 mb-3">
+                                        <h3 class="input-title">Proof Load Value</h3>
+                                        <input type="text" class="form-control">
+                                    </div>
+                                </div>                             
+
+                            </div>
+
+                            
+                        </div>
+
+                        <div class="mt-2" style="float: right;">
+                            <button type="button" class="btn btn-dark btn-group-b" style="width: 60px; height: 28px; padding: 0; font-size: 11px; font-family: Century Gothic Paneuropean;">
+                              Save
+                            </button>
+                            <button type="button" class="btn btn-dark btn-group-outline-r" style="width: 70px; height: 28px; padding: 0; font-size: 11px; font-family: Century Gothic Paneuropean;">
+                              Cancel
+                            </button>
+                          </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end main content-->
+</div>
+<!-- END layout-wrapper -->
+
+<!-- start scripts   -->
+<script src="assets/libs/dropzone/dropzone-min.js"></script>
+<script src="assets/js/pages/form-file-upload.init.js"></script>
+@@include("partials/vendor-scripts.html")
+<script src="assets/js/app.js"></script>
+<!-- end scripts -->
+</body>
+
+</html>

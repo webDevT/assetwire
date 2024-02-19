@@ -1,0 +1,203 @@
+@@include("partials/main.html")
+
+<head>
+    @@include("partials/title-meta.html", {"title": "Dashboard"})
+    @@include("partials/head-css.html")
+</head>
+@@include("partials/body.html")
+
+<!-- Begin page -->
+<div id="layout-wrapper" style="font-family: Poppins; margin-top: -79px;">
+    @@include("partials/topbar.html")
+
+    <!-- start main content -->
+    <div class="main-content-custom main-content-custom--full">
+
+        <div class="page-content-sidebar">
+            <div class="container-fluid">
+
+                <!-- start page title -->
+                <div class="row mb-3">
+                    <div class="col-md-3 d-flex align-items-center">
+                        <h1 class="title mb-0">UNIROPE LTD</h1>
+                    </div>
+
+                    <div class="col-md-9 d-flex justify-content-end flex-wrap button-wrapper">
+
+                        <button class="btn btn-dark">
+                            Archive
+                        </button>
+
+                        <button class="btn btn-dark ml-10">
+                            Merge
+                        </button>
+
+                        <button class="btn btn-dark ml-10">
+                            Recurring Schedules
+                        </button>
+
+                        <button class="btn btn-dark ml-10">
+                            Associate Event Types
+                        </button>
+
+                        <button class="btn btn-dark ml-10">
+                            Add Division to Place
+                        </button>
+                    </div>
+                </div>
+
+                <h1 class="title mb-3">Merge</h1>
+
+                <!-- end page title -->
+
+                <!-- start page content -->
+                <div class="row">
+
+                    <div class="col-xl-8">
+
+                        <!-- start card -->
+                        <div class="card">
+                            <div class="card-body">
+                                <h2 class="card-title  mb-2">1. UNIROPE LTD (this record will) be the "loser" of this merge</h2>
+                            </div>
+                        </div>
+                        <!-- end card -->
+
+                        <!-- start card -->
+                        <div class="card">
+                            <div class="card-body">
+                                <h2 class="card-title  mb-2">2. Select the customer you want to keep ("the winner") </h2>
+                            </div>
+                        </div>
+                        <!-- end card -->
+
+                        <!-- start card -->
+                        <div class="card">
+                            <div class="card-body">
+                                <h2 class="card-title  mb-2">3. Confirm Merge</h2>
+                                <p>
+                                    Below is the summary of the merger. If this is correct, press the merge button, or you can go back and select another asset. Press “Cancel Merge” below to cancel the entire process.
+                                </p>
+
+                                  <!-- start table -->
+        <div class="table-responsive">
+            <table class="table align-middle table-nowrap mb-0 table-striped">
+                <thead class="">
+                    <tr>
+                      
+                        <th class="align-middle">
+                        </th>
+                        <th class="align-middle">
+                            Asset Type
+                            <i class="bx bx-sort"></i>
+                        </th>
+                        <th class="align-middle">
+                            ID
+                            <i class="bx bx-sort"></i>
+                        </th>                      
+                    </tr>
+                </thead>
+                <tbody class="">
+
+                    <tr>
+                        <td>
+                            Loser
+                        </td>
+
+                        <td>
+                            UNIROPE LTD
+                        </td>
+
+                        <td>
+                            1999
+                        </td>                       
+                    </tr>
+
+                    <tr>
+                        <td>
+                            Winner
+                        </td>
+
+                        <td>
+                            UNIROPE LTD
+                        </td>
+
+                        <td>
+                            1999
+                        </td>                       
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+        <!-- end table-responsive -->
+
+         <!-- start button wrapper -->
+         <div class="button-wrapper button-wrapper--end">
+            <button type="button" class="btn btn-dark waves-effect waves-light">Merge</button>
+            <a href="12_0_2_1_1_places_view_place_merge_step_3.html" class="btn btn-outline-danger waves-effect waves-light">Back To Step 2</a>
+        </div>
+        <!-- end button wrapper -->
+
+                            </div>
+                        </div>
+                        <!-- end card -->
+
+                        <!-- start button wrapper -->
+                <div class="button-wrapper button-wrapper--end">
+                    <button type="button" class="btn btn-outline-danger waves-effect waves-light">Cancel Merge</button>
+                </div>
+                <!-- end button wrapper -->
+
+                    </div>
+
+                    <div class="col-xl-3 col-lg-4">
+
+                         <!-- start bordered card -->
+        <div class="card card--border">
+            <div class="card-body">
+
+                <h2 class="card-title  mb-2">What will be copied?</h2>
+                <p>
+                    All assets, events, schedules, divisions and users from duplicate owner will be copied over to the "winner".
+                </p>
+
+                <h2 class="card-title  mb-2 mt-3">What will be deleted?</h2>
+                <p>
+                    The duplicate owner will be archived which you can view any time by clicking the View Archived tab.
+                </p>
+
+                <h2 class="card-title  mb-2 mt-3">Can this operation be undone?</h2>
+                <p>
+                    No - this is a final operation so please ensure you have selected the correct duplicate.
+                </p>
+
+                <h2 class="card-title  mb-2 mt-3">When will the two records be merged?</h2>
+                <p>
+                    Once you confirm the merge the process of moving the data will start. You will receive an email confirmation once it''s completed.
+                </p>
+            </div>
+        </div>
+        <!-- end bordererd card -->        
+
+                    </div>
+
+                </div>
+                <!-- end page content -->
+
+
+                <div class="content-logo">
+                    <img src="assets/images/logo-dark.png" alt="">
+                </div>
+            </div>
+            <!-- end container-fluid -->
+        </div>  
+    </div>
+</div>
+<!-- end page-->
+
+<!-- start scripts -->
+@@include("partials/vendor-scripts.html")
+<script src="assets/libs/dropzone/dropzone-min.js"></script>
+<script src="assets/js/pages/form-file-upload.init.js"></script>
+<!-- end scripts -->

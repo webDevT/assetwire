@@ -1,0 +1,717 @@
+@@include("partials/main.html")
+
+<head>
+
+    @@include("partials/title-meta.html", {"title": "Dashboard"})
+
+    @@include("partials/head-css.html")
+
+</head>
+
+@@include("partials/body.html")
+<style>
+
+</style>
+<!-- Begin page -->
+<!-- Begin page -->
+<div id="layout-wrapper" style="font-family: Poppins; margin-top: -79px;">
+    @@include("partials/topbar.html")
+
+
+    <!-- ============================================================== -->
+    <!-- Start right Content here -->
+    <!-- ============================================================== -->
+    <div class="main-content-custom main-content-custom--full">
+
+        <div class="page-content-sidebar">
+            <div class="container-fluid">
+
+                <!-- start page title -->
+                <div class="row">
+                    <div class="col-12">
+                        <div class="page-title-box d-sm-flex align-items-center justify-content-between">
+                            <h1 class="title">Advanced Search</h1>
+
+                            <div class="page-title-right d-flex align-items-center button-wrapper">
+
+                                <select class="form-select select-dark">
+                                    <option>Print</option>
+                                    <option>This Report</option>
+                                    <option>Selected PDF Reports</option>
+                                    <option>Selected Observation Reports</option>
+                                </select>
+
+                                <select class="form-select select-dark">
+                                    <option>Mass Actions</option>
+                                    <option>Assign to a job</option>
+                                    <option>Export to Excel</option>
+                                </select>
+
+                                <button type="button" class="btn btn-dark waves-effect waves-light min-width-100">Summary report</button>
+
+                                <button type="button" class="btn btn-dark waves-effect waves-light">Email</button>
+
+                                <button type="button" class="btn btn-dark waves-effect waves-light">Save</button>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- end page title -->
+
+                <!-- start page content -->
+
+                <!-- start row -->
+                <div class="row gx5">
+                    <div class="col-lg-12">
+                        <div class="card">
+                            <div class="card-body">
+
+                                <div class="table-filter-wrapper">
+
+                                    <div class="table-title">
+                                        <button id="myBtn" type="button" class="filter-button active">
+                                            <i class="bx bx-customize"></i>
+                                            Filter Search
+                                        </button>
+                                    </div>
+
+                                    <div class="table-filter__text">
+                                        0 of 165 items in the results are selected. <a href="" class="link">Select all
+                                            165 items</a> or <a href="" class="link">Clear selection</a> select assets
+                                        to perform mass actions
+
+                                    </div>
+                                </div>
+
+
+                                <div class="table-responsive">
+                                    <table class="table align-middle table-nowrap mb-0 table-striped">
+                                        <thead class="">
+                                            <tr>
+                                                <th style="width: 20px;">
+                                                    <div class="form-check font-size-16 align-middle">
+                                                        <input class="form-check-input" type="checkbox"
+                                                            id="transactionCheck01">
+                                                        <label class="form-check-label"
+                                                            for="transactionCheck01"></label>
+                                                    </div>
+                                                </th>
+                                                <th class="align-middle">ID Number
+                                                    <i class="bx bx-sort"></i>
+                                                </th>
+                                                <th class="align-middle">Order Number
+                                                    <i class="bx bx-sort"></i>
+                                                </th>
+                                                <th class="align-middle">Serial Number
+                                                    <i class="bx bx-sort"></i>
+                                                </th>
+                                                <th class="align-middle">ID Number
+                                                    <i class="bx bx-sort"></i>
+                                                </th>
+                                                <th class="align-middle">Asset Status
+                                                    <i class="bx bx-sort"></i>
+                                                </th>
+                                                <th class="align-middle">Asset Type
+                                                    <i class="bx bx-sort"></i>
+                                                </th>
+                                                <th class="align-middle">Size
+                                                    <i class="bx bx-sort"></i>
+                                                </th>
+
+                                                <th class="align-middle"> Customer Name
+                                                    <i class="bx bx-sort"></i>
+                                                </th>
+
+                                                <th class="align-middle"> Comments
+                                                    <i class="bx bx-sort"></i>
+                                                </th>
+                                               
+
+                                               
+
+                                                <th class="align-middle">
+                                                   
+                                                </th>
+
+                                            </tr>
+                                        </thead>
+                                        <tbody class="">
+
+                                            <tr>
+                                                <td>
+                                                    <div class="form-check font-size-16">
+                                                        <input class="form-check-input" type="checkbox"
+                                                            id="transactionCheck02">
+                                                        <label class="form-check-label"
+                                                            for="transactionCheck02"></label>
+                                                    </div>
+                                                </td>
+                                                <td><a href="" class="link">urtest</a> </td>
+                                                <td>89021436</td>
+                                                <td>
+                                                    12345
+                                                </td>
+                                                <td>
+                                                    6789012
+                                                </td>
+                                                <td>
+                                                    <span class="badge badge-pill badge-soft-success font-size-12">Inspection Complete</span>
+                                                </td>
+
+                                                <td>
+                                                    Rigger's Choice® Chain Sling
+                                                </td>
+
+                                                <td>
+                                                    25 Feet
+                                                </td>
+
+                                                <td>
+                                                    John Doe
+                                                </td>
+
+                                                <td>
+                                                    Pulled to 2xWLL
+                                                </td>
+                                        
+                                                <td>
+                                                    <a href="" class="link ml-10">
+                                                        Edit         
+                                                    </a>
+                                                    <a href="" class="link ml-10">
+                                                        Print
+                                                    </a>
+                                                    <a href="" class="link ml-10">
+                                                        Start Event
+                                                    </a>
+                                                    <a href="" class="link ml-10">
+                                                        Export
+                                                    </a>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>
+                                                    <div class="form-check font-size-16">
+                                                        <input class="form-check-input" type="checkbox"
+                                                            id="transactionCheck02">
+                                                        <label class="form-check-label"
+                                                            for="transactionCheck02"></label>
+                                                    </div>
+                                                </td>
+                                                <td><a href="" class="link">urtest</a> </td>
+                                                <td>89021436</td>
+                                                <td>
+                                                    12345
+                                                </td>
+                                                <td>
+                                                    6789012
+                                                </td>
+                                                <td>
+                                                    <span class="badge badge-pill badge-soft-success-2 font-size-12">In Repair</span>
+                                                </td>
+
+                                                <td>
+                                                    Rigger's Choice® Chain Sling
+                                                </td>
+
+                                                <td>
+                                                    25 Feet
+                                                </td>
+
+                                                <td>
+                                                    John Doe
+                                                </td>
+
+                                                <td>
+                                                    replaced 2 latche kits retagged sling
+                                                </td>
+                                        
+                                                <td>
+                                                    <a href="" class="link ml-10">
+                                                        Edit         
+                                                    </a>
+                                                    <a href="" class="link ml-10">
+                                                        Print
+                                                    </a>
+                                                    <a href="" class="link ml-10">
+                                                        Start Event
+                                                    </a>
+                                                    <a href="" class="link ml-10">
+                                                        Export
+                                                    </a>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>
+                                                    <div class="form-check font-size-16">
+                                                        <input class="form-check-input" type="checkbox"
+                                                            id="transactionCheck02">
+                                                        <label class="form-check-label"
+                                                            for="transactionCheck02"></label>
+                                                    </div>
+                                                </td>
+                                                <td><a href="" class="link">urtest</a> </td>
+                                                <td>89021436</td>
+                                                <td>
+                                                    12345
+                                                </td>
+                                                <td>
+                                                    6789012
+                                                </td>
+                                                <td>
+                                                    <span class="badge badge-pill badge-soft-warning font-size-12">Repair Required</span>
+                                                </td>
+
+                                                <td>
+                                                    Rigger's Choice® Chain Sling
+                                                </td>
+
+                                                <td>
+                                                    25 Feet
+                                                </td>
+
+                                                <td>
+                                                    John Doe
+                                                </td>
+
+                                                <td>
+                                                    replace tag and 2 x 3/8" latch kits RC
+                                                </td>
+                                        
+                                                <td>
+                                                    <a href="" class="link ml-10">
+                                                        Edit         
+                                                    </a>
+                                                    <a href="" class="link ml-10">
+                                                        Print
+                                                    </a>
+                                                    <a href="" class="link ml-10">
+                                                        Start Event
+                                                    </a>
+                                                    <a href="" class="link ml-10">
+                                                        Export
+                                                    </a>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>
+                                                    <div class="form-check font-size-16">
+                                                        <input class="form-check-input" type="checkbox"
+                                                            id="transactionCheck02">
+                                                        <label class="form-check-label"
+                                                            for="transactionCheck02"></label>
+                                                    </div>
+                                                </td>
+                                                <td><a href="" class="link">urtest</a> </td>
+                                                <td>89021436</td>
+                                                <td>
+                                                    12345
+                                                </td>
+                                                <td>
+                                                    6789012
+                                                </td>
+                                                <td>
+                                                    <span class="badge badge-pill badge-soft-danger font-size-12">Awaiting Repair</span>
+                                                </td>
+
+                                                <td>
+                                                    Rigger's Choice® Chain Sling
+                                                </td>
+
+                                                <td>
+                                                    25 Feet
+                                                </td>
+
+                                                <td>
+                                                    John Doe
+                                                </td>
+
+                                                <td>
+                                                    Pulled to 2xWLL
+                                                </td>
+                                        
+                                                <td>
+                                                    <a href="" class="link ml-10">
+                                                        Edit         
+                                                    </a>
+                                                    <a href="" class="link ml-10">
+                                                        Print
+                                                    </a>
+                                                    <a href="" class="link ml-10">
+                                                        Start Event
+                                                    </a>
+                                                    <a href="" class="link ml-10">
+                                                        Export
+                                                    </a>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>
+                                                    <div class="form-check font-size-16">
+                                                        <input class="form-check-input" type="checkbox"
+                                                            id="transactionCheck02">
+                                                        <label class="form-check-label"
+                                                            for="transactionCheck02"></label>
+                                                    </div>
+                                                </td>
+                                                <td><a href="" class="link">urtest</a> </td>
+                                                <td>89021436</td>
+                                                <td>
+                                                    12345
+                                                </td>
+                                                <td>
+                                                    6789012
+                                                </td>
+                                                <td>
+                                                    <span class="badge badge-pill badge-soft-danger font-size-12">Inspection Overdue</span>
+                                                </td>
+
+                                                <td>
+                                                    Rigger's Choice® Chain Sling
+                                                </td>
+
+                                                <td>
+                                                    25 Feet
+                                                </td>
+
+                                                <td>
+                                                    John Doe
+                                                </td>
+
+                                                <td>
+                                                    replaced 2 latche kits retagged sling
+                                                </td>
+                                        
+                                                <td>
+                                                    <a href="" class="link ml-10">
+                                                        Edit         
+                                                    </a>
+                                                    <a href="" class="link ml-10">
+                                                        Print
+                                                    </a>
+                                                    <a href="" class="link ml-10">
+                                                        Start Event
+                                                    </a>
+                                                    <a href="" class="link ml-10">
+                                                        Export
+                                                    </a>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>
+                                                    <div class="form-check font-size-16">
+                                                        <input class="form-check-input" type="checkbox"
+                                                            id="transactionCheck02">
+                                                        <label class="form-check-label"
+                                                            for="transactionCheck02"></label>
+                                                    </div>
+                                                </td>
+                                                <td><a href="" class="link">urtest</a> </td>
+                                                <td>89021436</td>
+                                                <td>
+                                                    12345
+                                                </td>
+                                                <td>
+                                                    6789012
+                                                </td>
+                                                <td>
+                                                    <span class="badge badge-pill badge-soft-success font-size-12">Repair Complete</span>
+                                                </td>
+
+                                                <td>
+                                                    Rigger's Choice® Chain Sling
+                                                </td>
+
+                                                <td>
+                                                    25 Feet
+                                                </td>
+
+                                                <td>
+                                                    John Doe
+                                                </td>
+
+                                                <td>
+                                                    replace tag and 2 x 3/8" latch kits RC
+                                                </td>
+                                        
+                                                <td>
+                                                    <a href="" class="link ml-10">
+                                                        Edit         
+                                                    </a>
+                                                    <a href="" class="link ml-10">
+                                                        Print
+                                                    </a>
+                                                    <a href="" class="link ml-10">
+                                                        Start Event
+                                                    </a>
+                                                    <a href="" class="link ml-10">
+                                                        Export
+                                                    </a>
+                                                </td>
+                                            </tr>
+
+
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <!-- end table-responsive -->
+
+                               
+
+                            </div>
+
+                            
+                        </div>
+                         <!-- start pagination -->
+                         <div class="pagination-wrapper">
+                            <ul class="pagination justify-content-center pagination-rounded">
+                                <li class="page-item">
+                                    <a href="javascript: void(0);" class="page-link"><i class="mdi mdi-chevron-left"></i></a>
+                                </li>
+                                <li class="page-item">
+                                    <a href="javascript: void(0);" class="page-link">1</a>
+                                </li>
+                                <li class="page-item active">
+                                    <a href="javascript: void(0);" class="page-link">2</a>
+                                </li>
+                                <li class="page-item">
+                                    <a href="javascript: void(0);" class="page-link">3</a>
+                                </li>
+                                <li class="page-item">
+                                    <a href="javascript: void(0);" class="page-link">4</a>
+                                </li>
+                                <li class="page-item">
+                                    <a href="javascript: void(0);" class="page-link">5</a>
+                                </li>
+                                <li class="page-item">
+                                    <a href="javascript: void(0);" class="page-link"><i class="mdi mdi-chevron-right"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <!-- end pagination -->
+                    </div>
+                </div>
+                <!-- end row -->
+<div class="content-logo">
+    <img src="assets/images/logo-dark.png" alt="">
+</div>
+            </div>
+            <!-- end page content -->
+        </div>
+        <!-- container-fluid -->
+    </div>
+    <!-- End Page-content -->
+
+   
+</div>
+<!-- end main content-->
+
+ <!-- start filter MODAL -->
+ <div id="filterModal" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content modal-content--xl">
+        <div class="row">
+            <div class="col-md-2">
+               <h2 class="card-title">Filter Search</h2> 
+            </div>
+            <div class="col-md-10 d-flex align-items-center justify-content-between">
+             
+                    <div class="d-flex justify-content-between align-items-center">
+<input class="form-control search-input" type="text" placeholder="" id="search-input">
+                    
+                    <i style="font-size: 22px; color: #212121;" class="bx bx-search"></i>
+                    </div>
+                    
+                    <i style="font-size: 30px; color: #EC1C24;" class="bx bx-x close"></i>
+                 
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6">
+                <h3 class="input-title mt-20">Intake Number</h3>
+        <select class="form-select" aria-label="Select event type">
+            <option selected></option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+        </select>
+            </div>
+
+            <div class="col-md-6">
+                <h3 class="input-title mt-20">Customer Name</h3>
+        <select class="form-select" aria-label="Select event type">
+            <option selected></option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+        </select>
+            </div>
+
+            <div class="col-md-6">
+                <h3 class="input-title mt-20">Department</h3>
+        <select class="form-select" aria-label="Select event type">
+            <option selected></option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+        </select>
+            </div>
+
+            <div class="col-md-6">
+                <h3 class="input-title mt-20">Date Received</h3>
+        <select class="form-select" aria-label="Select event type">
+            <option selected></option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+        </select>
+            </div>
+
+            <div class="col-md-6">
+                <h3 class="input-title mt-20">Sub-Department</h3>
+        <select class="form-select" aria-label="Select event type">
+            <option selected></option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+        </select>
+            </div>
+
+            <div class="col-md-6">
+                <h3 class="input-title mt-20">Received By</h3>
+        <select class="form-select" aria-label="Select event type">
+            <option selected></option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+        </select>
+            </div>
+
+        </div>
+    
+    </div>
+</div>
+<!-- end filter MODAL -->
+
+ <!-- start download modal -->
+ <div id="downloadModal" class="modal" style="display: block;">
+    <!-- Modal content -->
+    <div class="modal-content modal-content--sm">
+        <div class="d-flex justify-content-between align-items-center">
+            <h2 class="card-title mb-0">Your download is being generated.</h2>                                             
+            <i style="font-size: 30px; color: #EC1C24;" class="bx bx-x close"></i>
+        </div>  
+        
+        <p class="mb-3 mt-2">
+            If you would like, you can change the name of your download below. You can see the status of this download at any time by going to your Downloads Page found under My Account
+        </p>
+        <h3 class="input-title mt-20">Download Name (eg. "Equipment Failures" or "July Events")</h3>
+        <input class="form-control" type="text" placeholder="" value="Event Summary Report - 11/23/2023" id="search-input">
+
+        <!-- start button wrapper -->
+        <div class="button-wrapper button-wrapper--end mt-4" id="modalButtons">
+
+            <button type="button" class="btn btn-dark waves-effect waves-light">Save and take me to my Downloads</button>
+
+            <button type="button" class="btn btn-outline-danger waves-effect waves-light">Save and close this message</button>
+
+        </div>
+        <!-- end button wrapper -->
+ 
+    </div>
+</div>
+<!-- end download modal -->
+
+<!-- sidemenu script from skote -->
+<script src="/dashboard/shared/assets/libs/simplebar/simplebar.min.js"></script>
+
+
+<!-- file upload scripts from skote -->
+<script src="/dashboard/shared/assets/js/pages/form-file-upload.init.js"></script>
+<script src="/dashboard/shared/assets/js/pages/form-file-upload.init.js"></script>
+
+<!-- date input scripts from skote -->
+<script src="/dashboard/shared/assets/libs/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
+
+<!-- select input scripts for Select2 -->
+<script src="/dashboard/shared/assets/libs/select2/js/select2.min.js"></script>
+<script src="/dashboard/shared/assets/js/pages/form-advanced.init.js"></script>
+
+<!-- javascript to open and close modal -->
+<script>
+    // Get the modal
+    let modal = document.getElementById("filterModal");
+
+document.addEventListener('click', function(event) {
+    if (event.target.classList.contains('modal')) {
+        modal.style.display = "none";
+    }
+});
+
+    // Get the button that opens the modal
+    let btn = document.getElementById("myBtn");
+
+    // Get the <span> element that closes the modal
+    let span = document.getElementsByClassName("close")[0];
+
+    // When the user clicks the button, open the modal 
+    btn.onclick = function () {
+        modal.style.display = "block";
+    }
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function () {
+        modal.style.display = "none";
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function (event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+</script>
+
+<!-- javscript for Select2 -->
+<script>
+    $('#asset-type').select2({
+        placeholder: "Choose",
+    });
+
+    //allows all dropdown options not in #asset-type to have a border-top
+    $('.regular-select').select2({
+        placeholder: '',
+        minimumResultsForSearch: Infinity,
+        dropdownCssClass: "regular-dropdown"
+    });
+
+    // show additional inputs based on *Length select value
+    $(document).ready(function () {
+        // hide the sub-panes
+        $('.length-units').hide();
+
+        // When our select2 changes...
+        $('#length').change(function () {
+            // ... we can get all the selected options
+            let selected = $(this).select2('data');
+
+            // Hide all the panes again
+            $('.length-units').hide();
+            // Go through the list of options
+            selected.forEach(function (option) {
+                // and show the one with this id
+                $("#" + option.id).show()
+                $("#length-icon").hide();
+            })
+        });
+    });
+</script>

@@ -1,0 +1,538 @@
+@@include("partials/main.html")
+
+<head>
+
+    @@include("partials/title-meta.html", {"title": "Dashboard"})
+
+    @@include("partials/head-css.html")
+
+</head>
+
+@@include("partials/body.html")
+<style>
+
+</style>
+
+<!-- Begin page -->
+<div id="layout-wrapper" style="font-family: Poppins; margin-top: -79px;">
+    @@include("partials/menu.html")
+    <!-- ========== Left Sidebar Start ========== -->
+    <div class="vertical-menu" style="">
+
+        <div data-simplebar class="h-100">
+
+            <!--- Sidemenu -->
+            <div id="sidebar-menu">
+                <!-- Left Menu Start -->
+                <ul class="metismenu list-unstyled" id="side-menu" style="padding-top: 50px;">
+                    <li>
+                        <a href="" class="waves-effect">
+                            <i class="bx bx-window"></i>
+                            <span key="t-chat">Single Asset</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="" class="waves-effect active">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M3.20156 20.3999C2.76156 20.3999 2.3849 20.2432 2.07156 19.9299C1.75823 19.6165 1.60156 19.2399 1.60156 18.7999V9.19985C1.60156 8.75985 1.75823 8.38319 2.07156 8.06985C2.3849 7.75652 2.76156 7.59985 3.20156 7.59985H16.0016C16.4416 7.59985 16.8182 7.75652 17.1316 8.06985C17.4449 8.38319 17.6016 8.75985 17.6016 9.19985V18.7999C17.6016 19.2399 17.4449 19.6165 17.1316 19.9299C16.8182 20.2432 16.4416 20.3999 16.0016 20.3999H3.20156ZM3.20156 18.7999H16.0016V10.7999H3.20156V18.7999Z"
+                                    fill="" />
+                                <circle cx="16.8061" cy="7.59994" r="5.36862" fill="white" />
+                                <path
+                                    d="M16.2047 10.5999H17.4047V8.19991H19.8047V6.99991H17.4047V4.59991H16.2047V6.99991H13.8047V8.19991H16.2047V10.5999ZM16.8047 13.5999C15.9747 13.5999 15.1947 13.4424 14.4647 13.1274C13.7347 12.8124 13.0997 12.3849 12.5597 11.8449C12.0197 11.3049 11.5922 10.6699 11.2772 9.93992C10.9622 9.20992 10.8047 8.42991 10.8047 7.59991C10.8047 6.76991 10.9622 5.98991 11.2772 5.25991C11.5922 4.52991 12.0197 3.89491 12.5597 3.35491C13.0997 2.81491 13.7347 2.38741 14.4647 2.07241C15.1947 1.75741 15.9747 1.59991 16.8047 1.59991C17.6347 1.59991 18.4147 1.75741 19.1447 2.07241C19.8747 2.38741 20.5097 2.81491 21.0497 3.35491C21.5897 3.89491 22.0172 4.52991 22.3322 5.25991C22.6472 5.98991 22.8047 6.76991 22.8047 7.59991C22.8047 8.42991 22.6472 9.20992 22.3322 9.93992C22.0172 10.6699 21.5897 11.3049 21.0497 11.8449C20.5097 12.3849 19.8747 12.8124 19.1447 13.1274C18.4147 13.4424 17.6347 13.5999 16.8047 13.5999ZM16.8047 12.3999C18.1447 12.3999 19.2797 11.9349 20.2097 11.0049C21.1397 10.0749 21.6047 8.93991 21.6047 7.59991C21.6047 6.25991 21.1397 5.12491 20.2097 4.19491C19.2797 3.26491 18.1447 2.79991 16.8047 2.79991C15.4647 2.79991 14.3297 3.26491 13.3997 4.19491C12.4697 5.12491 12.0047 6.25991 12.0047 7.59991C12.0047 8.93991 12.4697 10.0749 13.3997 11.0049C14.3297 11.9349 15.4647 12.3999 16.8047 12.3999Z"
+                                    fill="" />
+                            </svg>
+                            <span key="t-chat">Multiple Assets</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="" class="waves-effect">
+                            <i class="bx bx-export"></i>
+                            <span key="t-chat">Import</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="" class="waves-effect">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M11 16V4.8L9.4 6.4L8 5L12 1L16 5L14.6 6.4L13 4.8V16H11Z" fill="" />
+                                <path
+                                    d="M20 21C20 21.5 19.8 22 19.4 22.4C19 22.8 18.6 23 18 23H6C5.5 23 5 22.8 4.6 22.4C4.2 22 4 21.5 4 21V8.39998L2.4 9.99998L1 8.59998L5 4.59998L9 8.59998L7.6 9.99998L6 8.39998V21H18V8.39998L16.4 9.99998L15 8.59998L19 4.59998L23 8.59998L21.6 9.99998L20 8.39998V21Z"
+                                    fill="" />
+                            </svg>
+
+                            <span key="t-chat">Multi-Proof Test Upload</span>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+            <!-- Sidebar -->
+        </div>
+    </div>
+    <!-- Left Sidebar End -->
+
+    <!-- ============================================================== -->
+    <!-- Start right Content here -->
+    <!-- ============================================================== -->
+    <div class="main-content-custom">
+
+        <div class="page-content-sidebar">
+            <div class="container-fluid container-sidebar mb-5">
+
+                <!-- start page title -->
+                <div class="row">
+                    <div class="col-12">
+                        <div class="page-title-box d-sm-flex align-items-center justify-content-between">
+                            <h1 class="title">Perform Event: Proof Test - 300k Mobile Test Bed</h1>
+                        </div>
+                    </div>
+                </div>
+                <!-- end page title -->
+
+                <!-- start page content -->
+                
+                <div class="row">
+
+                    <div class="col-xl-3 col-lg-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <h2 class="card-title  mb-3">Proof Test - 300k Mobile Test Bed Details</h2>
+    
+                                <h3 class="input-title mt-20">Performed By</h3>
+                                <input class="form-control" type="text" placeholder="" value="Ben Trott">
+
+                                <h3 class="input-title mt-20">Date Performed</h3>
+                                <div class="input-group" id="datepicker1">
+                                    <input type="text" class="form-control" placeholder="11/15/ 2023 10:47 AM" data-date-format="dd M, yyyy hh:ii" data-date-container="#datepicker1" data-provide="datepicker">
+                                    <span class="input-group-text"><i class="mdi mdi-calendar"></i></span>        
+                                </div>
+
+                                <h3 class="input-title mt-20">Job Book</h3>
+                                <select class="form-select" aria-label="Select event type">
+                                    <option selected=""></option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+    
+                               
+                            </div>
+                        </div>
+    
+                        <div class="card">
+                            <div class="card-body">
+                                <h2 class="card-title  mb-3">Owner</h2>
+    
+                                <h3 class="input-title mt-20">*Owner</h3>
+                                <div class="d-flex align-items-center">
+                                    <input class="form-control" type="text" placeholder="" id="owner-input">
+                                    <i style="font-size: 30px; color: #EC1C24;" class="bx bx-x"></i>
+                                    <i style="font-size: 22px; color: #212121;" class="bx bx-search"></i>
+                                </div>
+
+                                
+    
+                                <div class="form-check mt-1 ">
+                                    <input class="form-check-input" type="checkbox" id="formCheck1">
+                                    <label class="form-check-label" for="formCheck1">
+                                        Use existing values from the assets
+                                    </label>
+                                </div>
+
+                                <h3 class="input-title mt-20">Location</h3>
+                                <div class="d-flex align-items-center">
+                                    <input class="form-control" type="text" placeholder="" id="owner-input">
+                                    <i style="font-size: 30px; color: #EC1C24;" class="bx bx-x"></i>
+                                </div>
+    
+                                <h3 class="input-title mt-20">Freeform Location</h3>
+                                <input class="form-control" type="text" placeholder="">
+                                <div class="form-check mt-1 ">
+                                    <input class="form-check-input" type="checkbox" id="formCheck1">
+                                    <label class="form-check-label" for="formCheck1">
+                                        Use existing values from the assets
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+    
+                       
+    
+                    </div>
+    
+                    <div class="col-xl-3 col-lg-6">
+
+                        <div class="row">
+    
+                            <div class="col-md-12">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h2 class="card-title">Result</h2>
+                                        <h3 class="input-title mt-20">Result</h3>
+                                <select class="form-select" aria-label="Select event type">
+                                    <option selected="">Set from criteria</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+    
+                                <h3 class="input-title mt-20">Event Status</h3>
+                                <select class="form-select" aria-label="Select event type">
+                                    <option selected=""></option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+    
+    
+                                </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-12">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h2 class="card-title">Auto Schedule Events</h2>
+
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="transactionCheck02" checked>
+                                            <label class="form-check-label" for="transactionCheck02">Should auto schedules be created for these events?</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="col-md-12">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h2 class="card-title">Attachments</h2>
+                                        <p class="font-weight-light">Upload images or documents you would like all users to have access to.</p>
+    
+                                         <!-- start dropzone -->
+                                         <div class="mt-3">
+                                            <div class="dropzone" id="dropzone1">
+                                                <div class="fallback">
+                                                    <input name="file" type="file" multiple="multiple">
+                                                </div>
+                                                <div class="dz-message needsclick">
+                                                    <div class="mb-3">
+                                                        <i class="display-4 text-muted bx bxs-cloud-upload"></i>
+                                                    </div>
+
+                                                    <h4>Drop files here or click to upload.</h4>
+                                                </div>
+                                            </div>
+
+                                            <ul class="list-unstyled mb-0" id="dropzone-preview1">
+                                                <li class="mt-2" id="dropzone-preview-list1">
+
+                                                    <div class="border rounded">
+                                                        <div class="d-flex p-2">
+                                                            <div class="flex-shrink-0 me-3">
+                                                                <div class="avatar-sm bg-light rounded">
+                                                                    <img data-dz-thumbnail
+                                                                        class="img-fluid rounded d-block"
+                                                                        src="https://img.themesbrand.com/judia/new-document.png"
+                                                                        alt="Dropzone-Image">
+                                                                </div>
+                                                            </div>
+                                                            <div class="flex-grow-1">
+                                                                <div class="pt-1">
+                                                                    <h5 class="fs-md mb-1" data-dz-name>&nbsp;</h5>
+                                                                    <p class="fs-sm text-muted mb-0" data-dz-size></p>
+                                                                    <strong class="error text-danger"
+                                                                        data-dz-errormessage></strong>
+                                                                </div>
+                                                            </div>
+                                                            <div class="flex-shrink-0 ms-3">
+                                                                <button data-dz-remove
+                                                                    class="btn btn-sm btn-danger">Delete</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                        <!-- end dropzone -->
+    
+                                </div>
+                                </div>
+                            </div>
+
+
+                           
+    
+                        </div>
+    
+                    </div>
+    
+                    <div class="col-xl-6 col-lg-12">
+    
+                        <!-- start card -->
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between align-items-center mb-3 card__header">
+                                    <h2 class="card-title">Event Form - Conclusion</h2>
+    
+                                
+                                </div>
+    
+                                <div class="row mb-3">
+                                    <div class="col-sm-6">
+                                        <div>
+                                            Result
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="radio-wrapper">
+                                            <div class="form-check form-check-inline">
+                                                <input id="tag-radio" class="form-check-input" type="radio" name="1" value="newAsset" checked="">
+                                                <label class="form-check-label unirope-radio-label" for="inlineRadio1">Pass</label>
+                                            </div>
+    
+                                            <div class="form-check form-check-inline ms-3">
+                                                <input id="tag-radio" class="form-check-input" type="radio" name="1" value="newAsset" checked="">
+                                                <label class="form-check-label unirope-radio-label" for="inlineRadio1">Fail</label>
+                                            </div>
+    
+                                            <div class="form-check form-check-inline ms-3">
+                                                <input id="tag-radio" class="form-check-input" type="radio" name="1" value="newAsset" checked="">
+                                                <label class="form-check-label unirope-radio-label" for="inlineRadio1">N/A</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end card -->
+    
+                 
+                         <!-- start card -->
+                         <div class="card">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between align-items-center mb-3 card__header">
+                                    <h2 class="card-title">Post Event Information</h2>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <h3 class="input-title mt-20">Asset Status</h3>
+                                <select class="form-select" aria-label="Select event type">
+                                    <option selected=""></option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <h3 class="input-title mt-20">Pre-Saved Comments</h3>
+                                <select class="form-select" aria-label="Select event type">
+                                    <option selected=""></option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                                    </div>
+                                </div>
+    
+                                <h3 class="input-title mt-20">General Comments</h3>
+                                <textarea name="" id="" cols="30" rows="5" class="form-control"></textarea>
+                                <div class="form-check mt-1 ">
+                                    <input class="form-check-input" type="checkbox" id="formCheck1">
+                                    <label class="form-check-label" for="formCheck1">
+                                        Would you like the PDF report printable?
+                                    </label>
+                                </div>
+    
+                                
+                            </div>
+                        </div>
+                        <!-- end card -->
+    
+                        
+    
+                        <div class="card">
+                            <div class="card-body">
+    
+                                <div class="d-flex justify-content-between align-items-center mb-3 card__header">
+                                    <h2 class="card-title">Event Schedules</h2>
+    
+                                    <button type="button" class="btn btn-dark waves-effect waves-light">Add A Schedule</button>
+                                </div>
+    
+                                <div class="table-responsive">
+                                    <table class="table table-striped mb-0 align-middle">
+                                      <thead style="border-bottom: 1px solid #EC1C24;">
+                                        <tr>
+                                          <th>
+                                            <div class="d-flex align-items-center">
+                                              Event
+                                              <i class="bx bx-sort fs-5"></i>
+                                            </div>
+                                          </th>
+                                          <th>
+                                            <div class="d-flex align-items-center">
+                                              Due Date
+                                              <i class="bx bx-sort fs-5"></i>
+                                            </div>
+                                          </th>
+                                          <th>
+                                            <div class="d-flex align-items-center">
+                                              Assignee
+                                              <i class="bx bx-sort fs-5"></i>
+                                            </div>
+                                          </th>
+                                          <th colspan="2">
+                                            <div class="d-flex align-items-center">
+                                              Job
+                                              <i class="bx bx-sort fs-5"></i>
+                                            </div>
+                                          </th>
+                                        </tr>
+                                      </thead>
+                                      <tbody>
+                                        <tr>
+                                          <td></td>
+                                          <td></td>
+                                          <td></td>
+                                          <td></td>
+                                          <td>
+    
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </div>
+    
+                                  
+    
+                        </div>
+                        
+                        
+    
+                        </div>
+    <div class="button-wrapper button-wrapper--end" id="modalButtons">
+    
+                                    <button type="button" class="btn btn-dark waves-effect waves-light">Save</button>
+        
+                                    <button type="button" class="btn btn-outline-danger waves-effect waves-light">Cancel</button>
+        
+                                </div>
+                    </div>
+                </div>
+                <!-- end page content -->
+
+
+
+
+                <div class="content-logo">
+                    <img src="assets/images/logo-dark.png" alt="">
+                </div>
+            </div>
+            <!-- end page content -->
+        </div>
+        <!-- container-fluid -->
+    </div>
+    <!-- End Page-content -->
+
+
+</div>
+<!-- end main content-->
+
+
+<!-- sidemenu script from skote -->
+<script src="/dashboard/shared/assets/libs/simplebar/simplebar.min.js"></script>
+
+
+<!-- file upload scripts from skote -->
+<script src="/dashboard/shared/assets/js/pages/form-file-upload.init.js"></script>
+<script src="/dashboard/shared/assets/js/pages/form-file-upload.init.js"></script>
+
+<!-- date input scripts from skote -->
+<script src="/dashboard/shared/assets/libs/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
+
+<!-- select input scripts for Select2 -->
+<script src="/dashboard/shared/assets/libs/select2/js/select2.min.js"></script>
+<script src="/dashboard/shared/assets/js/pages/form-advanced.init.js"></script>
+
+<!-- javascript to open and close modal -->
+<script>
+    // Get the modal
+    let modal = document.getElementById("filterModal");
+
+    document.addEventListener('click', function (event) {
+        if (event.target.classList.contains('modal')) {
+            modal.style.display = "none";
+        }
+    });
+
+    // Get the button that opens the modal
+    let btn = document.getElementById("myBtn");
+
+    // Get the <span> element that closes the modal
+    let span = document.getElementsByClassName("close")[0];
+
+    // When the user clicks the button, open the modal 
+    btn.onclick = function () {
+        modal.style.display = "block";
+    }
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function () {
+        modal.style.display = "none";
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function (event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+</script>
+
+<!-- javscript for Select2 -->
+<script>
+    $('#asset-type').select2({
+        placeholder: "Choose",
+    });
+
+    //allows all dropdown options not in #asset-type to have a border-top
+    $('.regular-select').select2({
+        placeholder: '',
+        minimumResultsForSearch: Infinity,
+        dropdownCssClass: "regular-dropdown"
+    });
+
+    // show additional inputs based on *Length select value
+    $(document).ready(function () {
+        // hide the sub-panes
+        $('.length-units').hide();
+
+        // When our select2 changes...
+        $('#length').change(function () {
+            // ... we can get all the selected options
+            let selected = $(this).select2('data');
+
+            // Hide all the panes again
+            $('.length-units').hide();
+            // Go through the list of options
+            selected.forEach(function (option) {
+                // and show the one with this id
+                $("#" + option.id).show()
+                $("#length-icon").hide();
+            })
+        });
+    });
+</script>
+@@include("partials/vendor-scripts.html")
+<script src="assets/libs/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
+<script src="assets/libs/@chenfengyuan/datepicker/datepicker.min.js"></script>
+<script src="assets/libs/dropzone/dropzone-min.js"></script>
+<script src="assets/js/pages/form-file-upload.init.js"></script>

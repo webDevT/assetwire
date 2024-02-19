@@ -1,0 +1,871 @@
+@@include("partials/main.html")
+
+<head>
+    @@include("partials/title-meta.html", {"title": "Edit Asset"})
+    @@include("partials/head-css.html")
+</head>
+@@include("partials/body.html")
+
+<!-- Begin page -->
+<div id="layout-wrapper" style="margin-top: -79px;">
+    @@include("partials/topbar.html")
+
+    <!-- start page content -->
+    <div class="main-content-custom main-content-custom--full">
+        <div class="page-content">
+            <div class="container-fluid">
+
+                <!-- start page title -->
+                <div class="row mb-3">
+                    <div class="col-md-10 d-flex align-items-center">
+                        <h1 class="title mb-0">Advanced Search</h1>
+                    </div>
+                </div>
+                <!-- end page title -->
+
+                <!-- start content -->
+                <div class="row">
+
+                    <div class="col-xl-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between align-items-center mb-3">
+
+                                    <h2 class="card-title mb-0">
+                                        Quick Search
+                                    </h2>
+
+                                    <button class="btn btn-dark">
+                                        Search
+                                    </button>
+
+                                </div>
+
+                                <div class="mb-3">
+                                    <h3 class="input-title fw-bold">Customer Assigned Serial Number</h3>
+                                    <input class="form-control" type="text" placeholder="">
+                                </div>
+
+                                <div class="mb-3">
+                                    <h3 class="input-title fw-bold">Job Book</h3>
+                                    <input class="form-control" type="text" placeholder="">
+                                </div>
+
+                                <div class="mb-3">
+                                    <h3 class="input-title fw-bold">Intake Number</h3>
+                                    <input class="form-control" type="text" placeholder="">
+                                </div>
+
+                                <div class="mb-3">
+                                    <h3 class="input-title fw-bold">Order Number</h3>
+                                    <input class="form-control" type="text" placeholder="">
+                                </div>
+
+                                <div class="mb-3">
+                                    <h3 class="input-title fw-bold">Serial Number</h3>
+                                    <input class="form-control" type="text" placeholder="">
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between align-items-center">
+
+                                    <h2 class="card-title mb-0">
+                                        Advanced Search
+                                    </h2>
+
+                                    <button class="btn btn-dark">
+                                        Search
+                                    </button>
+
+                                </div>
+
+                                <h2 class="card-title mt-3 mb-3">
+                                    Columns
+                                </h2>
+
+                                <div class="row">
+
+                                    <div class="col-md-4">
+
+
+
+
+                                        <ul class="list-unstyled categories-list">
+                                            <li>
+                                                <div class="custom-accordion">
+                                                    <a class="d-flex align-items-center" data-bs-toggle="collapse"
+                                                        href="#categories-collapse" role="button" aria-expanded="false"
+                                                        aria-controls="categories-collapse">
+                                                        <h3 class="input-title fw-bold mb-0">Event Information</h3>
+                                                        <i
+                                                            class="mdi mdi-chevron-up accor-down-icon ml-10 font-size-24"></i>
+                                                    </a>
+                                                    <div class="collapse show" id="categories-collapse">
+                                                        <div class="card border-0 shadow-none mb-0">
+                                                            <ul class="list-unstyled mb-0 ml-0 pl-0">
+
+                                                                <li class="mb-1">
+                                                                    <div class="form-check font-size-16">
+                                                                        <input class="form-check-input" type="checkbox"
+                                                                            id="1">
+                                                                        <label class="form-check-label" for="1"></label>
+                                                                        <label for="1"
+                                                                            class="input-title fw-bold mb-0">Action
+                                                                            Notes</label>
+                                                                    </div>
+                                                                </li>
+
+                                                                <li class="mb-1">
+                                                                    <div class="form-check font-size-16">
+                                                                        <input class="form-check-input" type="checkbox"
+                                                                            id="2">
+                                                                        <label class="form-check-label" for="2"></label>
+                                                                        <label for="2"
+                                                                            class="input-title fw-bold mb-0">Assignee</label>
+                                                                    </div>
+                                                                </li>
+
+                                                                <li class="mb-1">
+                                                                    <div class="form-check font-size-16">
+                                                                        <input class="form-check-input" type="checkbox"
+                                                                            id="3">
+                                                                        <label class="form-check-label" for="3"></label>
+                                                                        <label for="3"
+                                                                            class="input-title fw-bold mb-0">Comments</label>
+                                                                    </div>
+                                                                </li>
+
+                                                                <li class="mb-1">
+                                                                    <div class="form-check font-size-16">
+                                                                        <input class="form-check-input" type="checkbox"
+                                                                            id="4">
+                                                                        <label class="form-check-label" for="4"></label>
+                                                                        <label for="4"
+                                                                            class="input-title fw-bold mb-0">Created
+                                                                            By</label>
+                                                                    </div>
+                                                                </li>
+
+                                                                <li class="mb-1">
+                                                                    <div class="form-check font-size-16">
+                                                                        <input class="form-check-input" type="checkbox"
+                                                                            id="5">
+                                                                        <label class="form-check-label" for="5"></label>
+                                                                        <label for="5"
+                                                                            class="input-title fw-bold mb-0">Date
+                                                                            Performed</label>
+                                                                    </div>
+                                                                </li>
+
+                                                                <li class="mb-1">
+                                                                    <div class="form-check font-size-16">
+                                                                        <input class="form-check-input" type="checkbox"
+                                                                            id="6">
+                                                                        <label class="form-check-label" for="6"></label>
+                                                                        <label for="6"
+                                                                            class="input-title fw-bold mb-0">Days Past
+                                                                            Due</label>
+                                                                    </div>
+                                                                </li>
+
+                                                                <li class="mb-1">
+                                                                    <div class="form-check font-size-16">
+                                                                        <input class="form-check-input" type="checkbox"
+                                                                            id="7">
+                                                                        <label class="form-check-label" for="7"></label>
+                                                                        <label for="7"
+                                                                            class="input-title fw-bold mb-0">Due
+                                                                            Date</label>
+                                                                    </div>
+                                                                </li>
+
+                                                                <li class="mb-1">
+                                                                    <div class="form-check font-size-16">
+                                                                        <input class="form-check-input" type="checkbox"
+                                                                            id="8">
+                                                                        <label class="form-check-label" for="8"></label>
+                                                                        <label for="8"
+                                                                            class="input-title fw-bold mb-0">Event
+                                                                            State</label>
+                                                                    </div>
+                                                                </li>
+
+                                                                <li class="mb-1">
+                                                                    <div class="form-check font-size-16">
+                                                                        <input class="form-check-input" type="checkbox"
+                                                                            id="9">
+                                                                        <label class="form-check-label" for="9"></label>
+                                                                        <label for="9"
+                                                                            class="input-title fw-bold mb-0">Event
+                                                                            Status</label>
+                                                                    </div>
+                                                                </li>
+
+                                                                <li class="mb-1">
+                                                                    <div class="form-check font-size-16">
+                                                                        <input class="form-check-input" type="checkbox"
+                                                                            id="10">
+                                                                        <label class="form-check-label"
+                                                                            for="10"></label>
+                                                                        <label for="10"
+                                                                            class="input-title fw-bold mb-0">Event
+                                                                            Type</label>
+                                                                    </div>
+                                                                </li>
+
+                                                                <li class="mb-1">
+                                                                    <div class="form-check font-size-16">
+                                                                        <input class="form-check-input" type="checkbox"
+                                                                            id="11">
+                                                                        <label class="form-check-label"
+                                                                            for="11"></label>
+                                                                        <label for="11"
+                                                                            class="input-title fw-bold mb-0">Event Type
+                                                                            Group</label>
+                                                                    </div>
+                                                                </li>
+
+                                                                <li class="mb-1">
+                                                                    <div class="form-check font-size-16">
+                                                                        <input class="form-check-input" type="checkbox"
+                                                                            id="12">
+                                                                        <label class="form-check-label"
+                                                                            for="12"></label>
+                                                                        <label for="12"
+                                                                            class="input-title fw-bold mb-0">Job
+                                                                            Book</label>
+                                                                    </div>
+                                                                </li>
+
+                                                                <li class="mb-1">
+                                                                    <div class="form-check font-size-16">
+                                                                        <input class="form-check-input" type="checkbox"
+                                                                            id="13">
+                                                                        <label class="form-check-label"
+                                                                            for="13"></label>
+                                                                        <label for="13"
+                                                                            class="input-title fw-bold mb-0">Job
+                                                                            ID</label>
+                                                                    </div>
+                                                                </li>
+
+                                                                <li class="mb-1">
+                                                                    <div class="form-check font-size-16">
+                                                                        <input class="form-check-input" type="checkbox"
+                                                                            id="14">
+                                                                        <label class="form-check-label"
+                                                                            for="14"></label>
+                                                                        <label for="14"
+                                                                            class="input-title fw-bold mb-0">Job
+                                                                            Name</label>
+                                                                    </div>
+                                                                </li>
+
+                                                                <li class="mb-1">
+                                                                    <div class="form-check font-size-16">
+                                                                        <input class="form-check-input" type="checkbox"
+                                                                            id="15">
+                                                                        <label class="form-check-label"
+                                                                            for="15"></label>
+                                                                        <label for="15"
+                                                                            class="input-title fw-bold mb-0">Latitude</label>
+                                                                    </div>
+                                                                </li>
+
+                                                                <li class="mb-1">
+                                                                    <div class="form-check font-size-16">
+                                                                        <input class="form-check-input" type="checkbox"
+                                                                            id="16">
+                                                                        <label class="form-check-label"
+                                                                            for="16"></label>
+                                                                        <label for="16"
+                                                                            class="input-title fw-bold mb-0">Modified
+                                                                            By</label>
+                                                                    </div>
+                                                                </li>
+
+                                                                <li class="mb-1">
+                                                                    <div class="form-check font-size-16">
+                                                                        <input class="form-check-input" type="checkbox"
+                                                                            id="17">
+                                                                        <label class="form-check-label"
+                                                                            for="17"></label>
+                                                                        <label for="17"
+                                                                            class="input-title fw-bold mb-0">Performed
+                                                                            By</label>
+                                                                    </div>
+                                                                </li>
+
+                                                                <li class="mb-1">
+                                                                    <div class="form-check font-size-16">
+                                                                        <input class="form-check-input" type="checkbox"
+                                                                            id="18">
+                                                                        <label class="form-check-label"
+                                                                            for="18"></label>
+                                                                        <label for="18"
+                                                                            class="input-title fw-bold mb-0">Priority</label>
+                                                                    </div>
+                                                                </li>
+
+                                                                <li class="mb-1">
+                                                                    <div class="form-check font-size-16">
+                                                                        <input class="form-check-input" type="checkbox"
+                                                                            id="19">
+                                                                        <label class="form-check-label"
+                                                                            for="19"></label>
+                                                                        <label for="19"
+                                                                            class="input-title fw-bold mb-0">Result</label>
+                                                                    </div>
+                                                                </li>
+
+                                                                <li class="mb-1">
+                                                                    <div class="form-check font-size-16">
+                                                                        <input class="form-check-input" type="checkbox"
+                                                                            id="20">
+                                                                        <label class="form-check-label"
+                                                                            for="20"></label>
+                                                                        <label for="20"
+                                                                            class="input-title fw-bold mb-0">Score</label>
+                                                                    </div>
+                                                                </li>
+
+                                                                <li class="mb-1">
+                                                                    <div class="form-check font-size-16">
+                                                                        <input class="form-check-input" type="checkbox"
+                                                                            id="21">
+                                                                        <label class="form-check-label"
+                                                                            for="21"></label>
+                                                                        <label for="21"
+                                                                            class="input-title fw-bold mb-0">Score
+                                                                            Percentage</label>
+                                                                    </div>
+                                                                </li>
+
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+
+                                        </ul>
+
+                                    </div>
+
+                                    <div class="col-md-4">
+
+                                        <ul class="list-unstyled categories-list mb-3">
+                                            <li>
+                                                <div class="custom-accordion">
+                                                    <a class="d-flex align-items-center" data-bs-toggle="collapse"
+                                                        href="#categories-collapse1" role="button" aria-expanded="false"
+                                                        aria-controls="categories-collapse">
+                                                        <h3 class="input-title fw-bold mb-0">Identifiers</h3>
+                                                        <i
+                                                            class="mdi mdi-chevron-up accor-down-icon ml-10 font-size-24"></i>
+                                                    </a>
+                                                    <div class="collapse show" id="categories-collapse1">
+                                                        <div class="card border-0 shadow-none mb-0">
+                                                            <ul class="list-unstyled mb-0 ml-0 pl-0">
+
+                                                                <li class="mb-1">
+                                                                    <div class="form-check font-size-16">
+                                                                        <input class="form-check-input" type="checkbox"
+                                                                            id="21">
+                                                                        <label class="form-check-label"
+                                                                            for="21"></label>
+                                                                        <label for="21"
+                                                                            class="input-title fw-bold mb-0">Action
+                                                                            Notes</label>
+                                                                    </div>
+                                                                </li>
+
+                                                                <li class="mb-1">
+                                                                    <div class="form-check font-size-16">
+                                                                        <input class="form-check-input" type="checkbox"
+                                                                            id="22">
+                                                                        <label class="form-check-label"
+                                                                            for="22"></label>
+                                                                        <label for="22"
+                                                                            class="input-title fw-bold mb-0">Assignee</label>
+                                                                    </div>
+                                                                </li>
+
+                                                                <li class="mb-1">
+                                                                    <div class="form-check font-size-16">
+                                                                        <input class="form-check-input" type="checkbox"
+                                                                            id="23">
+                                                                        <label class="form-check-label"
+                                                                            for="23"></label>
+                                                                        <label for="23"
+                                                                            class="input-title fw-bold mb-0">Comments</label>
+                                                                    </div>
+                                                                </li>
+
+                                                                <li class="mb-1">
+                                                                    <div class="form-check font-size-16">
+                                                                        <input class="form-check-input" type="checkbox"
+                                                                            id="24">
+                                                                        <label class="form-check-label"
+                                                                            for="24"></label>
+                                                                        <label for="24"
+                                                                            class="input-title fw-bold mb-0">Created
+                                                                            By</label>
+                                                                    </div>
+                                                                </li>
+
+                                                                <li class="mb-1">
+                                                                    <div class="form-check font-size-16">
+                                                                        <input class="form-check-input" type="checkbox"
+                                                                            id="25">
+                                                                        <label class="form-check-label"
+                                                                            for="25"></label>
+                                                                        <label for="25"
+                                                                            class="input-title fw-bold mb-0">Date
+                                                                            Performed</label>
+                                                                    </div>
+                                                                </li>
+
+                                                                <li class="mb-1">
+                                                                    <div class="form-check font-size-16">
+                                                                        <input class="form-check-input" type="checkbox"
+                                                                            id="26">
+                                                                        <label class="form-check-label"
+                                                                            for="26"></label>
+                                                                        <label for="26"
+                                                                            class="input-title fw-bold mb-0">Days Past
+                                                                            Due</label>
+                                                                    </div>
+                                                                </li>
+
+                                                                <li class="mb-1">
+                                                                    <div class="form-check font-size-16">
+                                                                        <input class="form-check-input" type="checkbox"
+                                                                            id="27">
+                                                                        <label class="form-check-label"
+                                                                            for="27"></label>
+                                                                        <label for="27"
+                                                                            class="input-title fw-bold mb-0">Due
+                                                                            Date</label>
+                                                                    </div>
+                                                                </li>
+
+
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+
+                                        </ul>
+
+                                        <ul class="list-unstyled categories-list mb-3">
+                                            <li>
+                                                <div class="custom-accordion">
+                                                    <a class="d-flex align-items-center" data-bs-toggle="collapse"
+                                                        href="#categories-collapse2" role="button" aria-expanded="false"
+                                                        aria-controls="categories-collapse">
+                                                        <h3 class="input-title fw-bold mb-0">Ownership</h3>
+                                                        <i
+                                                            class="mdi mdi-chevron-up accor-down-icon ml-10 font-size-24"></i>
+                                                    </a>
+                                                    <div class="collapse show" id="categories-collapse2">
+                                                        <div class="card border-0 shadow-none mb-0">
+                                                            <ul class="list-unstyled mb-0 ml-0 pl-0">
+
+                                                                <li class="mb-1">
+                                                                    <div class="form-check font-size-16">
+                                                                        <input class="form-check-input" type="checkbox"
+                                                                            id="28">
+                                                                        <label class="form-check-label"
+                                                                            for="28"></label>
+                                                                        <label for="28"
+                                                                            class="input-title fw-bold mb-0">Action
+                                                                            Notes</label>
+                                                                    </div>
+                                                                </li>
+
+                                                                <li class="mb-1">
+                                                                    <div class="form-check font-size-16">
+                                                                        <input class="form-check-input" type="checkbox"
+                                                                            id="29">
+                                                                        <label class="form-check-label"
+                                                                            for="29"></label>
+                                                                        <label for="29"
+                                                                            class="input-title fw-bold mb-0">Assignee</label>
+                                                                    </div>
+                                                                </li>
+
+                                                                <li class="mb-1">
+                                                                    <div class="form-check font-size-16">
+                                                                        <input class="form-check-input" type="checkbox"
+                                                                            id="30">
+                                                                        <label class="form-check-label"
+                                                                            for="30"></label>
+                                                                        <label for="30"
+                                                                            class="input-title fw-bold mb-0">Comments</label>
+                                                                    </div>
+                                                                </li>
+
+                                                                <li class="mb-1">
+                                                                    <div class="form-check font-size-16">
+                                                                        <input class="form-check-input" type="checkbox"
+                                                                            id="31">
+                                                                        <label class="form-check-label"
+                                                                            for="31"></label>
+                                                                        <label for="31"
+                                                                            class="input-title fw-bold mb-0">Created
+                                                                            By</label>
+                                                                    </div>
+                                                                </li>
+
+                                                                <li class="mb-1">
+                                                                    <div class="form-check font-size-16">
+                                                                        <input class="form-check-input" type="checkbox"
+                                                                            id="32">
+                                                                        <label class="form-check-label"
+                                                                            for="32"></label>
+                                                                        <label for="32"
+                                                                            class="input-title fw-bold mb-0">Date
+                                                                            Performed</label>
+                                                                    </div>
+                                                                </li>
+                                                            </ul>
+
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+
+                                        </ul>
+
+
+                                        <ul class="list-unstyled categories-list mb-3">
+                                            <li>
+                                                <div class="custom-accordion">
+                                                    <a class="d-flex align-items-center" data-bs-toggle="collapse"
+                                                        href="#categories-collapse3" role="button" aria-expanded="false"
+                                                        aria-controls="categories-collapse">
+                                                        <h3 class="input-title fw-bold mb-0">Order Details</h3>
+                                                        <i
+                                                            class="mdi mdi-chevron-up accor-down-icon ml-10 font-size-24"></i>
+                                                    </a>
+                                                    <div class="collapse show" id="categories-collapse3">
+                                                        <div class="card border-0 shadow-none mb-0">
+                                                            <ul class="list-unstyled mb-0 ml-0 pl-0">
+
+                                                                <li class="mb-1">
+                                                                    <div class="form-check font-size-16">
+                                                                        <input class="form-check-input" type="checkbox"
+                                                                            id="33">
+                                                                        <label class="form-check-label"
+                                                                            for="33"></label>
+                                                                        <label for="33"
+                                                                            class="input-title fw-bold mb-0">Order
+                                                                            Description</label>
+                                                                    </div>
+                                                                </li>
+
+                                                                <li class="mb-1">
+                                                                    <div class="form-check font-size-16">
+                                                                        <input class="form-check-input" type="checkbox"
+                                                                            id="34">
+                                                                        <label class="form-check-label"
+                                                                            for="34"></label>
+                                                                        <label for="34"
+                                                                            class="input-title fw-bold mb-0">Order
+                                                                            Number</label>
+                                                                    </div>
+                                                                </li>
+
+                                                                <li class="mb-1">
+                                                                    <div class="form-check font-size-16">
+                                                                        <input class="form-check-input" type="checkbox"
+                                                                            id="35">
+                                                                        <label class="form-check-label"
+                                                                            for="35"></label>
+                                                                        <label for="35"
+                                                                            class="input-title fw-bold mb-0">Purchase
+                                                                            Order</label>
+                                                                    </div>
+                                                                </li>
+
+                                                            </ul>
+
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+
+                                        </ul>
+
+                                    </div>
+
+                                    <div class="col-md-4">
+                                        <ul class="list-unstyled categories-list mb-3">
+                                            <li>
+                                                <div class="custom-accordion">
+                                                    <a class="d-flex align-items-center" data-bs-toggle="collapse"
+                                                        href="#categories-collapse4" role="button" aria-expanded="false"
+                                                        aria-controls="categories-collapse">
+                                                        <h3 class="input-title fw-bold mb-0">Asset Details</h3>
+                                                        <i
+                                                            class="mdi mdi-chevron-up accor-down-icon ml-10 font-size-24"></i>
+                                                    </a>
+                                                    <div class="collapse show" id="categories-collapse4">
+                                                        <div class="card border-0 shadow-none mb-0">
+                                                            <ul class="list-unstyled mb-0 ml-0 pl-0">
+
+                                                                <li class="mb-1">
+                                                                    <div class="form-check font-size-16">
+                                                                        <input class="form-check-input" type="checkbox"
+                                                                            id="36">
+                                                                        <label class="form-check-label"
+                                                                            for="36"></label>
+                                                                        <label for="36"
+                                                                            class="input-title fw-bold mb-0">Asset
+                                                                            Status</label>
+                                                                    </div>
+                                                                </li>
+
+                                                                <li class="mb-1">
+                                                                    <div class="form-check font-size-16">
+                                                                        <input class="form-check-input" type="checkbox"
+                                                                            id="37">
+                                                                        <label class="form-check-label"
+                                                                            for="37"></label>
+                                                                        <label for="37"
+                                                                            class="input-title fw-bold mb-0">Asset
+                                                                            Type</label>
+                                                                    </div>
+                                                                </li>
+
+                                                                <li class="mb-1">
+                                                                    <div class="form-check font-size-16">
+                                                                        <input class="form-check-input" type="checkbox"
+                                                                            id="39">
+                                                                        <label class="form-check-label"
+                                                                            for="39"></label>
+                                                                        <label for="39"
+                                                                            class="input-title fw-bold mb-0">Asset Type
+                                                                            Group</label>
+                                                                    </div>
+                                                                </li>
+
+                                                                <li class="mb-1">
+                                                                    <div class="form-check font-size-16">
+                                                                        <input class="form-check-input" type="checkbox"
+                                                                            id="40">
+                                                                        <label class="form-check-label"
+                                                                            for="40"></label>
+                                                                        <label for="40"
+                                                                            class="input-title fw-bold mb-0">Comments</label>
+                                                                    </div>
+                                                                </li>
+
+                                                                <li class="mb-1">
+                                                                    <div class="form-check font-size-16">
+                                                                        <input class="form-check-input" type="checkbox"
+                                                                            id="40">
+                                                                        <label class="form-check-label"
+                                                                            for="40"></label>
+                                                                        <label for="40"
+                                                                            class="input-title fw-bold mb-0">Description</label>
+                                                                    </div>
+                                                                </li>
+
+                                                                <li class="mb-1">
+                                                                    <div class="form-check font-size-16">
+                                                                        <input class="form-check-input" type="checkbox"
+                                                                            id="41">
+                                                                        <label class="form-check-label"
+                                                                            for="41"></label>
+                                                                        <label for="41"
+                                                                            class="input-title fw-bold mb-0">Identified
+                                                                            By</label>
+                                                                    </div>
+                                                                </li>
+
+                                                                <li class="mb-1">
+                                                                    <div class="form-check font-size-16">
+                                                                        <input class="form-check-input" type="checkbox"
+                                                                            id="42">
+                                                                        <label class="form-check-label"
+                                                                            for="42"></label>
+                                                                        <label for="42"
+                                                                            class="input-title fw-bold mb-0">Last Event
+                                                                            Date</label>
+                                                                    </div>
+                                                                </li>
+
+                                                                <li class="mb-1">
+                                                                    <div class="form-check font-size-16">
+                                                                        <input class="form-check-input" type="checkbox"
+                                                                            id="43">
+                                                                        <label class="form-check-label"
+                                                                            for="43"></label>
+                                                                        <label for="43"
+                                                                            class="input-title fw-bold mb-0">Last
+                                                                            Unscheduled Date</label>
+                                                                    </div>
+                                                                </li>
+
+                                                                <li class="mb-1">
+                                                                    <div class="form-check font-size-16">
+                                                                        <input class="form-check-input" type="checkbox"
+                                                                            id="44">
+                                                                        <label class="form-check-label"
+                                                                            for="44"></label>
+                                                                        <label for="44"
+                                                                            class="input-title fw-bold mb-0">Latitude</label>
+                                                                    </div>
+                                                                </li>
+
+                                                                <li class="mb-1">
+                                                                    <div class="form-check font-size-16">
+                                                                        <input class="form-check-input" type="checkbox"
+                                                                            id="45">
+                                                                        <label class="form-check-label"
+                                                                            for="45"></label>
+                                                                        <label for="45"
+                                                                            class="input-title fw-bold mb-0">Longitude</label>
+                                                                    </div>
+                                                                </li>
+
+                                                                <li class="mb-1">
+                                                                    <div class="form-check font-size-16">
+                                                                        <input class="form-check-input" type="checkbox"
+                                                                            id="47">
+                                                                        <label class="form-check-label"
+                                                                            for="47"></label>
+                                                                        <label for="47"
+                                                                            class="input-title fw-bold mb-0">Modified
+                                                                            By</label>
+                                                                    </div>
+                                                                </li>
+
+                                                                <li class="mb-1">
+                                                                    <div class="form-check font-size-16">
+                                                                        <input class="form-check-input" type="checkbox"
+                                                                            id="48">
+                                                                        <label class="form-check-label"
+                                                                            for="48"></label>
+                                                                        <label for="48"
+                                                                            class="input-title fw-bold mb-0">Next
+                                                                            Scheduled Date</label>
+                                                                    </div>
+                                                                </li>
+
+                                                            </ul>
+                                        </ul>
+
+                                        <ul class="list-unstyled categories-list mb-3">
+                                            <li>
+                                                <div class="custom-accordion">
+                                                    <a class="d-flex align-items-center" data-bs-toggle="collapse"
+                                                        href="#categories-collapse5" role="button" aria-expanded="false"
+                                                        aria-controls="categories-collapse">
+                                                        <h3 class="input-title fw-bold mb-0">Custom Attributes</h3>
+                                                        <i
+                                                            class="mdi mdi-chevron-up accor-down-icon ml-10 font-size-24"></i>
+                                                    </a>
+                                                    <div class="collapse show" id="categories-collapse5">
+                                                        <div class="card border-0 shadow-none mb-0">
+                                                            <ul class="list-unstyled mb-0 ml-0 pl-0">
+
+                                                                <li class="mb-1">
+                                                                    <div class="form-check font-size-16">
+                                                                        <input class="form-check-input" type="checkbox"
+                                                                            id="49">
+                                                                        <label class="form-check-label"
+                                                                            for="49"></label>
+                                                                        <label for="49"
+                                                                            class="input-title fw-bold mb-0">Batch
+                                                                            Number</label>
+                                                                    </div>
+                                                                </li>
+
+                                                                <li class="mb-1">
+                                                                    <div class="form-check font-size-16">
+                                                                        <input class="form-check-input" type="checkbox"
+                                                                            id="50">
+                                                                        <label class="form-check-label"
+                                                                            for="50"></label>
+                                                                        <label for="50"
+                                                                            class="input-title fw-bold mb-0">Other
+                                                                            Attributes</label>
+                                                                    </div>
+                                                                </li>
+
+                                                                <li class="mb-1">
+                                                                    <div class="form-check font-size-16">
+                                                                        <input class="form-check-input" type="checkbox"
+                                                                            id="51">
+                                                                        <label class="form-check-label"
+                                                                            for="51"></label>
+                                                                        <label for="51"
+                                                                            class="input-title fw-bold mb-0">Size</label>
+                                                                    </div>
+                                                                </li>
+
+                                                                <li class="mb-1">
+                                                                    <div class="form-check font-size-16">
+                                                                        <input class="form-check-input" type="checkbox"
+                                                                            id="52">
+                                                                        <label class="form-check-label"
+                                                                            for="52"></label>
+                                                                        <label for="52"
+                                                                            class="input-title fw-bold mb-0">Sling
+                                                                            Capacity (WLL)</label>
+                                                                    </div>
+                                                                </li>
+
+                                                                <li class="mb-1">
+                                                                    <div class="form-check font-size-16">
+                                                                        <input class="form-check-input" type="checkbox"
+                                                                            id="53">
+                                                                        <label class="form-check-label"
+                                                                            for="53"></label>
+                                                                        <label for="53"
+                                                                            class="input-title fw-bold mb-0">Type</label>
+                                                                    </div>
+                                                                </li>
+
+
+                                                            </ul>
+                                        </ul>
+
+
+                                    </div>
+
+                                </div>
+
+
+
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- end content -->
+
+
+            </div>
+        </div>
+    </div>
+    <!-- end page content -->
+    <!-- start bottom logo -->
+    <div class="content-logo">
+        <img src="assets/images/logo-dark.png" alt="">
+    </div>
+    <!-- end bottom logo -->
+
+    @@include("partials/vendor-scripts.html")

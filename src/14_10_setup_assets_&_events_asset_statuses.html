@@ -1,0 +1,578 @@
+@@include("partials/main.html")
+
+<head>
+
+    @@include("partials/title-meta.html", {"title": "Dashboard"})
+
+    @@include("partials/head-css.html")
+
+</head>
+
+@@include("partials/body.html")
+
+<!-- Begin page -->
+<div id="layout-wrapper">
+    @@include("partials/topbar.html")
+
+    <!-- ========== Left Sidebar Start ========== -->
+    <div class="vertical-menu">
+
+        <div data-simplebar class="h-100">
+
+            <!--- Sidemenu -->
+            <div id="sidebar-menu" class="mt-3">
+                <!-- Left Menu Start -->
+                <ul class="metismenu list-unstyled" id="side-menu">
+
+                    <li>
+                        <a href="javascript: void(0);" class="has-arrow waves-effect">
+                            <i class="bx bx-cog"></i>
+                            <span key="t-dashboards">Settings</span>
+                        </a>
+                        <ul class="sub-menu" aria-expanded="false">
+                            <li><a href="14_1_0_setup_settings_organizations.html">Organizations</a></li>
+                            <li><a href="14_1_1_setup_settings_system_settings.html" key="">System Settings</a></li>
+                            <li><a href="14_1_2_setup_settings_branding.html" key="">Branding</a></li>
+                        </ul>
+                    </li>
+
+
+                    <li>
+                        <a href="javascript: void(0);" class="has-arrow waves-effect">
+                            <i class="mdi mdi-home-account"></i>
+                            <span key="t-ecommerce">Owners, Users & Locations</span>
+                        </a>
+                        <ul class="sub-menu" aria-expanded="false">
+                            <li><a href="14_2_0_setup_owners_users_&_locations_customers.html">Customers</a></li>
+                            <li><a href="14_2_1_setup_owners_users_&_locations_users.html">Users</a></li>
+                            <li><a href="14_2_2_setup_owners_users_&_locations_user_groups.html">User Groups</a></li>
+                            <li><a href="14_2_3_setup_owners_users_&_locations_user_registrations.html">User
+                                    Registrations</a></li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="javascript: void(0);" class="has-arrow waves-effect">
+                            <i class="bx bx-window"></i>
+                            <span key="t-crypto">Assets & Events</span>
+                        </a>
+                        <ul class="sub-menu" aria-expanded="false">
+                            <li><a href="14_3_setup_assets_&_events_event_type_groups_&_pdf_report_style.html">Event
+                                    Type Groups & PDF Report Style</a></li>
+                            <li><a href="14_4_setup_assets_&_events_event_types.html">Event Types</a></li>
+                            <li><a href="14_5_setup_assets_&_events_event_statuses.html">Event Statuses</a></li>
+                            <li><a href="14_6_setup_sssets_&_events_job_books.html">Job Books</a></li>
+                            <li><a href="14_8_setup_assets_&_events_asset_type_groups.html">Asset Type Groups</a></li>
+                            <li><a href="14_9_setup_assets_&_events_asset_types.html">Asset Types</a></li>
+                            <li><a href="14_10_setup_assets_&_events_asset_statuses.html" class="active">Asset Statuses</a></li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="javascript: void(0);" class="has-arrow waves-effect">
+                            <i class="bx bx-export"></i>
+                            <span key="t-email">Import</span>
+                        </a>
+                        <ul class="sub-menu" aria-expanded="false">
+                            <li><a href="14_11_setup_import_import_owners.html">Import Owners</a></li>
+                            <li><a href="14_12_setup_import_import_assets.html">Import Assets</a></li>
+                            <li><a href="14_13_setup_import_import_events.html">Import Events</a></li>
+                            <li><a href="14_14_setup_import_import_open_events.html">Import Open Events</a></li>
+                            <li><a href="14_15_setup_import_import_auto_attributes.html">Import Auto Attributes</a></li>
+                            <li><a href="14_14_setup_import_import_open_events.html">Import Open Events</a></li>
+                            <li><a href="14_16_setup_import_import_users.html">Import Users</a></li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="javascript: void(0);" class="has-arrow waves-effect">
+                            <i class="bx bx-grid"></i>
+                            <span key="t-invoices">Templates</span>
+                        </a>
+                        <ul class="sub-menu" aria-expanded="false">
+                            <li><a href="14_17_setup_templates_auto_attributes.html">Auto-Attributes</a></li>
+                            <li><a href="14_18_setup_templates_comment_templates.html">Comment Templates</a></li>
+                            <li><a href="14_19_setup_templates_search_column_layout.html">Search Column Layout</a></li>
+                            <li><a href="#">Reporting Column Layout</a></li>
+                            <li><a href="14_20_setup_templates_manage_asset_code_mappings.html">Manage Asset Code
+                                    Mappings</a></li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="javascript: void(0);" class="has-arrow waves-effect">
+                            <i class="bx bx-lock"></i>
+                            <span key="t-projects">Security</span>
+                        </a>
+                        <ul class="sub-menu" aria-expanded="false">
+                            <li><a href="14_21_setup_security_password_policy.html">Password Policy</a></li>
+                            <li><a href="14_22_setup_security_account_lockout_policy.html">Account Lockout Policy</a>
+                            </li>
+                            <li><a href="14_23_setup_security_locked_out_accounts.html">Locked Out Accounts</a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </div>
+            <!-- Sidebar -->
+        </div>
+    </div>
+    <!-- Left Sidebar End -->
+
+    <!-- ============================================================== -->
+    <!-- Start right Content here -->
+    <!-- ============================================================== -->
+    <div class="main-content-custom">
+        <div class="page-content-sidebar pt-0">
+            <div class="container-fluid ">
+
+                <!-- start page title -->
+                <div class="row">
+                    <div class="col-12">
+                        <div class="page-title-box d-sm-flex align-items-center justify-content-between">
+                            <h1 class="title">Manage Asset Statuses</h1>
+
+                            <div class="page-title-right">
+
+                                <button type="button" class="btn btn-sm btn-dark waves-effect waves-light">Add</button>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- end page title -->
+
+                <div class="row">
+
+                    <div class="col-12">
+
+                        <div class="card">
+                            <div class="card-body">
+                
+                                <div class="table-filter-wrapper">
+                <div class="card-title">
+                    Unarchived              
+                                    </div>
+
+                                    
+                                </div>
+                
+                                <!-- start table responsive -->
+                                <div class="table-responsive">
+                                    <table class="table align-middle table-nowrap mb-0 table-striped">
+                                        <thead class="">
+                                            <tr>
+                                                <th>
+                                                    Name
+                                                    <i class="bx bx-sort"></i>
+                                                </th>
+                                                <th class="align-middle">
+                                                    Created By
+                                                    <i class="bx bx-sort"></i>
+                                                </th>
+                                                <th class="align-middle">
+                                                    Created
+                                                    <i class="bx bx-sort"></i>
+                                                </th>
+                                                <th class="align-middle">
+                                                    Modified By
+                                                    <i class="bx bx-sort"></i>
+                                                </th>
+                                                <th class="align-middle">
+                                                    Modified
+                                                    <i class="bx bx-sort"></i>
+                                                </th>                                          
+
+                                                <th>
+                                                    
+                                                </th>
+                
+                                            </tr>
+                                        </thead>
+                                        <tbody class="">
+                                            <tr>
+                                                <td>
+                                                    In Service
+                                                </td>
+                
+                                                <td>
+                                                    
+                                                </td>
+
+                                                <td>
+                                                    09/10/2008 4:29 PM EDT
+                                                </td>
+
+                                                <td>
+                                                   
+                                                </td>
+
+                                                <td>
+                                                    09/10/2008 4:29 PM EDT
+                                                </td>
+                                                <td>
+                                                     <div class="links-wrapper">
+                                                        <a href="" class="link">
+                                                            Edit   
+                                                        </a>
+                                                        <a href="" class="link ml-10">
+                                                            Archive
+                                                        </a>
+
+                                                     </div>
+                                                </td>
+                                                          
+                                            </tr>
+
+                                            <tr>
+                                                <td>
+                                                    Not Yet In Service
+                                                </td>
+                
+                                                <td>
+                                                   
+                                                </td>
+
+                                                <td>
+                                                    04/21/2009 3:28 PM EDT
+                                                </td>
+
+                                                <td>
+                                                   
+                                                </td>
+
+                                                <td>
+                                                    04/21/2009 3:28 PM EDT
+                                                </td>
+                                                <td>
+                                                     <div class="links-wrapper">
+                                                        <a href="" class="link">
+                                                            Edit   
+                                                        </a>
+                                                        <a href="" class="link ml-10">
+                                                            Archive
+                                                        </a>
+
+                                                     </div>
+                                                </td>
+                                                          
+                                            </tr>
+
+                                            <tr>
+                                                <td>
+                                                    Out Of Service
+                                                </td>
+                
+                                                <td>
+                                                    
+                                                </td>
+
+                                                <td>
+                                                    09/10/2008 4:30 PM EDT
+                                                </td>
+
+                                                <td>
+                                                   
+                                                </td>
+
+                                                <td>
+                                                    09/10/2008 4:30 PM EDT
+                                                </td>
+                                                <td>
+                                                     <div class="links-wrapper">
+                                                        <a href="" class="link">
+                                                            Edit   
+                                                        </a>
+                                                        <a href="" class="link ml-10">
+                                                            Archive
+                                                        </a>
+
+                                                     </div>
+                                                </td>
+                                                          
+                                            </tr>
+
+                                            <tr>
+                                                <td>
+                                                    Sent for Certification
+                                                </td>
+                
+                                                <td>
+                                                    
+                                                </td>
+
+                                                <td>
+                                                    09/10/2008 4:29 PM EDT
+                                                </td>
+
+                                                <td>
+                                                   
+                                                </td>
+
+                                                <td>
+                                                    09/10/2008 4:29 PM EDT
+                                                </td>
+                                                <td>
+                                                     <div class="links-wrapper">
+                                                        <a href="" class="link">
+                                                            Edit   
+                                                        </a>
+                                                        <a href="" class="link ml-10">
+                                                            Archive
+                                                        </a>
+
+                                                     </div>
+                                                </td>
+                                                          
+                                            </tr>
+
+                                            <tr>
+                                                <td>
+                                                    Sent For Repair
+                                                </td>
+                
+                                                <td>
+                                                    
+                                                </td>
+
+                                                <td>
+                                                    09/10/2008 4:29 PM EDT
+                                                </td>
+
+                                                <td>
+                                                   
+                                                </td>
+
+                                                <td>
+                                                    09/10/2008 4:29 PM EDT
+                                                </td>
+                                                <td>
+                                                     <div class="links-wrapper">
+                                                        <a href="" class="link">
+                                                            Edit   
+                                                        </a>
+                                                        <a href="" class="link ml-10">
+                                                            Archive
+                                                        </a>
+
+                                                     </div>
+                                                </td>
+                                                          
+                                            </tr>
+
+                                            <tr>
+                                                <td>
+                                                    Unable To Locate
+                                                </td>
+                
+                                                <td>
+                                                    
+                                                </td>
+
+                                                <td>
+                                                    02/06/2009 4:32 PM EST
+                                                </td>
+
+                                                <td>
+                                                   
+                                                </td>
+
+                                                <td>
+                                                    02/06/2009 4:32 PM EST
+                                                </td>
+                                                <td>
+                                                     <div class="links-wrapper">
+                                                        <a href="" class="link">
+                                                            Edit   
+                                                        </a>
+                                                        <a href="" class="link ml-10">
+                                                            Archive
+                                                        </a>
+
+                                                     </div>
+                                                </td>
+                                                          
+                                            </tr>
+
+                                            <tr>
+                                                <td>
+                                                    Waiting for a decision
+                                                </td>
+                
+                                                <td>
+                                                    
+                                                </td>
+
+                                                <td>
+                                                    02/06/2009 4:32 PM EST
+                                                </td>
+
+                                                <td>
+                                                    Cecil Damaso
+                                                </td>
+
+                                                <td>
+                                                    08/06/2020 10:57 AM EDT
+                                                </td>
+                                                <td>
+                                                     <div class="links-wrapper">
+                                                        <a href="" class="link">
+                                                            Edit   
+                                                        </a>
+                                                        <a href="" class="link ml-10">
+                                                            Archive
+                                                        </a>
+
+                                                     </div>
+                                                </td>
+                                                          
+                                            </tr>
+                              
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <!-- end table-responsive -->
+
+
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-body">
+                
+                                <div class="table-filter-wrapper">
+                <div class="card-title">
+                    Archived             
+                                    </div>
+                                                  
+                                    
+                                </div>
+                
+                                <!-- start table responsive -->
+                                <div class="table-responsive">
+                                    <table class="table align-middle table-nowrap mb-0 table-striped">
+                                        <thead class="">
+                                            <tr>
+                                                <th>
+                                                    Name
+                                                    <i class="bx bx-sort"></i>
+                                                </th>
+                                                <th class="align-middle">
+                                                    Created By
+                                                    <i class="bx bx-sort"></i>
+                                                </th>
+                                                <th class="align-middle">
+                                                    Created On
+                                                    <i class="bx bx-sort"></i>
+                                                </th>
+                                                <th class="align-middle">
+                                                    Modified By
+                                                    <i class="bx bx-sort"></i>
+                                                </th>
+                                                <th class="align-middle">
+                                                    Modified On
+                                                    <i class="bx bx-sort"></i>
+                                                </th>                                          
+
+                                                <th>
+                                                    
+                                                </th>
+                
+                                            </tr>
+                                        </thead>
+                                        <tbody class="">
+                                           
+                                            <tr>
+                                                <td>
+                                                    N/A
+                                                </td>
+                
+                                                <td>
+                                                    
+                                                </td>
+
+                                                <td>
+                                                    08/12/2009 1:25 PM EDT
+                                                </td>
+
+                                                <td>
+                                                    Cory Eskra
+                                                </td>
+
+                                                <td>
+                                                    04/27/2011 10:29 AM EDT
+                                                </td>
+                                                <td>
+                                                     <div class="links-wrapper">
+                                                        <a href="" class="link">
+                                                            Unarchive
+                                                        </a>
+                                                     </div>
+                                                </td>
+                                                          
+                                            </tr>
+
+                                            <tr>
+                                                <td>
+                                                    N/A
+                                                </td>
+                
+                                                <td>
+                                                    
+                                                </td>
+
+                                                <td>
+                                                    08/12/2009 1:25 PM EDT
+                                                </td>
+
+                                                <td>
+                                                    Cory Eskra
+                                                </td>
+
+                                                <td>
+                                                    04/27/2011 10:29 AM EDT
+                                                </td>
+                                                <td>
+                                                     <div class="links-wrapper">
+                                                        <a href="" class="link">
+                                                            Unarchive
+                                                        </a>
+                                                     </div>
+                                                </td>
+                                                          
+                                            </tr>
+                              
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <!-- end table-responsive -->
+
+                            </div>
+                        </div>
+
+
+                        
+
+
+
+
+                    </div>
+
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- end main content-->
+</div>
+<!-- END layout-wrapper -->
+
+<!-- start scripts   -->
+@@include("partials/vendor-scripts.html")
+<script src="assets/js/app.js"></script>
+<!-- end scripts -->
+</body>
+
+</html>
