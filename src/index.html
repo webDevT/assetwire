@@ -1,702 +1,566 @@
 @@include("partials/main.html")
 
-    <head>
-        
-        @@include("partials/title-meta.html", {"title": "Dashboard"})
+<head>
 
-        @@include("partials/head-css.html")
+    @@include("partials/title-meta.html", {"title": "Dashboard"})
 
-    </head>
+    @@include("partials/head-css.html")
 
-    @@include("partials/body.html")
+</head>
 
-        <!-- Begin page -->
-        <div id="layout-wrapper">
+@@include("partials/body.html")
+<style>
 
-            @@include("partials/menu.html")
+</style>
+<!-- Begin page -->
+<!-- Begin page -->
+<div id="layout-wrapper" style="font-family: Poppins; margin-top: -79px;">
+    @@include("partials/menu.html")
+    <!-- ========== Left Sidebar Start ========== -->
+    <div class="vertical-menu" style="">
 
-            <!-- ============================================================== -->
-            <!-- Start right Content here -->
-            <!-- ============================================================== -->
-            <div class="main-content">
+        <div data-simplebar class="h-100">
 
-                <div class="page-content">
-                    <div class="container-fluid">
+            <!--- Sidemenu -->
+            <div id="sidebar-menu">
+                <!-- Left Menu Start -->
+                <ul class="metismenu list-unstyled" id="side-menu" style="padding-top: 50px;">
+                    <li>
+                        <a href="" class="waves-effect">
 
-                        @@include("partials/page-title.html", {"pagetitle": "Dashboards", "title": "Dashboard"})
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M12.5 18.925L8.25 14.675L9.65 13.275L12.5 16.125L18.15 10.475L19.55 11.875L12.5 18.925ZM18 9H16V4H14V7H4V4H2V18H8V20H2C1.45 20 0.979167 19.8042 0.5875 19.4125C0.195833 19.0208 0 18.55 0 18V4C0 3.45 0.195833 2.97917 0.5875 2.5875C0.979167 2.19583 1.45 2 2 2H6.175C6.35833 1.41667 6.71667 0.9375 7.25 0.5625C7.78333 0.1875 8.36667 0 9 0C9.66667 0 10.2625 0.1875 10.7875 0.5625C11.3125 0.9375 11.6667 1.41667 11.85 2H16C16.55 2 17.0208 2.19583 17.4125 2.5875C17.8042 2.97917 18 3.45 18 4V9ZM9 4C9.28333 4 9.52083 3.90417 9.7125 3.7125C9.90417 3.52083 10 3.28333 10 3C10 2.71667 9.90417 2.47917 9.7125 2.2875C9.52083 2.09583 9.28333 2 9 2C8.71667 2 8.47917 2.09583 8.2875 2.2875C8.09583 2.47917 8 2.71667 8 3C8 3.28333 8.09583 3.52083 8.2875 3.7125C8.47917 3.90417 8.71667 4 9 4Z" />
+                            </svg>
 
-                        <div class="row">
-                            <div class="col-xl-4">
-                                <div class="card overflow-hidden">
-                                    <div class="bg-primary-subtle">
-                                        <div class="row">
-                                            <div class="col-7">
-                                                <div class="text-primary p-3">
-                                                    <h5 class="text-primary">Welcome Back !</h5>
-                                                    <p>Skote Dashboard</p>
-                                                </div>
-                                            </div>
-                                            <div class="col-5 align-self-end">
-                                                <img src="assets/images/profile-img.png" alt="" class="img-fluid">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="card-body pt-0">
-                                        <div class="row">
-                                            <div class="col-sm-4">
-                                                <div class="avatar-md profile-user-wid mb-4">
-                                                    <img src="assets/images/users/avatar-1.jpg" alt="" class="img-thumbnail rounded-circle">
-                                                </div>
-                                                <h5 class="font-size-15 text-truncate">Henry Price</h5>
-                                                <p class="text-muted mb-0 text-truncate">UI/UX Designer</p>
-                                            </div>
+                            <span key="t-chat">Intake Form</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="waves-effect active">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M12.5 18.925L8.25 14.675L9.65 13.275L12.5 16.125L18.15 10.475L19.55 11.875L12.5 18.925ZM18 9H16V4H14V7H4V4H2V18H8V20H2C1.45 20 0.979167 19.8042 0.5875 19.4125C0.195833 19.0208 0 18.55 0 18V4C0 3.45 0.195833 2.97917 0.5875 2.5875C0.979167 2.19583 1.45 2 2 2H6.175C6.35833 1.41667 6.71667 0.9375 7.25 0.5625C7.78333 0.1875 8.36667 0 9 0C9.66667 0 10.2625 0.1875 10.7875 0.5625C11.3125 0.9375 11.6667 1.41667 11.85 2H16C16.55 2 17.0208 2.19583 17.4125 2.5875C17.8042 2.97917 18 3.45 18 4V9ZM9 4C9.28333 4 9.52083 3.90417 9.7125 3.7125C9.90417 3.52083 10 3.28333 10 3C10 2.71667 9.90417 2.47917 9.7125 2.2875C9.52083 2.09583 9.28333 2 9 2C8.71667 2 8.47917 2.09583 8.2875 2.2875C8.09583 2.47917 8 2.71667 8 3C8 3.28333 8.09583 3.52083 8.2875 3.7125C8.47917 3.90417 8.71667 4 9 4Z" />
+                            </svg>
+                            <span key="t-chat">Intake List</span>
+                        </a>
+                    </li>
 
-                                            <div class="col-sm-8">
-                                                <div class="pt-4">
+                </ul>
+            </div>
+            <!-- Sidebar -->
+        </div>
+    </div>
+    <!-- Left Sidebar End -->
 
-                                                    <div class="row">
-                                                        <div class="col-6">
-                                                            <h5 class="font-size-15">125</h5>
-                                                            <p class="text-muted mb-0">Projects</p>
-                                                        </div>
-                                                        <div class="col-6">
-                                                            <h5 class="font-size-15">$1245</h5>
-                                                            <p class="text-muted mb-0">Revenue</p>
-                                                        </div>
-                                                    </div>
-                                                    <div class="mt-4">
-                                                        <a href="javascript: void(0);" class="btn btn-primary waves-effect waves-light btn-sm">View Profile <i class="mdi mdi-arrow-right ms-1"></i></a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card">
-                                    <div class="card-body">
-                                        <h4 class="card-title mb-4">Monthly Earning</h4>
-                                        <div class="row">
-                                            <div class="col-sm-6">
-                                                <p class="text-muted">This month</p>
-                                                <h3>$34,252</h3>
-                                                <p class="text-muted"><span class="text-success me-2"> 12% <i class="mdi mdi-arrow-up"></i> </span> From previous period</p>
+    <!-- ============================================================== -->
+    <!-- Start right Content here -->
+    <!-- ============================================================== -->
+    <div class="main-content-custom">
 
-                                                <div class="mt-4">
-                                                    <a href="javascript: void(0);" class="btn btn-primary waves-effect waves-light btn-sm">View More <i class="mdi mdi-arrow-right ms-1"></i></a>
-                                                </div>
-                                            </div>
-                                            <div class="col-sm-6">
-                                                <div class="mt-4 mt-sm-0">
-                                                    <div id="radialBar-chart" data-colors='["--bs-primary"]' class="apex-charts"></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <p class="text-muted mb-0">We craft digital, graphic and dimensional thinking.</p>
-                                    </div>
-                                </div>
+        <div class="page-content-sidebar">
+            <div class="container-fluid container-sidebar mb-5">
+
+                <!-- start page title -->
+                <div class="row">
+                    <div class="col-12">
+                        <div class="page-title-box d-sm-flex align-items-center justify-content-between">
+                            <h1 class="title">Intake List</h1>
+
+                            <div class="page-title-right">
+                                <button type="button" class="btn btn-dark waves-effect waves-light">Print</button>
+
+                                <button type="button" class="btn btn-dark waves-effect waves-light">Email</button>
+
+                                <button type="button" class="btn btn-dark waves-effect waves-light">Save</button>
                             </div>
-                            <div class="col-xl-8">
-                                <div class="row">
-                                    <div class="col-md-4">
-                                        <div class="card mini-stats-wid">
-                                            <div class="card-body">
-                                                <div class="d-flex">
-                                                    <div class="flex-grow-1">
-                                                        <p class="text-muted fw-medium">Orders</p>
-                                                        <h4 class="mb-0">1,235</h4>
-                                                    </div>
 
-                                                    <div class="flex-shrink-0 align-self-center">
-                                                        <div class="mini-stat-icon avatar-sm rounded-circle bg-primary">
-                                                            <span class="avatar-title">
-                                                                <i class="bx bx-copy-alt font-size-24"></i>
-                                                            </span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <div class="card mini-stats-wid">
-                                            <div class="card-body">
-                                                <div class="d-flex">
-                                                    <div class="flex-grow-1">
-                                                        <p class="text-muted fw-medium">Revenue</p>
-                                                        <h4 class="mb-0">$35, 723</h4>
-                                                    </div>
-
-                                                    <div class="flex-shrink-0 align-self-center ">
-                                                        <div class="avatar-sm rounded-circle bg-primary mini-stat-icon">
-                                                            <span class="avatar-title rounded-circle bg-primary">
-                                                                <i class="bx bx-archive-in font-size-24"></i>
-                                                            </span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <div class="card mini-stats-wid">
-                                            <div class="card-body">
-                                                <div class="d-flex">
-                                                    <div class="flex-grow-1">
-                                                        <p class="text-muted fw-medium">Average Price</p>
-                                                        <h4 class="mb-0">$16.2</h4>
-                                                    </div>
-
-                                                    <div class="flex-shrink-0 align-self-center">
-                                                        <div class="avatar-sm rounded-circle bg-primary mini-stat-icon">
-                                                            <span class="avatar-title rounded-circle bg-primary">
-                                                                <i class="bx bx-purchase-tag-alt font-size-24"></i>
-                                                            </span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- end row -->
-
-                                <div class="card">
-                                    <div class="card-body">
-                                        <div class="d-sm-flex flex-wrap">
-                                            <h4 class="card-title mb-4">Email Sent</h4>
-                                            <div class="ms-auto">
-                                                <ul class="nav nav-pills">
-                                                    <li class="nav-item">
-                                                        <a class="nav-link" href="#">Week</a>
-                                                    </li>
-                                                    <li class="nav-item">
-                                                        <a class="nav-link" href="#">Month</a>
-                                                    </li>
-                                                    <li class="nav-item">
-                                                        <a class="nav-link active" href="#">Year</a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        
-                                        <div id="stacked-column-chart" class="apex-charts" data-colors='["--bs-primary", "--bs-warning", "--bs-success"]' dir="ltr"></div>
-                                    </div>
-                                </div>
-                            </div>
                         </div>
-                        <!-- end row -->
-
-                        <div class="row">
-                            <div class="col-xl-4">
-                                <div class="card">
-                                    <div class="card-body">
-                                        <h4 class="card-title mb-4">Social Source</h4>
-                                        <div class="text-center">
-                                            <div class="avatar-sm mx-auto mb-4">
-                                                <span class="avatar-title rounded-circle bg-primary-subtle font-size-24">
-                                                        <i class="mdi mdi-facebook text-primary"></i>
-                                                    </span>
-                                            </div>
-                                            <p class="font-16 text-muted mb-2"></p>
-                                            <h5><a href="javascript: void(0);" class="text-dark">Facebook - <span class="text-muted font-16">125 sales</span> </a></h5>
-                                            <p class="text-muted">Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus tincidunt.</p>
-                                            <a href="javascript: void(0);" class="text-primary font-16">Learn more <i class="mdi mdi-chevron-right"></i></a>
-                                        </div>
-                                        <div class="row mt-4">
-                                            <div class="col-4">
-                                                <div class="social-source text-center mt-3">
-                                                    <div class="avatar-xs mx-auto mb-3">
-                                                        <span class="avatar-title rounded-circle bg-primary font-size-16">
-                                                                <i class="mdi mdi-facebook text-white"></i>
-                                                            </span>
-                                                    </div>
-                                                    <h5 class="font-size-15">Facebook</h5>
-                                                    <p class="text-muted mb-0">125 sales</p>
-                                                </div>
-                                            </div>
-                                            <div class="col-4">
-                                                <div class="social-source text-center mt-3">
-                                                    <div class="avatar-xs mx-auto mb-3">
-                                                        <span class="avatar-title rounded-circle bg-info font-size-16">
-                                                                <i class="mdi mdi-twitter text-white"></i>
-                                                            </span>
-                                                    </div>
-                                                    <h5 class="font-size-15">Twitter</h5>
-                                                    <p class="text-muted mb-0">112 sales</p>
-                                                </div>
-                                            </div>
-                                            <div class="col-4">
-                                                <div class="social-source text-center mt-3">
-                                                    <div class="avatar-xs mx-auto mb-3">
-                                                        <span class="avatar-title rounded-circle bg-pink font-size-16">
-                                                                <i class="mdi mdi-instagram text-white"></i>
-                                                            </span>
-                                                    </div>
-                                                    <h5 class="font-size-15">Instagram</h5>
-                                                    <p class="text-muted mb-0">104 sales</p>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-4">
-                                <div class="card">
-                                    <div class="card-body">
-                                        <h4 class="card-title mb-5">Activity</h4>
-                                        <ul class="verti-timeline list-unstyled">
-                                            <li class="event-list">
-                                                <div class="event-timeline-dot">
-                                                    <i class="bx bx-right-arrow-circle font-size-18"></i>
-                                                </div>
-                                                <div class="d-flex">
-                                                    <div class="flex-shrink-0 me-3">
-                                                        <h5 class="font-size-14">22 Nov <i class="bx bx-right-arrow-alt font-size-16 text-primary align-middle ms-2"></i></h5>
-                                                    </div>
-                                                    <div class="flex-grow-1">
-                                                        <div>
-                                                            Responded to need “Volunteer Activities
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li class="event-list">
-                                                <div class="event-timeline-dot">
-                                                    <i class="bx bx-right-arrow-circle font-size-18"></i>
-                                                </div>
-                                                <div class="d-flex">
-                                                    <div class="flex-shrink-0 me-3">
-                                                        <h5 class="font-size-14">17 Nov <i class="bx bx-right-arrow-alt font-size-16 text-primary align-middle ms-2"></i></h5>
-                                                    </div>
-                                                    <div class="flex-grow-1">
-                                                        <div>
-                                                            Everyone realizes why a new common language would be desirable... <a href="javascript: void(0);">Read more</a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li class="event-list active">
-                                                <div class="event-timeline-dot">
-                                                    <i class="bx bxs-right-arrow-circle font-size-18 bx-fade-right"></i>
-                                                </div>
-                                                <div class="d-flex">
-                                                    <div class="flex-shrink-0 me-3">
-                                                        <h5 class="font-size-14">15 Nov <i class="bx bx-right-arrow-alt font-size-16 text-primary align-middle ms-2"></i></h5>
-                                                    </div>
-                                                    <div class="flex-grow-1">
-                                                        <div>
-                                                            Joined the group “Boardsmanship Forum”
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li class="event-list">
-                                                <div class="event-timeline-dot">
-                                                    <i class="bx bx-right-arrow-circle font-size-18"></i>
-                                                </div>
-                                                <div class="d-flex">
-                                                    <div class="flex-shrink-0 me-3">
-                                                        <h5 class="font-size-14">12 Nov <i class="bx bx-right-arrow-alt font-size-16 text-primary align-middle ms-2"></i></h5>
-                                                    </div>
-                                                    <div class="flex-grow-1">
-                                                        <div>
-                                                            Responded to need “In-Kind Opportunity”
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                        <div class="text-center mt-4"><a href="javascript: void(0);" class="btn btn-primary waves-effect waves-light btn-sm">View More <i class="mdi mdi-arrow-right ms-1"></i></a></div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-xl-4">
-                                <div class="card">
-                                    <div class="card-body">
-                                        <h4 class="card-title mb-4">Top Cities Selling Product</h4>
-
-                                        <div class="text-center">
-                                            <div class="mb-4">
-                                                <i class="bx bx-map-pin text-primary display-4"></i>
-                                            </div>
-                                            <h3>1,456</h3>
-                                            <p>San Francisco</p>
-                                        </div>
-
-                                        <div class="table-responsive mt-4">
-                                            <table class="table align-middle table-nowrap">
-                                                <tbody>
-                                                    <tr>
-                                                        <td style="width: 30%">
-                                                            <p class="mb-0">San Francisco</p>
-                                                        </td>
-                                                        <td style="width: 25%">
-                                                            <h5 class="mb-0">1,456</h5></td>
-                                                        <td>
-                                                            <div class="progress bg-transparent progress-sm">
-                                                                <div class="progress-bar bg-primary rounded" role="progressbar" style="width: 94%" aria-valuenow="94" aria-valuemin="0" aria-valuemax="100"></div>
-                                                            </div>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>
-                                                            <p class="mb-0">Los Angeles</p>
-                                                        </td>
-                                                        <td>
-                                                            <h5 class="mb-0">1,123</h5>
-                                                        </td>
-                                                        <td>
-                                                            <div class="progress bg-transparent progress-sm">
-                                                                <div class="progress-bar bg-success rounded" role="progressbar" style="width: 82%" aria-valuenow="82" aria-valuemin="0" aria-valuemax="100"></div>
-                                                            </div>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>
-                                                            <p class="mb-0">San Diego</p>
-                                                        </td>
-                                                        <td>
-                                                            <h5 class="mb-0">1,026</h5>
-                                                        </td>
-                                                        <td>
-                                                            <div class="progress bg-transparent progress-sm">
-                                                                <div class="progress-bar bg-warning rounded" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
-                                                            </div>
-                                                        </td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- end row -->
-
-                        <div class="row">
-                            <div class="col-lg-12">
-                                <div class="card">
-                                    <div class="card-body">
-                                        <h4 class="card-title mb-4">Latest Transaction</h4>
-                                        <div class="table-responsive">
-                                            <table class="table align-middle table-nowrap mb-0">
-                                                <thead class="table-light">
-                                                    <tr>
-                                                        <th style="width: 20px;">
-                                                            <div class="form-check font-size-16 align-middle">
-                                                                <input class="form-check-input" type="checkbox" id="transactionCheck01">
-                                                                <label class="form-check-label" for="transactionCheck01"></label>
-                                                            </div>
-                                                        </th>
-                                                        <th class="align-middle">Order ID</th>
-                                                        <th class="align-middle">Billing Name</th>
-                                                        <th class="align-middle">Date</th>
-                                                        <th class="align-middle">Total</th>
-                                                        <th class="align-middle">Payment Status</th>
-                                                        <th class="align-middle">Payment Method</th>
-                                                        <th class="align-middle">View Details</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <tr>
-                                                        <td>
-                                                            <div class="form-check font-size-16">
-                                                                <input class="form-check-input" type="checkbox" id="transactionCheck02">
-                                                                <label class="form-check-label" for="transactionCheck02"></label>
-                                                            </div>
-                                                        </td>
-                                                        <td><a href="javascript: void(0);" class="text-body fw-bold">#SK2540</a> </td>
-                                                        <td>Neal Matthews</td>
-                                                        <td>
-                                                            07 Oct, 2019
-                                                        </td>
-                                                        <td>
-                                                            $400
-                                                        </td>
-                                                        <td>
-                                                            <span class="badge badge-pill badge-soft-success font-size-11">Paid</span>
-                                                        </td>
-                                                        <td>
-                                                            <i class="fab fa-cc-mastercard me-1"></i> Mastercard
-                                                        </td>
-                                                        <td>
-                                                            <!-- Button trigger modal -->
-                                                            <button type="button" class="btn btn-primary btn-sm btn-rounded waves-effect waves-light" data-bs-toggle="modal" data-bs-target=".transaction-detailModal">
-                                                                View Details
-                                                            </button>
-                                                        </td>
-                                                    </tr>
-
-                                                    <tr>
-                                                        <td>
-                                                            <div class="form-check font-size-16">
-                                                                <input class="form-check-input" type="checkbox" id="transactionCheck03">
-                                                                <label class="form-check-label" for="transactionCheck03"></label>
-                                                            </div>
-                                                        </td>
-                                                        <td><a href="javascript: void(0);" class="text-body fw-bold">#SK2541</a> </td>
-                                                        <td>Jamal Burnett</td>
-                                                        <td>
-                                                            07 Oct, 2019
-                                                        </td>
-                                                        <td>
-                                                            $380
-                                                        </td>
-                                                        <td>
-                                                            <span class="badge badge-pill badge-soft-danger font-size-11">Chargeback</span>
-                                                        </td>
-                                                        <td>
-                                                            <i class="fab fa-cc-visa me-1"></i> Visa
-                                                        </td>
-                                                        <td>
-                                                            <!-- Button trigger modal -->
-                                                            <button type="button" class="btn btn-primary btn-sm btn-rounded waves-effect waves-light" data-bs-toggle="modal" data-bs-target=".transaction-detailModal">
-                                                                View Details
-                                                            </button>
-                                                        </td>
-                                                    </tr>
-
-                                                    <tr>
-                                                        <td>
-                                                            <div class="form-check font-size-16">
-                                                                <input class="form-check-input" type="checkbox" id="transactionCheck04">
-                                                                <label class="form-check-label" for="transactionCheck04"></label>
-                                                            </div>
-                                                        </td>
-                                                        <td><a href="javascript: void(0);" class="text-body fw-bold">#SK2542</a> </td>
-                                                        <td>Juan Mitchell</td>
-                                                        <td>
-                                                            06 Oct, 2019
-                                                        </td>
-                                                        <td>
-                                                            $384
-                                                        </td>
-                                                        <td>
-                                                            <span class="badge badge-pill badge-soft-success font-size-11">Paid</span>
-                                                        </td>
-                                                        <td>
-                                                            <i class="fab fa-cc-paypal me-1"></i> Paypal
-                                                        </td>
-                                                        <td>
-                                                            <!-- Button trigger modal -->
-                                                            <button type="button" class="btn btn-primary btn-sm btn-rounded waves-effect waves-light" data-bs-toggle="modal" data-bs-target=".transaction-detailModal">
-                                                                View Details
-                                                            </button>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>
-                                                            <div class="form-check font-size-16">
-                                                                <input class="form-check-input" type="checkbox" id="transactionCheck05">
-                                                                <label class="form-check-label" for="transactionCheck05"></label>
-                                                            </div>
-                                                        </td>
-                                                        <td><a href="javascript: void(0);" class="text-body fw-bold">#SK2543</a> </td>
-                                                        <td>Barry Dick</td>
-                                                        <td>
-                                                            05 Oct, 2019
-                                                        </td>
-                                                        <td>
-                                                            $412
-                                                        </td>
-                                                        <td>
-                                                            <span class="badge badge-pill badge-soft-success font-size-11">Paid</span>
-                                                        </td>
-                                                        <td>
-                                                            <i class="fab fa-cc-mastercard me-1"></i> Mastercard
-                                                        </td>
-                                                        <td>
-                                                            <!-- Button trigger modal -->
-                                                            <button type="button" class="btn btn-primary btn-sm btn-rounded waves-effect waves-light" data-bs-toggle="modal" data-bs-target=".transaction-detailModal">
-                                                                View Details
-                                                            </button>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>
-                                                            <div class="form-check font-size-16">
-                                                                <input class="form-check-input" type="checkbox" id="transactionCheck06">
-                                                                <label class="form-check-label" for="transactionCheck06"></label>
-                                                            </div>
-                                                        </td>
-                                                        <td><a href="javascript: void(0);" class="text-body fw-bold">#SK2544</a> </td>
-                                                        <td>Ronald Taylor</td>
-                                                        <td>
-                                                            04 Oct, 2019
-                                                        </td>
-                                                        <td>
-                                                            $404
-                                                        </td>
-                                                        <td>
-                                                            <span class="badge badge-pill badge-soft-warning font-size-11">Refund</span>
-                                                        </td>
-                                                        <td>
-                                                            <i class="fab fa-cc-visa me-1"></i> Visa
-                                                        </td>
-                                                        <td>
-                                                            <!-- Button trigger modal -->
-                                                            <button type="button" class="btn btn-primary btn-sm btn-rounded waves-effect waves-light" data-bs-toggle="modal" data-bs-target=".transaction-detailModal">
-                                                                View Details
-                                                            </button>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>
-                                                            <div class="form-check font-size-16">
-                                                                <input class="form-check-input" type="checkbox" id="transactionCheck07">
-                                                                <label class="form-check-label" for="transactionCheck07"></label>
-                                                            </div>
-                                                        </td>
-                                                        <td><a href="javascript: void(0);" class="text-body fw-bold">#SK2545</a> </td>
-                                                        <td>Jacob Hunter</td>
-                                                        <td>
-                                                            04 Oct, 2019
-                                                        </td>
-                                                        <td>
-                                                            $392
-                                                        </td>
-                                                        <td>
-                                                            <span class="badge badge-pill badge-soft-success font-size-11">Paid</span>
-                                                        </td>
-                                                        <td>
-                                                            <i class="fab fa-cc-paypal me-1"></i> Paypal
-                                                        </td>
-                                                        <td>
-                                                            <!-- Button trigger modal -->
-                                                            <button type="button" class="btn btn-primary btn-sm btn-rounded waves-effect waves-light" data-bs-toggle="modal" data-bs-target=".transaction-detailModal">
-                                                                View Details
-                                                            </button>
-                                                        </td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                        <!-- end table-responsive -->
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- end row -->
                     </div>
-                    <!-- container-fluid -->
                 </div>
-                <!-- End Page-content -->
+                <!-- end page title -->
 
-                <!-- Transaction Modal -->
-                <div class="modal fade transaction-detailModal" tabindex="-1" role="dialog" aria-labelledby="transaction-detailModalLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-centered" role="document">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="transaction-detailModalLabel">Order Details</h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body">
-                                <p class="mb-2">Product id: <span class="text-primary">#SK2540</span></p>
-                                <p class="mb-4">Billing Name: <span class="text-primary">Neal Matthews</span></p>
+                <!-- start page content -->
+
+                <!-- start row -->
+                <div class="row gx5">
+                    <div class="col-lg-12">
+                        <div class="card">
+                            <div class="card-body">
+
+                                <div class="table-filter-wrapper">
+
+                                    <div class="table-title">
+                                        <button id="myBtn" type="button" class="filter-button active">
+                                            <i class="bx bx-customize"></i>
+                                            Filter Search
+                                        </button>
+                                    </div>
+
+                                    <div class="table-filter__text">
+                                        0 of 165 items in the results are selected. <a href="" class="link">Select all
+                                            165 items</a> or <a href="" class="link">Clear selection</a> select assets
+                                        to perform mass actions
+
+                                    </div>
+                                </div>
+
 
                                 <div class="table-responsive">
-                                    <table class="table align-middle table-nowrap">
-                                        <thead>
+                                    <table class="table align-middle table-nowrap mb-0 table-striped">
+                                        <thead class="">
                                             <tr>
-                                                <th scope="col">Product</th>
-                                                <th scope="col">Product Name</th>
-                                                <th scope="col">Price</th>
+                                                <th style="width: 20px;">
+                                                    <div class="form-check font-size-16 align-middle">
+                                                        <input class="form-check-input" type="checkbox"
+                                                            id="transactionCheck01">
+                                                        <label class="form-check-label"
+                                                            for="transactionCheck01"></label>
+                                                    </div>
+                                                </th>
+                                                <th class="align-middle">Intake Number
+                                                    <i class="bx bx-sort"></i>
+                                                </th>
+                                                <th class="align-middle">Department
+                                                    <i class="bx bx-sort"></i>
+                                                </th>
+                                                <th class="align-middle">Sub-Departments
+                                                    <i class="bx bx-sort"></i>
+                                                </th>
+                                                <th class="align-middle">Customer Name
+                                                    <i class="bx bx-sort"></i>
+                                                </th>
+                                                <th class="align-middle">Date Received
+                                                    <i class="bx bx-sort"></i>
+                                                </th>
+                                                <th class="align-middle">Received By
+                                                    <i class="bx bx-sort"></i>
+                                                </th>
+                                                <th class="align-middle"></th>
                                             </tr>
                                         </thead>
-                                        <tbody>
+                                        <tbody class="">
                                             <tr>
-                                                <th scope="row">
-                                                    <div>
-                                                        <img src="assets/images/product/img-7.png" alt="" class="avatar-sm">
-                                                    </div>
-                                                </th>
                                                 <td>
-                                                    <div>
-                                                        <h5 class="text-truncate font-size-14">Wireless Headphone (Black)</h5>
-                                                        <p class="text-muted mb-0">$ 225 x 1</p>
+                                                    <div class="form-check font-size-16">
+                                                        <input class="form-check-input" type="checkbox"
+                                                            id="transactionCheck02">
+                                                        <label class="form-check-label"
+                                                            for="transactionCheck02"></label>
                                                     </div>
                                                 </td>
-                                                <td>$ 255</td>
-                                            </tr>
-                                            <tr>
-                                                <th scope="row">
-                                                    <div>
-                                                        <img src="assets/images/product/img-4.png" alt="" class="avatar-sm">
+                                                <td><a href="" class="link">12345</a> </td>
+                                                <td>Chain Shop</td>
+                                                <td>
+                                                    Wire Mesh Slings
+                                                </td>
+                                                <td>
+                                                    Sarah Fin
+                                                </td>
+                                                <td>
+                                                    10/22/2008
+                                                </td>
+                                                <td>
+                                                    Bill Hill
+                                                </td>
+                                                <td>
+                                                    <div class="table-icons">
+                                                        <button><i class="bx bx-pencil"></i></button>
+                                                        <button><i class="bx bx-printer"></i></button>
+                                                        <button><i class="bx bx-envelope"></i></button>
                                                     </div>
-                                                </th>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
                                                 <td>
-                                                    <div>
-                                                        <h5 class="text-truncate font-size-14">Phone patterned cases</h5>
-                                                        <p class="text-muted mb-0">$ 145 x 1</p>
+                                                    <div class="form-check font-size-16">
+                                                        <input class="form-check-input" type="checkbox"
+                                                            id="transactionCheck02">
+                                                        <label class="form-check-label"
+                                                            for="transactionCheck02"></label>
                                                     </div>
                                                 </td>
-                                                <td>$ 145</td>
-                                            </tr>
-                                            <tr>
-                                                <td colspan="2">
-                                                    <h6 class="m-0 text-right">Sub Total:</h6>
+                                                <td><a href="" class="link">12345</a> </td>
+                                                <td>Hoist Shop <br>
+                                                    Web Shop</td>
+                                                <td>
+                                                    Lifting Magnets <br>
+                                                    Web Slings
                                                 </td>
                                                 <td>
-                                                    $ 400
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td colspan="2">
-                                                    <h6 class="m-0 text-right">Shipping:</h6>
+                                                    Sarah Fin
                                                 </td>
                                                 <td>
-                                                    Free
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td colspan="2">
-                                                    <h6 class="m-0 text-right">Total:</h6>
+                                                    10/22/2008
                                                 </td>
                                                 <td>
-                                                    $ 400
+                                                    Bill Hill
+                                                </td>
+                                                <td>
+                                                    <div class="table-icons">
+                                                        <button><i class="bx bx-pencil"></i></button>
+                                                        <button><i class="bx bx-printer"></i></button>
+                                                        <button><i class="bx bx-envelope"></i></button>
+                                                    </div>
                                                 </td>
                                             </tr>
+
+                                            <tr>
+                                                <td>
+                                                    <div class="form-check font-size-16">
+                                                        <input class="form-check-input" type="checkbox"
+                                                            id="transactionCheck02">
+                                                        <label class="form-check-label"
+                                                            for="transactionCheck02"></label>
+                                                    </div>
+                                                </td>
+                                                <td><a href="" class="link">12345</a> </td>
+                                                <td>Chain Shop</td>
+                                                <td>
+                                                    Twin-Path
+                                                </td>
+                                                <td>
+                                                    Sarah Fin
+                                                </td>
+                                                <td>
+                                                    10/22/2008
+                                                </td>
+                                                <td>
+                                                    Bill Hill
+                                                </td>
+                                                <td>
+                                                    <div class="table-icons">
+                                                        <button><i class="bx bx-pencil"></i></button>
+                                                        <button><i class="bx bx-printer"></i></button>
+                                                        <button><i class="bx bx-envelope"></i></button>
+                                                    </div>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>
+                                                    <div class="form-check font-size-16">
+                                                        <input class="form-check-input" type="checkbox"
+                                                            id="transactionCheck02">
+                                                        <label class="form-check-label"
+                                                            for="transactionCheck02"></label>
+                                                    </div>
+                                                </td>
+                                                <td><a href="" class="link">12345</a> </td>
+                                                <td>Wire Rope Shop</td>
+                                                <td>
+                                                    Wire Rope <br>
+                                                    Assemblies
+                                                </td>
+                                                <td>
+                                                    Sarah Fin
+                                                </td>
+                                                <td>
+                                                    10/22/2008
+                                                </td>
+                                                <td>
+                                                    Bill Hill
+                                                </td>
+                                                <td>
+                                                    <div class="table-icons">
+                                                        <button><i class="bx bx-pencil"></i></button>
+                                                        <button><i class="bx bx-printer"></i></button>
+                                                        <button><i class="bx bx-envelope"></i></button>
+                                                    </div>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>
+                                                    <div class="form-check font-size-16">
+                                                        <input class="form-check-input" type="checkbox"
+                                                            id="transactionCheck02">
+                                                        <label class="form-check-label"
+                                                            for="transactionCheck02"></label>
+                                                    </div>
+                                                </td>
+                                                <td><a href="" class="link">12345</a> </td>
+                                                <td>Web Shop </td>
+                                                <td>
+                                                    Web Slings
+                                                </td>
+                                                <td>
+                                                    Sarah Fin
+                                                </td>
+                                                <td>
+                                                    10/22/2008
+                                                </td>
+                                                <td>
+                                                    Bill Hill
+                                                </td>
+                                                <td>
+                                                    <div class="table-icons">
+                                                        <button><i class="bx bx-pencil"></i></button>
+                                                        <button><i class="bx bx-printer"></i></button>
+                                                        <button><i class="bx bx-envelope"></i></button>
+                                                    </div>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>
+                                                    <div class="form-check font-size-16">
+                                                        <input class="form-check-input" type="checkbox"
+                                                            id="transactionCheck02">
+                                                        <label class="form-check-label"
+                                                            for="transactionCheck02"></label>
+                                                    </div>
+                                                </td>
+                                                <td><a href="" class="link">12345</a> </td>
+                                                <td>Chain Shop</td>
+                                                <td>
+                                                    Chain Slings
+                                                </td>
+                                                <td>
+                                                    Sarah Fin
+                                                </td>
+                                                <td>
+                                                    10/22/2008
+                                                </td>
+                                                <td>
+                                                    Bill Hill
+                                                </td>
+                                                <td>
+                                                    <div class="table-icons">
+                                                        <button><i class="bx bx-pencil"></i></button>
+                                                        <button><i class="bx bx-printer"></i></button>
+                                                        <button><i class="bx bx-envelope"></i></button>
+                                                    </div>
+                                                </td>
+                                            </tr>
+
+
                                         </tbody>
                                     </table>
                                 </div>
+                                <!-- end table-responsive -->
+
+                               
+
                             </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                            </div>
+
+                            
                         </div>
+                         <!-- start pagination -->
+                         <div class="pagination-wrapper">
+                            <ul class="pagination justify-content-center pagination-rounded">
+                                <li class="page-item">
+                                    <a href="javascript: void(0);" class="page-link"><i class="mdi mdi-chevron-left"></i></a>
+                                </li>
+                                <li class="page-item">
+                                    <a href="javascript: void(0);" class="page-link">1</a>
+                                </li>
+                                <li class="page-item active">
+                                    <a href="javascript: void(0);" class="page-link">2</a>
+                                </li>
+                                <li class="page-item">
+                                    <a href="javascript: void(0);" class="page-link">3</a>
+                                </li>
+                                <li class="page-item">
+                                    <a href="javascript: void(0);" class="page-link">4</a>
+                                </li>
+                                <li class="page-item">
+                                    <a href="javascript: void(0);" class="page-link">5</a>
+                                </li>
+                                <li class="page-item">
+                                    <a href="javascript: void(0);" class="page-link"><i class="mdi mdi-chevron-right"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <!-- end pagination -->
                     </div>
                 </div>
-                <!-- end modal -->
-
-     
-                
-                @@include("partials/footer.html")
+                <!-- end row -->
+<div class="content-logo">
+    <img src="assets/images/logo-dark.png" alt="">
+</div>
             </div>
-            <!-- end main content-->
-
-
-
-
+            <!-- end page content -->
         </div>
-        <!-- END layout-wrapper -->
+        <!-- container-fluid -->
+    </div>
+    <!-- End Page-content -->
 
+    <!-- MODAL -->
+    <div id="filterModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <div class="row">
+                <div class="col-md-2">
+                   <h2 class="card-title">Filter Search</h2> 
+                </div>
+                <div class="col-md-10 d-flex align-items-center justify-content-between">
+                 
+                        <div class="d-flex justify-content-between align-items-center">
+<input class="form-control search-input" type="text" placeholder="" id="search-input">
+                        
+                        <i style="font-size: 22px; color: #212121;" class="bx bx-search"></i>
+                        </div>
+                        
+                        <i style="font-size: 30px; color: #EC1C24;" class="bx bx-x"></i>
+                     
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <h3 class="input-title mt-20">Intake Number</h3>
+            <select class="form-select" aria-label="Select event type">
+                <option selected></option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+            </select>
+                </div>
+
+                <div class="col-md-6">
+                    <h3 class="input-title mt-20">Customer Name</h3>
+            <select class="form-select" aria-label="Select event type">
+                <option selected></option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+            </select>
+                </div>
+
+                <div class="col-md-6">
+                    <h3 class="input-title mt-20">Department</h3>
+            <select class="form-select" aria-label="Select event type">
+                <option selected></option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+            </select>
+                </div>
+
+                <div class="col-md-6">
+                    <h3 class="input-title mt-20">Date Received</h3>
+            <select class="form-select" aria-label="Select event type">
+                <option selected></option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+            </select>
+                </div>
+
+                <div class="col-md-6">
+                    <h3 class="input-title mt-20">Sub-Department</h3>
+            <select class="form-select" aria-label="Select event type">
+                <option selected></option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+            </select>
+                </div>
+
+                <div class="col-md-6">
+                    <h3 class="input-title mt-20">Received By</h3>
+            <select class="form-select" aria-label="Select event type">
+                <option selected></option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+            </select>
+                </div>
+
+            </div>
         
+        </div>
+    </div>
+</div>
+<!-- end main content-->
 
-        @@include("partials/right-sidebar.html")
 
-        @@include("partials/vendor-scripts.html")
+<!-- sidemenu script from skote -->
+<script src="/dashboard/shared/assets/libs/simplebar/simplebar.min.js"></script>
 
-        <!-- apexcharts -->
-        <script src="assets/libs/apexcharts/apexcharts.min.js"></script>
 
-        <!-- dashboard init -->
-        <script src="assets/js/pages/dashboard.init.js"></script>
+<!-- file upload scripts from skote -->
+<script src="/dashboard/shared/assets/js/pages/form-file-upload.init.js"></script>
+<script src="/dashboard/shared/assets/js/pages/form-file-upload.init.js"></script>
 
-        <!-- App js -->
-        <script src="assets/js/app.js"></script>
-        
-    </body>
+<!-- date input scripts from skote -->
+<script src="/dashboard/shared/assets/libs/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
 
-</html>
+<!-- select input scripts for Select2 -->
+<script src="/dashboard/shared/assets/libs/select2/js/select2.min.js"></script>
+<script src="/dashboard/shared/assets/js/pages/form-advanced.init.js"></script>
+
+<!-- javascript to open and close modal -->
+<script>
+    // Get the modal
+    let modal = document.getElementById("filterModal");
+
+document.addEventListener('click', function(event) {
+    if (event.target.classList.contains('modal')) {
+        modal.style.display = "none";
+    }
+});
+
+    // Get the button that opens the modal
+    let btn = document.getElementById("myBtn");
+
+    // Get the <span> element that closes the modal
+    let span = document.getElementsByClassName("close")[0];
+
+    // When the user clicks the button, open the modal 
+    btn.onclick = function () {
+        modal.style.display = "block";
+    }
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function () {
+        modal.style.display = "none";
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function (event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+</script>
+
+<!-- javscript for Select2 -->
+<script>
+    $('#asset-type').select2({
+        placeholder: "Choose",
+    });
+
+    //allows all dropdown options not in #asset-type to have a border-top
+    $('.regular-select').select2({
+        placeholder: '',
+        minimumResultsForSearch: Infinity,
+        dropdownCssClass: "regular-dropdown"
+    });
+
+    // show additional inputs based on *Length select value
+    $(document).ready(function () {
+        // hide the sub-panes
+        $('.length-units').hide();
+
+        // When our select2 changes...
+        $('#length').change(function () {
+            // ... we can get all the selected options
+            let selected = $(this).select2('data');
+
+            // Hide all the panes again
+            $('.length-units').hide();
+            // Go through the list of options
+            selected.forEach(function (option) {
+                // and show the one with this id
+                $("#" + option.id).show()
+                $("#length-icon").hide();
+            })
+        });
+    });
+</script>

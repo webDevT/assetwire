@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*
 Template Name: Skote - Admin & Dashboard Template
 Author: Themesbrand
@@ -5454,6 +5455,7 @@ button {
 }
 
 .link {
+  cursor: pointer;
   color: #007BFF;
   text-decoration: underline !important;
 }
@@ -5694,6 +5696,12 @@ thead {
 table .badge {
   width: 100%;
   border-radius: 50px;
+}
+
+.badge {
+  border-radius: 50px;
+  padding-right: 10px;
+  padding-left: 10px;
 }
 
 .main-content-custom {
@@ -6248,4 +6256,253 @@ td {
   .image-card i:before {
     font-size: 35vw;
   }
+}
+.btn-sm.form-select {
+  font-size: 0.7109375rem;
+  height: 26.66px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.mr-10 {
+  margin-left: 10px;
+}
+
+.pl-10 {
+  padding-right: 10px;
+}
+
+.pr-10 {
+  padding-left: 10px;
+}
+
+.bage {
+  border-radius: 50px;
+}
+
+.table-responsive-overflow-y {
+  overflow-y: auto;
+  height: 230px;
+}
+
+.scroll-container,
+.table-responsive {
+  position: relative; /* Позиционируем контейнер относительно его потомков */
+}
+
+.table-responsive {
+  padding-bottom: 30px;
+  overflow-x: auto;
+}
+
+/* Стили для кастомного скролла */
+.scroll-container::-webkit-scrollbar,
+.table-responsive::-webkit-scrollbar {
+  width: 10px; /* Ширина скроллбара */
+}
+
+.scroll-container::-webkit-scrollbar-thumb,
+.table-responsive::-webkit-scrollbar-thumb {
+  background-color: #000; /* Цвет ползунка скроллбара */
+  border-radius: 5px; /* Скругление углов ползунка */
+}
+
+.select-230 {
+  width: 230px;
+  max-width: 100%;
+}
+
+.height-50 {
+  height: 50px;
+}
+
+.select-wrapper {
+  position: relative;
+}
+.select-wrapper i {
+  position: absolute;
+  left: 30px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.input-wrapper-x {
+  position: relative;
+}
+.input-wrapper-x i {
+  position: absolute;
+  left: 5px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  cursor: pointer;
+}
+.input-wrapper-x input {
+  padding-left: 30px;
+}
+
+.profile-picture {
+  width: 165px;
+  max-width: 100%;
+}
+.profile-picture img {
+  max-width: 100%;
+  width: 100%;
+}
+
+.atributes-list {
+  overflow: auto;
+  padding-bottom: 20px;
+}
+
+.atributes-list__table {
+  min-width: 850px;
+}
+
+.modal {
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+.select-wrapper--disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.input-wrapper-x {
+  width: 100%;
+}
+
+.categories-list {
+  margin-bottom: 0;
+}
+
+.accordion-list {
+  margin-bottom: 0;
+}
+.accordion-list i {
+  color: #000;
+}
+
+.add-new {
+  display: none;
+}
+
+.form-check-input {
+  width: 16px;
+  height: 16px;
+}
+
+.ml-5 {
+  margin-right: 5px;
+}
+
+.mr-5 {
+  margin-left: 5px;
+}
+
+.help {
+  cursor: pointer;
+  position: relative;
+}
+
+.help-content {
+  position: absolute;
+  top: 0;
+  right: 100%;
+  background: #fff;
+  z-index: 99;
+  border: 1px solid #000;
+  border-radius: 10px;
+  width: 316px;
+  padding: 16px;
+  display: none;
+}
+
+.help:hover .help-content {
+  display: block;
+}
+
+.job-book-list {
+  border: 1px solid #000;
+  border-radius: 5px;
+}
+
+.job-book-item {
+  padding: 5px 7px;
+  border-bottom: 1px solid #000;
+}
+
+.job-book-item:last-child {
+  border-bottom: none;
+}
+
+.calend-type {
+  display: none;
+}
+
+.tui-view-7 {
+  display: none;
+}
+
+.tui-full-calendar-month-week-item > div {
+  background-color: #f8f8fb;
+}
+
+.tui-full-calendar-extra-date {
+  opacity: 0;
+}
+
+.tui-full-calendar-popup {
+  background: #fff;
+}
+
+.tui-full-calendar-weekday-border {
+  border-top: none !important;
+}
+
+.tui-full-calendar-weekday-grid-line {
+  border: 1px solid #000;
+}
+
+.tui-full-calendar-weekday-schedule-bullet {
+  display: none;
+}
+
+.tui-full-calendar-month-week-item .tui-full-calendar-today .tui-full-calendar-weekday-grid-date-decorator {
+  background-color: transparent !important;
+}
+
+.tui-full-calendar-weekday-grid-line {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  text-align: left;
+}
+
+.btn-calendar {
+  color: #000 !important;
+  border-color: #000 !important;
+  border-radius: 30px !important;
+}
+
+.btn-calendar i {
+  color: #000;
+}
+
+.tui-view-38,
+.tui-view-48 {
+  display: none;
+}
+
+#calendar1 .tui-full-calendar-month-week-item,
+#calendar2 .tui-full-calendar-month-week-item {
+  height: 50px !important;
 }
